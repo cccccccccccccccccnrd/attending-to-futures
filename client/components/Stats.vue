@@ -1,7 +1,9 @@
 <template>
   <div class="stats">
-    <p>X {{ stats.mouseX }} Y {{ stats.mouseY }} CLICKS {{ stats.clicks }}</p>
-    <p>{{ stats.userAgent }}</p>
+    <p>{{ stats.mouseX }} {{ stats.mouseY }} {{ stats.clicks }}</p>
+    <p class="hidden">{{ stats.navigator ? stats.navigator.userAgent : '' }}</p>
+    <p class="hidden">{{ stats.navigator ? stats.navigator.connection : '' }}</p>
+    <p class="hidden">{{ stats.navigator ? stats.navigator.languages : '' }}</p>
   </div>
 </template>
 
@@ -10,8 +12,7 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   data () {
-    return {
-    }
+    return {}
   },
   mounted () {
     this.init()
@@ -32,5 +33,18 @@ export default {
 <style scoped>
 .stats {
   font-size: 0.7em;
+  padding: 16px;
+}
+
+.stats:hover {
+  cursor: wait;
+}
+
+.stats:hover > * {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 </style>

@@ -1,14 +1,15 @@
 export const state = () => ({
-  userAgent: '',
+  navigator: null,
   mouseX: '0',
   mouseY: '0',
-  clicks: 0
+  clicks: 0,
+  print: null,
 })
 
 export const actions = {
-  init ({ commit, state }) {
-    commit('setUserAgent', navigator.userAgent)
-    commit('setUserAgent', navigator.userAgent)
+  async init ({ commit, state }) {
+    console.log(navigator)
+    commit('setNavigator', navigator)
 
     document.addEventListener('mousemove', (event) => {
       commit('setMouseX', event.clientX)
@@ -22,8 +23,8 @@ export const actions = {
 }
 
 export const mutations = {
-  setUserAgent(state, userAgent) {
-    state.userAgent = userAgent
+  setNavigator(state, navigator) {
+    state.navigator = navigator
   },
   setMouseX(state, mouseX) {
     state.mouseX = mouseX
@@ -34,6 +35,9 @@ export const mutations = {
   setClicks(state, clicks) {
     state.clicks = clicks
   },
+  setPrint(state, print) {
+    state.print = print
+  }
 }
 
 export const getters = {

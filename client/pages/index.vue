@@ -6,10 +6,19 @@
     >
       {{ term[0] }}
     </h1>
+    <img
+      v-drag="onDrag"
+      style="opacity: 0"
+      id="asset-1"
+      src="~/assets/4-nand.jpg"
+      class="drag"
+    >
   </div>
 </template>
 
 <script>
+import { mapActions, mapMutations } from 'vuex'
+
 export default {
   data () {
     return {
@@ -26,9 +35,23 @@ export default {
         this.index = 0
       }
     }, 100)
-    console.log(this.terms)
   },
   computed: {
+    ...mapActions({
+      socket: 'socket/socket',
+      stats: 'stats/all'
+    })
+  },
+  methods: {
+    ...mapActions({
+      send: 'socket/send',
+    }),
+    ...mapMutations({
+      setElement: 'drags/setElement',
+    }),
+    onDrag (event) {
+      this.send(['drag', event])
+    }
   }
 }
 </script>

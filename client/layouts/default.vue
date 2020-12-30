@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import Logo from '@/components/Logo.vue'
 import Stats from '@/components/Stats.vue'
 
@@ -71,8 +71,39 @@ export default {
   data () {
     return {}
   },
+  mounted () {
+    const app = this
+    this.init()
+
+    this.socket.addEventListener('message', (message) => {
+      const msg = JSON.parse(message.data)
+
+      switch (msg.type) {
+        case 'drag-init':
+          Object.keys(msg.payload).map((key) => {
+            app.position(msg.payload[key], true)
+          })
+          break
+        case 'drag':
+          this.position(msg.payload)
+          break
+      }
+    })
+  },
+  methods: {
+    ...mapActions({
+      init: 'socket/init'
+    }),
+    position (payload, show) {
+      const element = document.querySelector(`#${payload.id}`)
+      element.style.top = `${payload.top}px`
+      element.style.left = `${payload.left}px`
+      if (show) element.style.opacity = 1
+    }
+  },
   computed: {
     ...mapGetters({
+      socket: 'socket/socket',
       stats: 'stats/all'
     })
   }
@@ -177,17 +208,28 @@ nav a {
 }
 
 main {
+  position: relative;
   width: 100%;
   padding: 1em;
   overflow-y: scroll;
 }
 
 .stats-container {
-  padding: 1em;
+  /* padding: 1em; */
   border-top: 1px solid black;
 }
 
 .description {
   padding: 1em;
+}
+
+.drag {
+  max-width: 300px;
+  z-index: 9999;
+  cursor: grab;
+}
+
+.drag:active {
+  cursor: grabbing;
 }
 </style>
