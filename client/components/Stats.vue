@@ -2,15 +2,22 @@
   <div class="stats">
     <p>{{ stats.mouseX }} {{ stats.mouseY }} {{ stats.clicks }}</p>
     <p class="hidden">{{ stats.navigator ? stats.navigator.userAgent : '' }}</p>
-    <p class="hidden">{{ stats.navigator ? stats.navigator.connection : '' }}</p>
+    <!-- <p class="hidden">{{ stats.navigator ? stats.navigator.connection : '' }}</p -->
     <p class="hidden">{{ stats.navigator ? stats.navigator.languages : '' }}</p>
+    <visual
+      class="hidden"
+    />
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import Visual from '@/components/Visual.vue'
 
 export default {
+  components: {
+    Visual
+  },
   data () {
     return {}
   },

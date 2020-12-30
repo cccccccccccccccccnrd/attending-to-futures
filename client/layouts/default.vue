@@ -48,9 +48,12 @@
             perspectives on design education, research, and
             practice.</p></div>
       </div>
-        <div class="stats-container">
-          <stats/>
-        </div>
+        <no-ssr>
+          <div class="stats-container">
+            <!-- <visual/> -->
+            <stats/>
+          </div>
+        </no-ssr>
     </aside>
     <main>
       <nuxt/>
@@ -62,11 +65,13 @@
 import { mapActions, mapGetters } from 'vuex'
 import Logo from '@/components/Logo.vue'
 import Stats from '@/components/Stats.vue'
+import Visual from '@/components/Visual.vue'
 
 export default {
   components: {
     Logo,
-    Stats
+    Stats,
+    Visual
   },
   data () {
     return {}
