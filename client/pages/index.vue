@@ -8,7 +8,7 @@
     </h1>
     <img
       v-drag="onDrag"
-      style="opacity: 0"
+      style="opacity: 1"
       id="asset-1"
       src="~/assets/4-nand.jpg"
       class="drag"
