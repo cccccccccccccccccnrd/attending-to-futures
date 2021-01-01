@@ -4,7 +4,7 @@ const state = {
   elements: {}
 }
 
-const wss = new WebSocket.Server({ port: 2001 })
+const wss = new WebSocket.Server({ port: 1718 })
 
 wss.broadcast = function broadcast(data) {
   wss.clients.forEach(function each(client) {
