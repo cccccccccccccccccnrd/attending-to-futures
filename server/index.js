@@ -6,14 +6,6 @@ const state = {
 
 const wss = new WebSocket.Server({ port: 1718 })
 
-wss.broadcast = function broadcast(data) {
-  wss.clients.forEach(function each(client) {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(data)
-    }
-  })
-} 
-
 wss.on('connection', (ws) => {
   ws.send(JSON.stringify({
     type: 'drag-init',

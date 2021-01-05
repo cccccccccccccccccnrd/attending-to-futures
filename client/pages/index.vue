@@ -10,7 +10,7 @@
       v-drag="onDrag"
       style="opacity: 1"
       id="asset-1"
-      src="~/assets/4-nand.jpg"
+      src="~/assets/design-is-a-service.png"
       class="drag"
     >
   </div>

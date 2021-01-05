@@ -19,7 +19,9 @@
             and more unknowable than it may have been in
             the past. Currently we are looking for papers.</p>
             <br>
-            <button>Call for Papers</button>
+            <a href="/attending-to-futures-cfp.pdf" target="_blank">
+              <button>Call for Papers</button>
+            </a>
             <br>
             <br>
             <br>
