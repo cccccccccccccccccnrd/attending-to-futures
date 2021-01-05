@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const actions = {
   init (context) {
-    const url = window.location.hostname === 'localhost' ? 'ws://localhost:2001' : 'wss://attendingtofutures.de/ws'
+    const url = window.location.hostname === 'localhost' ? 'ws://localhost:2001' : 'wss://www.attendingtofutures.de/ws'
     context.commit('setSocket', new WebSocket(url))
   },
   send (context, [type, payload]) {
