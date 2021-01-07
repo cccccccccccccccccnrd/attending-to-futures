@@ -118,6 +118,13 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'M';
+  src: url('~assets/margueritegrotesk-regular-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+}
+
 ::-webkit-scrollbar {
   width: 0.75em;
   height: 0.75em;
@@ -139,8 +146,9 @@ html, body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'M', Arial, sans-serif;
   font-size: 16px;
+  line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -171,10 +179,10 @@ button {
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 0.7em;
-  /* border: 1px solid black; */
-  box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.15);
+  border: 1px solid black;
+  /* box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.15); */
   cursor: pointer;
-  transition: 100ms all ease-in-out;
+  /* transition: 100ms all ease-in-out; */
 }
 
 button:hover {
