@@ -1,7 +1,7 @@
 <template>
   <div class="site">
     <aside>
-      <div class="scroll">
+      <div>
         <div class="logo-container">
           <logo/>
         </div>
@@ -12,50 +12,15 @@
           <a href="#">Contact</a>
         </nav>
         <div class="description">
-          <p>Pandemics and climate catastrophes expose
-            various crises of increasingly interdependent
-            and complex global systems, while rendering the
-            future radically uncertain (Isabelle Stengers)
-            and more unknowable than it may have been in
-            the past. Currently we are looking for papers.</p>
-            <br>
-            <a href="/attending-to-futures-cfp.pdf" target="_blank">
-              <button>Call for Papers</button>
-            </a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>Pandemics and climate catastrophes expose
-            various crises of increasingly interdependent
-            and complex global systems, while rendering the
-            future radically uncertain (Isabelle Stengers)
-            and more unknowable than it may have been in
-            the past. The conference Attending [to] Futures
-            examines the ambivalent role and responsibility of
-            design as world-making at a moment in which the
-            world »is presented in crisis« (Ghosn, Jazairy).
-            Acknowledging the ways in which design (as
-            practices, forms of knowledge, and sets of objects) is accountable for social and environmental
-            injustice, the conference invites critical perspectives that scrutinize unchallenged disciplinary
-            norms and dominant ways of knowing, being, doing, and imagining in design education, research,
-            and practice. Currently we are looking for papers.</p>
-            <br>
-            <p>How are design practices embedded in sociopolitical contexts and hegemonic power structures and how do they (re-)produce exclusion?
-            How can persistent structures of systemic
-            oppression and privilege in design be recognized
-            and changed? How can approaches for the invention and constitution of future worlds be developed without perpetuating pejorative constructions of race, class, gender and ability?
-            Drawing on current de/anti-colonial, post-humanist, queer-feminist and dis/ability discourses,
-            the conference attempts a political reprogramming of design in order to generate transformative
-            perspectives on design education, research, and
-            practice.</p></div>
+          <p>The conference Attending [to] Futures examines the ambivalent role and responsibility of design as world-making at a moment in which the world »is presented in crisis« (Ghosn, Jazairy). Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, the conference invites critical perspectives that scrutinize unchallenged disciplinary norms and dominant ways of knowing, being, doing, and imagining in design education, research, and practice. Drawing on current de-/anti-colonial, post-humanist, queer-feminist and disability discourses, the conference attempts a political reprogramming of design in order to generate transformative perspectives on design education, research, and practice.</p>
+        </div>
       </div>
-        <no-ssr>
-          <div class="stats-container">
-            <!-- <visual/> -->
-            <stats/>
-          </div>
-        </no-ssr>
+      <no-ssr>
+        <div class="stats-container">
+          <!-- <visual/> -->
+          <stats/>
+        </div>
+      </no-ssr>
     </aside>
     <main>
       <nuxt/>
@@ -118,12 +83,20 @@ export default {
 </script>
 
 <style>
-@font-face {
+/* @font-face {
   font-family: 'M';
   src: url('~assets/margueritegrotesk-regular-webfont.woff') format('woff');
   font-display: swap;
   font-weight: 300;
+} */
+
+@font-face {
+  font-family: 'M';
+  src: url('~assets/MargueriteGroteskvariabelGX.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 300;
 }
+
 
 ::-webkit-scrollbar {
   width: 0.75em;
@@ -166,7 +139,7 @@ p {
 
 h1 {
   margin: 0;
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: normal;
   line-height: 1;
 }
@@ -178,8 +151,10 @@ button {
   border: 0;
   border-radius: 100px;
   text-transform: uppercase;
-  font-size: 0.7em;
-  border: 1px solid black;
+  font-size: 1em;
+  color: white;
+  background: black;
+  /*border: 1px solid black;*/
   /* box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.15); */
   cursor: pointer;
   /* transition: 100ms all ease-in-out; */
@@ -219,18 +194,17 @@ nav {
 
 nav a {
   display: block;
-  line-height: 1.5;
+  line-height: 1.25;
+  text-decoration: line-through;
 }
 
 main {
   position: relative;
   width: 100%;
-  padding: 1em;
   overflow-y: scroll;
 }
 
 .stats-container {
-  /* padding: 1em; */
   border-top: 1px solid black;
 }
 

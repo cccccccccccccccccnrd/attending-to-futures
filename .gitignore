@@ -1,4 +1,5 @@
 *.woff
+*.ttf
 
 .DS_Store
 node_modules
