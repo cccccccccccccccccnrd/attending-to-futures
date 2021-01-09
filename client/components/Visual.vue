@@ -22,6 +22,7 @@ export default {
   },
   methods: {
     draw () {
+      this.ctx.fillStyle = 'blue'
       this.ctx.fillRect(this.stats.mouseX / 6, this.stats.mouseY / 6, 2, 2)
       window.requestAnimationFrame(this.draw)
     }
