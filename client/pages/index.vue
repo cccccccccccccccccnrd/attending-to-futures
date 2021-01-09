@@ -102,7 +102,7 @@ h1 {
 }
 
 marquee {
-  padding: 0.5em 0;
+  padding: 0.35em 0;
   font-size: 1.5em;
   border-bottom: 1px solid black;
 }
