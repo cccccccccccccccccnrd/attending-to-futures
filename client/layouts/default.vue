@@ -46,7 +46,7 @@ export default {
   data () {
     return {}
   },
-  mounted () {
+  async mounted () {
     const app = this
     this.init()
 
@@ -60,7 +60,7 @@ export default {
           })
           break
         case 'drag':
-          this.position(msg.payload)
+          if (this.$route.name === 'index') this.position(msg.payload)
           break
       }
     })
@@ -73,7 +73,6 @@ export default {
       const element = document.querySelector(`#${payload.id}`)
       element.style.top = `${payload.top}px`
       element.style.left = `${payload.left}px`
-      if (show) element.style.opacity = 1
     }
   },
   computed: {

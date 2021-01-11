@@ -11,11 +11,18 @@ wss.on('connection', (ws) => {
     type: 'drag-init',
     payload: state.elements
   }))
-
+  
   ws.on('message', (data) => {
     const msg = JSON.parse(data)
 
     switch (msg.type) {
+      case 'get-drag-init':
+        console.log('get-init')
+        ws.send(JSON.stringify({
+          type: 'drag-init',
+          payload: state.elements
+        }))
+        break
       case 'drag':
         state.elements[msg.payload.id] = msg.payload
         wss.clients.forEach((client) => {

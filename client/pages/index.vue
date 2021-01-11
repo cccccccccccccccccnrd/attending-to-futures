@@ -49,7 +49,7 @@ export default {
         title: 'Call for papers',
         content: 'We are currently looking for abstracts and interesting speakers for the conference. We accept and encourage submissions of different formats.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400
-      }, {
+      }/* , {
         title: 'Contested Histories — Unlearning',
         content: 'The first panel critically revises and problematizes the eurocentric, patriarchal, colonial, environmentally untenable, and capitalist traditions in which design is embedded and calls for an »unlearning« (Gayatri Spivak) of discriminatory, exclusive, oppressive, and »defuturing« (Toni Fry) codes and design practices that came into being because of them. The aim of this panel is to expose normative definitions of design, design epistemologies, and established ways of learning in order to understand ›why we design, what we design‹ (loosely based on Mary Lawhon) and to recognize how design produces inequality and subjugation.',
         width: 600
@@ -61,10 +61,12 @@ export default {
         title: 'Critical Practices — Leading Out',
         content: 'The third panel proceeds from the etymology of education: latin ›educare‹ not as ›e-ducere‹ - i.e. ›leading someone to something‹ - but as ›ex-ducere‹, ›leading someone out‹ of the familiar (Tim Ingold). Attention to the constitutive conditions of design requires a reckoning with a multiplicity of actors and contexts, from institutional norms and regulations, to pedagogies, curricula, materials, architectural environments, and discursive protocols. This panel therefore focuses on and calls for the transformation of everything that helps bring design into being: physical and digital tools, as well as their material infrastructures and legitimating disciplinary narratives. ',
         width: 600
-      }]
+      } */]
     }
   },
   mounted () {
+    if (this.socket) this.send(['get-drag-init', {}])
+
     setInterval(() => {
       this.terms[this.index] = this.terms[this.index].reverse()
       if (this.index < this.terms.length - 1) {
