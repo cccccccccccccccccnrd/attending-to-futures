@@ -1,46 +1,45 @@
 <template>
-  <div>
-    <marquee>NOV 18—20, 2021 · CONTESTED HISTORIES · RADICAL FUTURES · CRITICAL PRACTICES · NOV 18—20, 2021 · CONTESTED HISTORIES · RADICAL FUTURES · CRITICAL PRACTICES · NOV 18—20, 2021 · CONTESTED HISTORIES · RADICAL FUTURES · CRITICAL PRACTICES</marquee>
-    <section>
-      <h1
-        v-for="(term, index) in terms"
-        :key="`headline-${index}`"
-        :style="`font-variation-settings: 'angl' ${stats.mouseX}, 'rond' ${stats.clicks * 50};`"
-      >
-        {{ term[0] }}
-      </h1>
-      <!-- <img
-        v-drag="onDrag"
-        style="opacity: 1"
-        id="assetdd-1"
-        src="~/assets/design-is-a-service.png"
-        class="drag"
-      > -->
-      <window
-        v-for="(box, index) in windows"
-        :key="`windows-xp-${index}`"
-        :id="`windows-xp-${index}`"
-        :title="box.title"
-        :content="box.content"
-        :width="box.width"
-        v-drag="onDrag"
-        class="drag"
-      />
-    </section>
+  <div class="page page-index">
+    <h1
+      v-for="(term, index) in terms"
+      :key="`headline-${index}`"
+      :style="`font-variation-settings: 'rond' ${stats.mouseX}, 'angl' ${stats.clicks * 50};`"
+    >
+      {{ term[0] }}
+    </h1>
+    <!-- <img
+      v-drag="onDrag"
+      style="opacity: 1"
+      id="assetdd-1"
+      src="~/assets/design-is-a-service.png"
+      class="drag"
+    > -->
+    <window
+      v-for="(box, index) in windows"
+      :key="`windows-xp-${index}`"
+      :id="`windows-xp-${index}`"
+      :title="box.title"
+      :content="box.content"
+      :width="box.width"
+      v-drag="onDrag"
+      class="drag"
+    />
   </div>
 </template>
 
 <script>
 import { mapActions, mapGetters, mapMutations } from 'vuex'
 import Window from '@/components/Window.vue'
+import News from '@/components/News.vue'
 
 export default {
   components: {
-    Window
+    Window,
+    News
   },
   data () {
     return {
-      terms: Array.apply(null, Array(7)).map((e) => ['attending to', 'futures']),
+      terms: Array.apply(null, Array(1)).map((e) => ['Matters of Politics in Design Education, Research, Practice', 'apply now']),
       index: 0,
       windows: [/* {
         title: 'About the conference',
@@ -48,7 +47,7 @@ export default {
         width: 600
       }, */ {
         title: 'Call for papers',
-        content: 'We are currently looking for abstracts and interesting speakers for the conference. Feel free to contact us. <br/> <br/> <a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Get it</button></a>',
+        content: 'We are currently looking for abstracts and interesting speakers for the conference. We accept and encourage submissions of different formats.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400
       }, {
         title: 'Contested Histories — Unlearning',
@@ -73,7 +72,7 @@ export default {
       } else {
         this.index = 0
       }
-    }, 100)
+    }, 2000)
   },
   computed: {
     ...mapGetters({
@@ -96,18 +95,23 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  text-transform: uppercase;
-  user-select: None;
-}
-
-marquee {
-  padding: 0.35em 0;
-  font-size: 1.5em;
-  border-bottom: 1px solid black;
-}
-
-section {
+.page-index {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4vw;
+  color: blue;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
 }
 </style>

@@ -60,7 +60,7 @@ export default {
   width: 100%;
   max-width: 600px;
   border: 1px solid black;
-  background: white;
+  background: silver;
   box-shadow: 1em 1em 2em blue;
 }
 

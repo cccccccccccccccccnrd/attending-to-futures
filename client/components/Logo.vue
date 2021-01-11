@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <p>Attending to Futures</p>
+    <p>Attending [to] Futures</p>
   </div>
 </template>
 

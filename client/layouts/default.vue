@@ -3,13 +3,14 @@
     <aside>
       <div>
         <div class="logo-container">
-          <logo/>
+          <nuxt-link to="/">
+            <logo/>
+          </nuxt-link>
         </div>
         <nav>
-          <a href="#">Conference</a>
-          <a href="#">Program</a>
-          <a href="#">Tickets</a>
-          <a href="#">Contact</a>
+          <nuxt-link to="/conference">Conference</nuxt-link>
+          <nuxt-link to="/join">Call for submissions</nuxt-link>
+          <nuxt-link to="/contact">Contact</nuxt-link>
         </nav>
         <div class="description">
           <p>The conference Attending [to] Futures examines the ambivalent role and responsibility of design as world-making at a moment in which the world »is presented in crisis« (Ghosn, Jazairy). Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, the conference invites critical perspectives that scrutinize unchallenged disciplinary norms and dominant ways of knowing, being, doing, and imagining in design education, research, and practice. Drawing on current de-/anti-colonial, post-humanist, queer-feminist and disability discourses, the conference attempts a political reprogramming of design in order to generate transformative perspectives on design education, research, and practice.</p>
@@ -17,12 +18,12 @@
       </div>
       <no-ssr>
         <div class="stats-container">
-          <!-- <visual/> -->
           <stats/>
         </div>
       </no-ssr>
     </aside>
     <main>
+      <news/>
       <nuxt/>
     </main>
   </div>
@@ -33,12 +34,14 @@ import { mapActions, mapGetters } from 'vuex'
 import Logo from '@/components/Logo.vue'
 import Stats from '@/components/Stats.vue'
 import Visual from '@/components/Visual.vue'
+import News from '@/components/News.vue'
 
 export default {
   components: {
     Logo,
     Stats,
-    Visual
+    Visual,
+    News
   },
   data () {
     return {}
@@ -99,9 +102,8 @@ export default {
 
 
 ::-webkit-scrollbar {
-  width: 0.75em;
-  height: 0.75em;
-  /* border-right: 1px solid black; */
+  width: 0.75rem;
+  height: 0.75rem;
   border-left: 1px solid black;
 }
 
@@ -126,6 +128,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background: silver;
 }
 
 a, a:visited {
@@ -139,9 +142,16 @@ p {
 
 h1 {
   margin: 0;
-  font-size: 5vw;
   font-weight: normal;
   line-height: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1;
+  color: blue;
 }
 
 button {
@@ -152,17 +162,10 @@ button {
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 1em;
-  color: white;
+  color: silver;
   background: black;
-  /*border: 1px solid black;*/
-  /* box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.15); */
+  line-height: 1;
   cursor: pointer;
-  /* transition: 100ms all ease-in-out; */
-}
-
-button:hover {
-  background: black;
-  color: white;
 }
 
 .site {
@@ -172,7 +175,14 @@ button:hover {
 }
 
 .logo-container {
-  padding: 1em;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  width: 100%;
 }
 
 aside {
@@ -195,13 +205,6 @@ nav {
 nav a {
   display: block;
   line-height: 1.25;
-  text-decoration: line-through;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  overflow-y: scroll;
 }
 
 .stats-container {
