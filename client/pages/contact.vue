@@ -15,7 +15,7 @@
       <img src="~/assets/kisd-th-logo.png" style="max-width: 8em;"/>
       <br>
       <p><a href="https://kisd.de/studium/menschen/johanna-mehl/">Johanna Mehl</a>, <a href="https://kisd.de/studium/menschen/prof-dr-carolin-hofler/">Carolin Höfler</a>, <a href="https://kisd.de/studium/menschen/prof-michael-gais/">Michael Gais</a>, <a href="https://kisd.de/studium/menschen/daniela-meinhardt/">Daniela Meinhardt</a> & the conference team:</p>
-      <p>David Allrich, Hannah Böker, Jost Goldschmitt, Luise Kanein, Philip Lehmann, Yvonne Lober, Philipp Pätzold, Conrad Weise, Kjell Wistoff</p>
+      <p>David Allrich, Hannah Böker, Jost Goldschmitt, Luise Kanein, Philip Lehmann, Yvonne Lober, Philipp Pätzold, David Sieverding, Martin Sistig, Conrad Weise, Kjell Wistoff</p>
       <br>
       <h2>Privacy Policy</h2>
       <p>Each time a document from *.attendingtofutures.de is accessed, access data is stored. Each data record consists at least of</p>
