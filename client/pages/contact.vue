@@ -8,7 +8,7 @@
       </p>
       <p>
         TH Köln – University of Applied Sciences<br>
-        Faculty for Culture Studies<br>
+        Faculty of Cultural Sciences<br>
         Köln International School of Design<br>
         Ubierring 40, 50678 Köln<br>
         <a href="mailto:info@attendingtofutures.com">info@attendingtofutures.com</a>
