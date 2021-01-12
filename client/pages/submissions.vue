@@ -6,7 +6,7 @@
       <p>&rarr; How can persistent structures of systemic oppression and privilege in design be recognized and changed?</p>
       <p>&rarr; How can approaches for the invention and constitution of future worlds be developed without perpetuating pejorative constructions of race, class, gender and ability?</p>
       <p>&rarr; How can we reprogram education, research and practice, in order to lead design out of defuturing ways of knowing, being, and doing?</p>
-      <p>&rarr; How can we deal with the »monsters« (Ahmed Ansari) that design helps to create and that inversely help design into being?</p>
+      <p>&rarr; How can we deal with the &laquo;monsters&raquo; (Ahmed Ansari) that design helps to create and that inversely help design into being?</p>
       <p>&rarr; How do supposed design innovations contribute to the destruction of possible futures, rather than opening up new spaces of possibility?</p>
       <p>&rarr; What does a critical revision and transformation of contested histories and entrenched narratives entail?</p>
       <p>&rarr; Which counter-hegemonic projects already exist, and how can they be amplified and mobilized?</p>
@@ -15,7 +15,7 @@
       <p>&rarr; Which tools, methods, and media can be used to develop things, material practices, images, spaces, and bodies that transform existing hegemonies and subversively reverse normative orders?</p>
       <br>
       <h2>We accept and encourage submissions of different formats</h2>
-      <p>&rarr; Talks (word+images/video)</p>
+      <p>&rarr; Talks (word + images/video)</p>
       <p>&rarr; Presentation or exhibition of (training-) research projects (word + images/video + prototypes/artifacts)</p>
       <p>&rarr; Workshops (with conference participants)</p>
       <p>&rarr; Performances (live or video)</p>
