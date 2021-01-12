@@ -49,7 +49,8 @@ export default {
   },
   async mounted () {
     const app = this
-    this.init()
+    this.socketInit()
+    this.statsInit()
 
     this.socket.addEventListener('message', (message) => {
       const msg = JSON.parse(message.data)
@@ -68,7 +69,8 @@ export default {
   },
   methods: {
     ...mapActions({
-      init: 'socket/init'
+      socketInit: 'socket/init',
+      statsInit: 'stats/init'
     }),
     position (payload, show) {
       const element = document.querySelector(`#${payload.id}`)
