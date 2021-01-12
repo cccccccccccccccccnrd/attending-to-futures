@@ -18,11 +18,12 @@
           <p>Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, ATTENDING [TO] FUTURES is a platform for critical perspectives that scrutinize unchallenged disciplinary norms and designerly ways of knowing, being, doing, and imagining in design education, research, and practice.</p>
         </div>
       </div>
-      <no-ssr>
-        <div class="stats-container">
-          <stats/>
-        </div>
-      </no-ssr>
+      <div class="logo-container">
+        <img src="~/assets/kisd-th-logo.svg" style="max-width: 6em;"/>
+      </div>
+      <!-- <div class="stats-container">
+        <stats/>
+      </div> -->
     </aside>
     <main>
       <news/>
@@ -34,14 +35,12 @@
 <script>
 import { mapActions, mapGetters } from 'vuex'
 import Logo from '@/components/Logo.vue'
-import Stats from '@/components/Stats.vue'
 import Visual from '@/components/Visual.vue'
 import News from '@/components/News.vue'
 
 export default {
   components: {
     Logo,
-    Stats,
     Visual,
     News
   },
@@ -128,7 +127,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background: silver;
+  background: rgb(200, 200, 200);
 }
 
 a, a:visited {
@@ -149,6 +148,14 @@ h1 {
 h2 {
   margin: 0;
   font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1;
+  color: blue;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2em;
   font-weight: normal;
   line-height: 1;
   color: blue;

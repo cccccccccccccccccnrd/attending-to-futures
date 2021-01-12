@@ -16,7 +16,7 @@
       <br>
       <h2>We accept and encourage submissions of different formats</h2>
       <p>&rarr; Talks (word+images/video)</p>
-      <p>&rarr; Presentation or exhibition of (training-) research projects (word+images/video + prototypes/artifacts)</p>
+      <p>&rarr; Presentation or exhibition of (training-) research projects (word + images/video + prototypes/artifacts)</p>
       <p>&rarr; Workshops (with conference participants)</p>
       <p>&rarr; Performances (live or video)</p>
       <p>&rarr; Other formats</p>
@@ -27,8 +27,10 @@
       <p>Conference<br>November 18–20, 2021</p>
       <br>
       <h2>Submission modalities</h2>
-      <p>Abstract of submission (500 words max., if needed, up to 5 images can be included) Short biography (200 words max.)</p>
+      <p>Abstract of submission (500 words max., if needed, up to 5 images can be included). Short biography (200 words max.)</p>
       <p>PDF file via e-mail to <a href="mailto:submission@attendingtofutures.de">submission@attendingtofutures.de</a></p>
+      <br>
+      <a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>
     </div>
   </div>
 </template>

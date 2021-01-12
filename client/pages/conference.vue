@@ -14,7 +14,6 @@
       <h2>Critical Practices<br>LEADING OUT</h2>
       <p>The third panel proceeds from the etymology of education: latin ›educare‹ not as ›e-ducere‹—i.e. ›leading someone to something‹—but as ›ex-ducere‹, ›leading someone out‹ of the familiar (Tim Ingold). Attention to the constitutive conditions of design requires a reckoning with a multiplicity of actors and contexts, from institutional norms and regulations, to pedagogies, curricula, materials, architectural environments, and discursive protocols. This panel therefore focuses on and calls for the transformation of everything that helps bring design into being: physical and digital tools, as well as their material infrastructures and legitimating disciplinary narratives.</p>
       <br>
-
       <div class="appendix">
         <h2>Bibliography</h2>
         <p>Ashcroft, Bill: Utopianism in Postcolonial Literatures, New York / London: Routledge / Taylor & Francis 2017.</p>
@@ -22,9 +21,10 @@
         <p>Fry, Tony: Defuturing A New Design Philosophy, New York: Bloomsbury Visual Arts 2020. </p>
         <p>Ingold, Tim: Anthropology and/as Education, New York / London: Routledge / Taylor & Francis 2017.</p>
         <p>Gethmann, Daniel and Susanne Hauser (eds.): Kulturtechnik Entwerfen: Praktiken, Konzepte und Medien in Architektur und Design Science, Bielefeld: Transcript 2009.</p>
+        <p>Ghosn, Rania, and El Hadi Jazairy. Geostories: another architecture for the environment, New York / Barcelona / Actar 2018.</p>
         <p>Lawhon, Mary: Making Urban Theory: Learning and Unlearning through Southern Cities, New York / London: Routledge / Taylor & Francis 2020.</p>
         <p>Lorde, Audre: The Master’s Tools Will Never Dismantle the Master’s House, London: Penguin Books 2018. </p>
-        <p>Marguin, Séverine, Henrike Rabe, Wolfgang Schäffner and Friedrich Schmidgall (eds.): Experimentieren: Einblicke in Praktiken und Versuchsaufbauten zwischen Wissenschaft und Gestaltung,  Bielefeld: Transcript 2019.</p>
+        <p>Marguin, Séverine, Henrike Rabe, Wolfgang Schäffner and Friedrich Schmidgall (eds.): Experimentieren: Einblicke in Praktiken und Versuchsaufbauten zwischen Wissenschaft und Gestaltung, Bielefeld: Transcript 2019.</p>
         <p>Puig de la Bellacasa, María: Matters of Care: Speculative Ethics in More than Human Worlds, Minneapolis, MN: University of Minnesota Press, 2017.</p>
         <p>Schultz, Tristan and Ahmed Ansari et al.: &laquo;Editors’ Introduction&raquo;, in: Design and Culture 10/1, 2018, pp. 1–6.</p>
         <p>Stengers, Isabelle: Another Science Is Possible: A Manifesto for Slow Science, Cambridge: Polity Press 2018.</p>
