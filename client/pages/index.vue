@@ -47,7 +47,7 @@ export default {
         width: 600
       }, */ {
         title: 'Call for Submissions',
-        content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05. 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
+        content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05, 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400
       }/* , {
         title: 'Contested Histories — Unlearning',
