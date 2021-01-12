@@ -9,11 +9,13 @@
         </div>
         <nav>
           <nuxt-link to="/conference">Conference</nuxt-link>
-          <nuxt-link to="/join">Call for submissions</nuxt-link>
+          <nuxt-link to="/submissions">Call for submissions</nuxt-link>
           <nuxt-link to="/contact">Contact</nuxt-link>
         </nav>
         <div class="description">
-          <p>The conference Attending [to] Futures examines the ambivalent role and responsibility of design as world-making at a moment in which the world »is presented in crisis« (Ghosn, Jazairy). Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, the conference invites critical perspectives that scrutinize unchallenged disciplinary norms and dominant ways of knowing, being, doing, and imagining in design education, research, and practice. Drawing on current de-/anti-colonial, post-humanist, queer-feminist and disability discourses, the conference attempts a political reprogramming of design in order to generate transformative perspectives on design education, research, and practice.</p>
+          <p>A conference for design practitioners, researchers, educators, students, scholars, and activists, who engage in a political reprogramming of design!</p>
+          <br>
+          <p>Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, ATTENDING [TO] FUTURES is a platform for critical perspectives that scrutinize unchallenged disciplinary norms and designerly ways of knowing, being, doing, and imagining in design education, research, and practice.</p>
         </div>
       </div>
       <no-ssr>
@@ -99,7 +101,6 @@ export default {
   font-weight: 300;
 }
 
-
 ::-webkit-scrollbar {
   width: 0.75rem;
   height: 0.75rem;
@@ -121,7 +122,7 @@ html, body {
 
 body {
   font-family: 'M', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -147,7 +148,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: normal;
   line-height: 1;
   color: blue;
@@ -167,16 +168,6 @@ button {
   cursor: pointer;
 }
 
-.site {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-
-.logo-container {
-  padding: 1rem;
-}
-
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -189,12 +180,8 @@ aside {
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 300px;
+  max-width: 375px;
   border-right: 1px solid black;
-}
-
-.scroll {
-  overflow-y: scroll;
 }
 
 nav {
@@ -204,6 +191,24 @@ nav {
 nav a {
   display: block;
   line-height: 1.25;
+}
+
+nav a.nuxt-link-exact-active {
+  color: blue;
+}
+
+.site {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-container {
+  padding: 1rem;
+}
+
+.scroll {
+  overflow-y: scroll;
 }
 
 .stats-container {
@@ -222,5 +227,12 @@ nav a {
 
 .drag:active {
   cursor: grabbing;
+}
+
+.page {
+  height: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  overflow-y: auto;
 }
 </style>

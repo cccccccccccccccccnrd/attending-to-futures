@@ -3,7 +3,7 @@
     <h1
       v-for="(term, index) in terms"
       :key="`headline-${index}`"
-      :style="`font-variation-settings: 'rond' ${stats.mouseX}, 'angl' ${stats.clicks * 50};`"
+      :style="`font-variation-settings: 'rond' ${rond}, 'angl' ${stats.clicks * 30};`"
     >
       {{ term[0] }}
     </h1>
@@ -46,8 +46,8 @@ export default {
         content: 'The conference Attending [to] Futures examines the ambivalent role and responsibility of design as world-making at a moment in which the world »is presented in crisis« (Ghosn, Jazairy). Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, the conference invites critical perspectives that scrutinize unchallenged disciplinary norms and dominant ways of knowing, being, doing, and imagining in design education, research, and practice. Drawing on current de-/anti-colonial, post-humanist, queer-feminist and disability discourses, the conference attempts a political reprogramming of design in order to generate transformative perspectives on design education, research, and practice.',
         width: 600
       }, */ {
-        title: 'Call for papers',
-        content: 'We are currently looking for abstracts and interesting speakers for the conference. We accept and encourage submissions of different formats.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
+        title: 'Call for Submissions',
+        content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05. 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400
       }/* , {
         title: 'Contested Histories — Unlearning',
@@ -80,7 +80,11 @@ export default {
     ...mapGetters({
       socket: 'socket/socket',
       stats: 'stats/all'
-    })
+    }),
+    rond () {
+      if (!process.browser) return
+      return ((this.stats.mouseX - 0) / (window.innerWidth - 0) * (900 - 0) + 0)
+    }
   },
   methods: {
     ...mapActions({
