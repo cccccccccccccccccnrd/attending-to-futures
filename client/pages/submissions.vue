@@ -28,7 +28,7 @@
       <br>
       <h2>Submission modalities</h2>
       <p>Abstract of submission (500 words max., if needed, up to 5 images can be included). Short biography (200 words max.)</p>
-      <p>PDF file via e-mail to <a href="mailto:submission@attendingtofutures.de">submission@attendingtofutures.de</a></p>
+      <p>PDF file via e-mail to <a href="mailto:submissions@attendingtofutures.de">submissions@attendingtofutures.de</a></p>
       <br>
       <a href="/attending-to-futures-cfp.pdf" target="_blank">
         <button style="max-width: 50%;">Download pdf</button>
