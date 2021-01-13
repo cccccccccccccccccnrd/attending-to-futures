@@ -11,7 +11,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Matters of Politics in Design Education, Research, Practice. The design conference ATTENDING [TO] FUTURES will take place at Köln International School of Design of TH Köln (Cologne, Germany) on 18-20 November 2021.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
