@@ -122,6 +122,10 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
+  .page-index {
+    min-height: 50vh;
+  }
+
   h1 {
     font-size: 10vw;
   }
