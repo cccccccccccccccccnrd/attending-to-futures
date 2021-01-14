@@ -120,4 +120,14 @@ h1 {
   text-align: center;
   user-select: none;
 }
+
+@media screen and (max-width: 450px) {
+  .page-index {
+    min-height: 30em;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+}
 </style>

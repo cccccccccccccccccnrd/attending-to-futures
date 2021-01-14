@@ -8,9 +8,30 @@
           </nuxt-link>
         </div>
         <nav>
-          <nuxt-link to="/conference">Conference</nuxt-link>
-          <nuxt-link to="/submissions">Call for submissions</nuxt-link>
-          <nuxt-link to="/contact">Contact</nuxt-link>
+          <nuxt-link
+            to="/conference"
+            @click.native="handleNavClick"
+          >
+            Conference
+          </nuxt-link>
+          <nuxt-link
+            to="/submissions"
+            @click.native="handleNavClick"
+          >
+            Call for submissions
+          </nuxt-link>
+          <nuxt-link
+            to="/tickets"
+            @click.native="handleNavClick"
+          >
+            Tickets
+          </nuxt-link>
+          <nuxt-link
+            to="/contact"
+            @click.native="handleNavClick"
+          >
+            Contact
+          </nuxt-link>
         </nav>
         <div class="description">
           <p>A conference for design practitioners, researchers, educators, students, scholars, and activists, who engage in a political reprogramming of design!</p>
@@ -58,11 +79,12 @@ export default {
       switch (msg.type) {
         case 'drag-init':
           Object.keys(msg.payload).map((key) => {
+            console.log(msg.payload[key])
             app.position(msg.payload[key], true)
           })
           break
         case 'drag':
-          if (this.$route.name === 'index') this.position(msg.payload)
+          this.position(msg.payload)
           break
       }
     })
@@ -73,9 +95,20 @@ export default {
       statsInit: 'stats/init'
     }),
     position (payload, show) {
+      if (this.$route.name !== 'index') return
       const element = document.querySelector(`#${payload.id}`)
       element.style.top = `${payload.top}px`
       element.style.left = `${payload.left}px`
+    },
+    handleNavClick (event) {
+      if (window.innerWidth >= 450) return
+
+      setTimeout(() => {
+        window.scroll({
+          top: document.querySelector('main').offsetTop,
+          behavior: 'smooth'
+        })
+      }, 100)
     }
   },
   computed: {
@@ -165,13 +198,13 @@ h3 {
 
 button {
   width: 100%;
-  padding: 0.6em 0.75em;
+  padding: 0.5em 1em;
   background: none;
   border: 0;
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 1em;
-  color: silver;
+  color: rgb(200, 200, 200);
   background: black;
   line-height: 1;
   cursor: pointer;
@@ -243,5 +276,44 @@ nav a.nuxt-link-exact-active {
   padding: 1rem;
   font-size: 1em;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+
+  .site {
+    flex-flow: column nowrap;
+  }
+
+  aside {
+    max-width: initial;
+    border-right: 0;
+  }
+
+  main {
+    border-top: 1px solid black;
+  }
+
+  nav a {
+    display: table;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: 100px;
+  }
+
+  nav a:first-of-type {
+    margin-top: 0;
+  }
+
+  nav a.nuxt-link-exact-active {
+    border-color: black;
+    color: white;
+    background: black;
+    box-shadow: 1em 1em 2em blue;
+  }
 }
 </style>
