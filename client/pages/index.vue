@@ -124,6 +124,7 @@ h1 {
 @media screen and (max-width: 450px) {
   .page-index {
     min-height: 50vh;
+    overflow-y: hidden;
   }
 
   h1 {
