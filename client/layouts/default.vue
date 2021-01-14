@@ -285,6 +285,7 @@ nav a.nuxt-link-exact-active {
 
   .site {
     flex-flow: column nowrap;
+    height: auto;
   }
 
   aside {
@@ -293,6 +294,7 @@ nav a.nuxt-link-exact-active {
   }
 
   main {
+    min-height: 100vh;
     border-top: 1px solid black;
   }
 
