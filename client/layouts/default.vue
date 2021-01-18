@@ -162,7 +162,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background: rgb(200, 200, 200);
+  background: rgb(252, 252, 252);
 }
 
 a, a:visited {
@@ -204,7 +204,7 @@ button {
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 1em;
-  color: rgb(200, 200, 200);
+  color: rgb(252, 252, 252);
   background: black;
   line-height: 1;
   cursor: pointer;

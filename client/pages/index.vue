@@ -114,7 +114,7 @@ export default {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 8vw;
   color: blue;
   text-transform: uppercase;
   text-align: center;
