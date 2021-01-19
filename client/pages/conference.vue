@@ -54,11 +54,11 @@ export default {
 }
 
 a, a:visited {
-  text-shadow: 1rem 1rem 1rem blue;
+  text-shadow: 1rem 1rem 1rem var(--highlight-text-color);
 }
 
 p {
-  color: black;
+  color: var(--dark-text-color);
   margin: 1em 0;
 }
 

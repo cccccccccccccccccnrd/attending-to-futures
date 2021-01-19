@@ -115,7 +115,7 @@ export default {
 
 h1 {
   font-size: 8vw;
-  color: blue;
+  color: var(--highlight-text-color);
   text-transform: uppercase;
   text-align: center;
   user-select: none;

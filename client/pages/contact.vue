@@ -51,7 +51,7 @@ export default {
 }
 
 a, a:visited {
-  color: black;
+  color: var(--dark-text-color);
   text-decoration: underline;
 }
 

@@ -44,6 +44,6 @@ canvas {
   left: 1em; */
   /* transform: scale(0.8);
   transform-origin: bottom left; */
-  /* border: 1px solid black; */
+  /* border: 1px solid var(--dark-text-color); */
 }
 </style>

@@ -60,7 +60,7 @@ a, a:visited {
 }
 
 p {
-  color: black;
+  color: var(--dark-text-color);
   margin: 1em 0;
 }
 

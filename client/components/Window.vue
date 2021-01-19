@@ -59,9 +59,9 @@ export default {
 .window {
   width: 100%;
   max-width: 600px;
-  border: 1px solid black;
-  background: rgb(252, 252, 252);
-  box-shadow: 1em 1em 2em blue;
+  border: 1px solid var(--dark-text-color);
+  background: var(--background-color);
+  box-shadow: 1em 1em 2em var(--highlight-text-color);
 }
 
 .bar {
@@ -70,7 +70,7 @@ export default {
 }
 
 .border-bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--dark-text-color);
 }
 
 .bar .title {
@@ -85,8 +85,8 @@ export default {
   align-items: center;
   height: calc(calc(0.5rem * 2) + 1.5rem);
   width: calc(calc(0.5rem * 2) + 1.5rem);
-  color: white;
-  background: black;
+  color: var(--background-color);
+  background: var(--dark-text-color);
   cursor: pointer;
 }
 

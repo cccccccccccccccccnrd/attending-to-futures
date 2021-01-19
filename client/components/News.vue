@@ -8,6 +8,6 @@
 marquee {
   padding: 1rem 0;
   font-size: 1.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--dark-text-color);
 }
 </style>

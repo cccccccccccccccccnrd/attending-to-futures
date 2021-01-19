@@ -138,15 +138,21 @@ export default {
 ::-webkit-scrollbar {
   width: 0.75rem;
   height: 0.75rem;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--dark-text-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: var(--dark-text-color);
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  --background-color: rgb(225, 220, 210);
+  --dark-text-color: rgb(45, 40, 35);
+  --highlight-text-color: rgb(0, 0, 255);
 }
 
 html, body {
@@ -162,11 +168,13 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background: rgb(252, 252, 252);
+  background: var(--background-color);
+  /* background: linear-gradient(0deg, rgba(223,210,172,1) 0%, rgba(221,89,107,1) 100%); */
+  color: var(--dark-text-color);
 }
 
 a, a:visited {
-  color: black;
+  color: var(--dark-text-color);
   text-decoration: none;
 }
 
@@ -185,7 +193,7 @@ h2 {
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1;
-  color: blue;
+  color: var(--highlight-text-color);
 }
 
 h3 {
@@ -193,7 +201,7 @@ h3 {
   font-size: 1.2em;
   font-weight: normal;
   line-height: 1;
-  color: blue;
+  color: var(--highlight-text-color);
 }
 
 button {
@@ -204,8 +212,8 @@ button {
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 1em;
-  color: rgb(252, 252, 252);
-  background: black;
+  color: var(--background-color);
+  background: var(--dark-text-color);
   line-height: 1;
   cursor: pointer;
 }
@@ -223,7 +231,7 @@ aside {
   justify-content: space-between;
   width: 100%;
   max-width: 375px;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--dark-text-color);
 }
 
 nav {
@@ -236,7 +244,7 @@ nav a {
 }
 
 nav a.nuxt-link-exact-active {
-  color: blue;
+  color: var(--highlight-text-color);
 }
 
 .site {
@@ -254,7 +262,7 @@ nav a.nuxt-link-exact-active {
 }
 
 .stats-container {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--dark-text-color);
 }
 
 .description {
@@ -295,7 +303,7 @@ nav a.nuxt-link-exact-active {
 
   main {
     min-height: 100vh;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--dark-text-color);
   }
 
   nav a {
@@ -303,7 +311,7 @@ nav a.nuxt-link-exact-active {
     margin-top: 0.5em;
     padding: 0.5em 1em;
     line-height: 1.5;
-    border: 1px solid black;
+    border: 1px solid var(--dark-text-color);
     border-radius: 100px;
   }
 
@@ -312,10 +320,10 @@ nav a.nuxt-link-exact-active {
   }
 
   nav a.nuxt-link-exact-active {
-    border-color: black;
+    border-color: var(--dark-text-color);
     color: white;
-    background: black;
-    box-shadow: 1em 1em 2em blue;
+    background: var(--dark-text-color);
+    box-shadow: 1em 1em 2em var(--highlight-text-color);
   }
 }
 </style>
