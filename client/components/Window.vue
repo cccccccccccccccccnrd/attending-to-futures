@@ -3,40 +3,42 @@
     class="window"
     :style="`max-width: ${width}px;`"
   >
-    <div
-      class="bar"
-      :class="{ 'border-bottom': open }"
-    >
-      <div class="title">{{ title }}</div>
+    <div class="shadow-container">
       <div
-        @click="open = !open"
-        class="button"
+        class="bar"
+        :class="{ 'border-bottom': open }"
       >
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 30 30" xml:space="preserve">
-          <style type="text/css">
-            .stroke {
-              fill: none;
-              stroke-width: 1.5px;
-              stroke: #FFFFFF;
-              stroke-miterlimit: 10;
-            }
-          </style>
-          <g v-if="open">
-            <line class="stroke" x1="0.5" y1="0.5" x2="29.5" y2="29.5"/>
-            <line class="stroke" x1="29.5" y1="0.5" x2="0.5" y2="29.5"/>
-          </g>
-          <g v-if="!open">
-            <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5 "/>
-          </g>
-        </svg>
+        <div class="title">{{ title }}</div>
+        <div
+          @click="open = !open"
+          class="button"
+        >
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 30 30" xml:space="preserve">
+            <style type="text/css">
+              .stroke {
+                fill: none;
+                stroke-width: 1.5px;
+                stroke: #FFFFFF;
+                stroke-miterlimit: 10;
+              }
+            </style>
+            <g v-if="open">
+              <line class="stroke" x1="0.5" y1="0.5" x2="29.5" y2="29.5"/>
+              <line class="stroke" x1="29.5" y1="0.5" x2="0.5" y2="29.5"/>
+            </g>
+            <g v-if="!open">
+              <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5 "/>
+            </g>
+          </svg>
+        </div>
       </div>
+      <div
+        v-if="open"
+        class="content"
+        v-html="content"
+      ></div>
     </div>
-    <div
-      v-if="open"
-      class="content"
-      v-html="content"
-    ></div>
   </div>
 </template>
 
@@ -60,8 +62,26 @@ export default {
   width: 100%;
   max-width: 600px;
   border: 1px solid var(--dark-text-color);
+  /* box-shadow: 1em 1em 2em var(--highlight-text-color); */
+}
+
+.shadow-container {
   background: var(--background-color);
-  box-shadow: 1em 1em 2em var(--highlight-text-color);
+  position: relative;
+}
+
+.shadow-container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -0.75em;
+  left: -0.75em;
+  height: 90%;
+  width: 100%;
+  opacity: 1;
+  background: linear-gradient(to right, var(--gradient-colors));
+  filter: blur(10px);
+  transition: all 0.2s;
 }
 
 .bar {

@@ -111,6 +111,7 @@ export default {
   padding: 1em;
   overflow-y: auto;
   overflow-x: hidden;
+  /* background: linear-gradient(145deg, var(--gradient-colors)); */
 }
 
 h1 {

@@ -150,9 +150,13 @@ export default {
 }
 
 html {
-  --background-color: rgb(225, 220, 210);
+  /* --background-color: rgb(225, 220, 210);
   --dark-text-color: rgb(45, 40, 35);
-  --highlight-text-color: rgb(0, 0, 255);
+  --highlight-text-color: rgb(0, 0, 255); */
+  --background-color: rgb(255, 255, 255);
+  --dark-text-color: rgb(0, 0, 0);
+  --highlight-text-color: rgb(0, 0, 0);
+  --gradient-colors: rgb(139, 156, 130) 0%, rgb(197, 194, 86) 20%, rgb(210, 144, 98) 50%, rgb(19, 14, 241) 70%, rgb(3, 9, 73) 90%, rgb(3, 10, 50);
 }
 
 html, body {
@@ -162,7 +166,7 @@ html, body {
 
 body {
   font-family: 'M', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -230,7 +234,7 @@ aside {
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 375px;
+  max-width: 330px;
   border-right: 1px solid var(--dark-text-color);
 }
 
@@ -240,11 +244,28 @@ nav {
 
 nav a {
   display: block;
-  line-height: 1.25;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  line-height: 1;
+  /* background: linear-gradient(145deg, var(--gradient-colors));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-variation-settings: 'rond' 0;
+  transition: font-variation-settings 800ms ease-in-out;
+}
+
+nav a:last-of-type {
+  margin-bottom: 0;
+}
+
+nav a:hover {
+  font-variation-settings: 'rond' 900;
 }
 
 nav a.nuxt-link-exact-active {
+  /* font-size: 1.5em; */
   color: var(--highlight-text-color);
+  font-variation-settings: 'rond' 900;
 }
 
 .site {

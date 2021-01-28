@@ -8,6 +8,7 @@
 marquee {
   padding: 1rem 0;
   font-size: 1.5em;
+  background: linear-gradient(45deg, var(--gradient-colors));
   border-bottom: 1px solid var(--dark-text-color);
 }
 </style>
