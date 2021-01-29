@@ -39,7 +39,12 @@
           <p>Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, ATTENDING [TO] FUTURES is a platform for critical perspectives that scrutinize unchallenged disciplinary norms and designerly ways of knowing, being, doing, and imagining in design education, research, and practice.</p>
         </div>
         <div class="socials">
-          <a href="https://www.instagram.com/attendingtofutures/">@attendingtofutures</a>
+          <!-- <button class="inline">
+            <a href="https://www.instagram.com/attendingtofutures/">info@attendingtofutures.de</a>
+          </button> -->
+          <button class="inline">
+            <a href="https://www.instagram.com/attendingtofutures/">@attendingtofutures</a>
+          </button>
         </div>
       </div>
       <div class="logo-container">
@@ -216,13 +221,30 @@ button {
   padding: 0.5em 1em;
   background: none;
   border: 0;
-  border-radius: 100px;
+  border-radius: 10px;
   text-transform: uppercase;
   font-size: 1em;
-  color: var(--background-color);
-  background: var(--dark-text-color);
+  color: var(--dark-text-color);
+  /* background: var(--dark-text-color); */
+  border: 1px solid;
   line-height: 1;
   cursor: pointer;
+}
+
+button:hover {
+  color: var(--background-color);
+  background: var(--dark-text-color);
+}
+
+button.inline {
+  display: table;
+  width: initial;
+  padding: 0.25em 0.5em;
+  text-transform: none;
+}
+
+button.inline:hover a {
+  color: var(--background-color);
 }
 
 main {
@@ -291,12 +313,12 @@ nav a.nuxt-link-exact-active {
 
 .description {
   padding: 1em;
-  /* border-top: 1px solid var(--dark-text-color); */
+  border-top: 1px solid var(--dark-text-color);
 }
 
 .socials {
   padding: 1em;
-  /* border-top: 1px solid var(--dark-text-color); */
+  border-top: 1px solid var(--dark-text-color);
 }
 
 .socials a {
