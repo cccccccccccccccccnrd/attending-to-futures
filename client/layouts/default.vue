@@ -43,7 +43,7 @@
             <a href="https://www.instagram.com/attendingtofutures/">info@attendingtofutures.de</a>
           </button> -->
           <button class="inline">
-            <a href="https://www.instagram.com/attendingtofutures/">@attendingtofutures</a>
+            <a href="https://www.instagram.com/attendingtofutures/" target="_blank">@attendingtofutures</a>
           </button>
         </div>
       </div>
