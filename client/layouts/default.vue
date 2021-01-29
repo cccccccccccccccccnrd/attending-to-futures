@@ -38,6 +38,9 @@
           <br>
           <p>Acknowledging the ways in which design (as practices, forms of knowledge, and sets of objects) is accountable for social and environmental injustice, ATTENDING [TO] FUTURES is a platform for critical perspectives that scrutinize unchallenged disciplinary norms and designerly ways of knowing, being, doing, and imagining in design education, research, and practice.</p>
         </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/attendingtofutures/">@attendingtofutures</a>
+        </div>
       </div>
       <div class="logo-container">
         <img src="~/assets/kisd-th-logo.svg" style="max-width: 6em;"/>
@@ -288,6 +291,16 @@ nav a.nuxt-link-exact-active {
 
 .description {
   padding: 1em;
+  /* border-top: 1px solid var(--dark-text-color); */
+}
+
+.socials {
+  padding: 1em;
+  /* border-top: 1px solid var(--dark-text-color); */
+}
+
+.socials a {
+  display: block;
 }
 
 .drag {
