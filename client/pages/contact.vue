@@ -15,8 +15,7 @@
       </p>
       <br>
       <h3>Organisation</h3>
-      <p><a href="https://kisd.de/studium/menschen/johanna-mehl/">Johanna Mehl</a>, <a href="https://kisd.de/studium/menschen/prof-dr-carolin-hofler/">Carolin Höfler</a>, <a href="https://kisd.de/studium/menschen/prof-michael-gais/">Michael Gais</a>, <a href="https://kisd.de/studium/menschen/daniela-meinhardt/">Daniela Meinhardt</a> & the conference team:</p>
-      <p>David Allrich, Hannah Böker, Jost Goldschmitt, Luise Kanein, Philip Lehmann, Yvonne Lober, Philipp Pätzold, David Sieverding, Martin Sistig, Conrad Weise, Kjell Wistoff</p>
+      <p>David Allrich, Hannah Böker, Michael Gais, Jost Goldschmitt, Carolin Höfler, Luise Kanein, Philip Lehmann, Yvonne Lober, Johanna Mehl, Daniela Meinhardt, Philipp Pätzold, David Sieverding, Martin Sistig, Conrad Weise, Kjell Wistoff</p>
       <p>The typeface is Marguerite by <a href="http://charlotterohde.de">Charlotte Rohde</a>.</p>
       <br>
       <h3>Privacy Policy</h3>
