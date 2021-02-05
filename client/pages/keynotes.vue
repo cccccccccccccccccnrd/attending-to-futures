@@ -6,7 +6,7 @@
         :key="`keynote-${index}`"
         class="keynote"
       >
-        <div class="indent">
+        <div class="left">
           <div class="top">
             <div class="name">
               <p>{{ keynote.name }}</p>
@@ -30,6 +30,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="appendix">
+      <p>More keynotes to be announced soon!</p>
     </div>
   </div>
 </template>
@@ -65,8 +68,9 @@ export default {
 </script>
 
 <style scoped>
-.indent {
+.left {
   max-width: 600px;
+  margin: 0 2em 0 0;
 }
 
 .keynotes {
@@ -76,7 +80,6 @@ export default {
 
 .keynote {
   display: flex;
-  gap: 2em;
   padding: 1em;
   border-bottom: 1px solid var(--dark-text-color);
 }
@@ -84,11 +87,11 @@ export default {
 .keynote .top {
   display: flex;
   align-items: center;
-  gap: 1em;
   margin: 0 0 1em 0;
 }
 
 .keynote .name {
+  margin: 0 1em 0 0;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -132,6 +135,10 @@ export default {
 .keynote .image img {
   max-width: 100%;
   max-height: 10em;
+}
+
+.appendix {
+  padding: 1em;
 }
 
 @media screen and (max-width: 450px) {

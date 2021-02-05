@@ -168,7 +168,6 @@ export default {
 
 .content.speaker {
   display: flex;
-  gap: 2em;
 }
 
 .content.speaker img {
@@ -178,17 +177,18 @@ export default {
 .content.speaker .left {
   display: flex;
   flex-flow: column nowrap;
+  margin: 0 2em 0 0;
 }
 
 .content.speaker .left .top {
   display: flex;
-  gap: 1em;
   margin: 0 0 1em 0;
 }
 
 .content.speaker .left .top .gradient-bar {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
+  margin: 0 1em 0 0;
   flex: 1;
 }
 

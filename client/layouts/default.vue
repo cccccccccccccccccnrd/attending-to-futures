@@ -54,7 +54,9 @@
         </div>
       </div>
       <div class="logo-container">
-        <img src="~/assets/kisd-th-logo.svg" style="max-width: 6em;"/>
+        <a href="https://kisd.de/" target="_blank">
+          <img src="~/assets/kisd-th-logo.svg" style="max-width: 6em;"/>
+        </a>
       </div>
       <!-- <div class="stats-container">
         <stats/>
@@ -164,9 +166,6 @@ export default {
 }
 
 html {
-  /* --background-color: rgb(225, 220, 210);
-  --dark-text-color: rgb(45, 40, 35);
-  --highlight-text-color: rgb(0, 0, 255); */
   --background-color: rgb(255, 255, 255);
   --dark-text-color: rgb(0, 0, 0);
   --highlight-text-color: rgb(0, 0, 0);
