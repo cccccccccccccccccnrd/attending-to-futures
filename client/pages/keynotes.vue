@@ -130,6 +130,17 @@ export default {
 } */
 
 .keynote .image img {
+  max-width: 100%;
   max-height: 10em;
+}
+
+@media screen and (max-width: 450px) {
+  .keynote {
+    flex-flow: column-reverse;
+  }
+
+  .keynote .image img {
+    max-height: initial;
+  }
 }
 </style>
