@@ -8,7 +8,10 @@
         class="bar"
         :class="{ 'border-bottom': open }"
       >
-        <div class="title">{{ title }}</div>
+        <div
+          class="title"
+          v-html="title"
+        ></div>
         <div
           @click="open = !open"
           class="button"
@@ -34,26 +37,69 @@
         </div>
       </div>
       <div
-        v-if="open"
+        v-if="open && type ==='standard'"
         class="content"
         v-html="content"
       ></div>
+      <div
+        v-if="open && type ==='speaker'"
+        class="content speaker"
+      >
+        <div class="left">
+          <div class="top">
+            <div
+              class="gradient-bar"
+              :style="`background: linear-gradient(${deg}deg, var(--gradient-colors));`"
+            ></div>
+            <div
+              class="name"
+              v-html="content.name"
+            >
+              <!-- <p>{{ content.name }}</p> -->
+            </div>
+          </div>
+          <div
+            class="description"
+            v-html="content.description"
+          ></div>
+        </div>
+        <div>
+          <nuxt-link
+            to="/keynotes"
+          >
+            <img
+              :src="require(`@/assets/${content.image}`)"
+              style="filter: grayscale(100);"
+            />
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  props: ['title', 'content', 'width'],
+  props: ['type', 'title', 'content', 'width', 'opened'],
   components: {},
   data () {
     return {
-      open: false
+      open: this.opened
     }
   },
   mounted () {},
   methods: {},
-  computed: {}
+  computed: {
+    ...mapGetters({
+      stats: 'stats/all'
+    }),
+    deg () {
+      if (!process.browser) return
+      return ((this.stats.mouseX - 45) / (window.innerWidth - 45) * ((90 + 45) - 45) + 45)
+    }
+  }
 }
 </script>
 
@@ -94,6 +140,7 @@ export default {
 }
 
 .bar .title {
+  flex: 1;
   padding: 0.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -118,4 +165,40 @@ export default {
 .content {
   padding: 2em;
 }
+
+.content.speaker {
+  display: flex;
+  gap: 2em;
+}
+
+.content.speaker img {
+  max-height: 10em;
+}
+
+.content.speaker .left {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.content.speaker .left .top {
+  display: flex;
+  gap: 1em;
+  margin: 0 0 1em 0;
+}
+
+.content.speaker .left .top .gradient-bar {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+}
+
+.content.speaker .left .top .name {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-variation-settings: 'rond' 900;
+}
+
+/* .content.speaker .left .description >>> p:last-of-type {
+  margin: 1em 0 0 0;
+} */
 </style>

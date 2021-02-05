@@ -15,6 +15,12 @@
             Conference
           </nuxt-link>
           <nuxt-link
+            to="/keynotes"
+            @click.native="handleNavClick"
+          >
+            Keynotes
+          </nuxt-link>
+          <nuxt-link
             to="/submissions"
             @click.native="handleNavClick"
           >
@@ -293,6 +299,10 @@ nav a.nuxt-link-exact-active {
   font-variation-settings: 'rond' 900;
 }
 
+.no-padding-pls {
+  padding: 0 !important;
+}
+
 .site {
   display: flex;
   width: 100%;
@@ -311,7 +321,7 @@ nav a.nuxt-link-exact-active {
   border-top: 1px solid var(--dark-text-color);
 }
 
-.description {
+aside .description {
   padding: 1em;
   border-top: 1px solid var(--dark-text-color);
 }

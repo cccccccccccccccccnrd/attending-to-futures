@@ -17,7 +17,7 @@ module.exports = {
       { hid: 'url', name: 'url', content: 'https://www.attendingtofutures.de' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ],
   },
 
