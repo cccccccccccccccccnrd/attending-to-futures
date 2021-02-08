@@ -8,8 +8,11 @@
       >
         <div class="left">
           <div class="top">
-            <div class="name">
-              <p>{{ keynote.name }}</p>
+            <div
+              class="name"
+              v-html="keynote.name"
+            >
+              <!-- <p>{{ keynote.name }}</p> -->
             </div>
             <div
               class="gradient-bar"
@@ -48,6 +51,10 @@ export default {
         name: 'Mindy Seu',
         description: '<p><a href="https://www.mindyseu.com/" target="_blank">Mindy Seu</a> <a href="https://www.instagram.com/mindyseu/" target="_blank">@mindyseu</a> is a designer, researcher and Assistant Prof. at Rutgers Mason School of the Arts, New Brunswick, and Yale School of Art, New Haven.</p> <p class="full">She connects topics of racial, social, and environmental justice to digital archiving, coding, software, and graphic design. As a fellow at the Harvard Law School\'s Berkman Klein Center for the Internet & Society, she began an archive of global cyberfeminism spanning three decades. She has also been a fellow at the Internet Archive, co-organizing the Arts Track of the inaugural Decentralized Web Summit. Formerly she was a designer on 2×4\'s Interactive Media team and the Museum of Modern Art’s in-house design studio.</p>',
         image: 'mindy-seu.jpg'
+      }, {
+        name: 'Lisa Baumgarten <br> & Imad Gebrayel',
+        description: '<p><a href="https://lisabaumgarten.de/Info" target="_blank">Lisa Baumgarten</a> <a href="https://www.instagram.com/lis.baum/" target="_blank">@lis.baum</a> is a Designer, Researcher and Lecturer. She currently offers seminars in design history and practice at UdK Berlin, HfK Bremen, and HTW Berlin. In 2019 she co-founded the research platform Teaching Design – a collectively gathered bibliography focusing on design education from intersectional feminist & decolonial perspectives. In this context Lisa investigates the potential of conversational formats as means to transform design education. Next to her creative practice Lisa is doing her second M.A. at in Cultural Studies at HU Berlin. Her current M.A. research focuses on design education, its entanglements with neoliberalism and student activism within design schools.</p> <p><a href="https://www.imadgebrayel.com/" target="_blank">Imad Gebrayel</a> <a href="https://www.instagram.com/imadgebrayel/" target="_blank">@imadgebrayel</a> is a Designer, Ph.D candidate in European Ethnology at HU Berlin, and lecturer at UdK Berlin, HfK Bremen, and design Akademie Berlin. He investigates how designers can reposition their work, make space for alternative discourses, and abstain from recolonizing cultural experiences. His current PhD research is centered around negotiations of memory and identifications in Sonnenallee - also known as the Arab street of Berlin. Within design research, Imad looks at identity representation using examples from interdisciplinary practices contributing to an Orientalist, reductivist gaze, and propagating Othering.</p>',
+        image: 'baumgarten-gebrayel.jpg'
       }]
     }
   },
@@ -86,7 +93,6 @@ export default {
 
 .keynote .top {
   display: flex;
-  align-items: center;
   margin: 0 0 1em 0;
 }
 
@@ -97,7 +103,6 @@ export default {
 }
 
 .keynote .gradient-bar {
-  height: 1.3em;
   width: 100%;
   flex: 1;
 }

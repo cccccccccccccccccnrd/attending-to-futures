@@ -49,7 +49,7 @@ export default {
         content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05, 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400,
         open: false
-      }, {
+      }/* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Mindy Seu</div></div>',
         content: {
@@ -58,6 +58,16 @@ export default {
           image: 'mindy-seu.jpg'
         },
         width: 800,
+        open: true
+      } */, {
+        type: 'speaker',
+        title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Lisa Baumgarten & Imad Gebrayel</div></div>',
+        content: {
+          name: 'Lisa & <br> Imad',
+          description: '<p><a href="https://lisabaumgarten.de/Info" target="_blank">Lisa Baumgarten</a> <a href="https://www.instagram.com/lis.baum/" target="_blank">@lis.baum</a> is a Designer, Researcher and Lecturer. She currently offers seminars in design history and practice at UdK Berlin, HfK Bremen, and HTW Berlin. <a href="https://www.imadgebrayel.com/" target="_blank">Imad Gebrayel</a> <a href="https://www.instagram.com/imadgebrayel/" target="_blank">@imadgebrayel</a> is a Designer, Ph.D candidate in European Ethnology at HU Berlin, and lecturer at UdK Berlin, HfK Bremen, and design Akademie Berlin.</p>',
+          image: 'baumgarten-gebrayel.jpg'
+        },
+        width: 900,
         open: true
       }]
     }
