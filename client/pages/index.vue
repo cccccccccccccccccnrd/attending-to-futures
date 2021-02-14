@@ -59,13 +59,23 @@ export default {
         },
         width: 800,
         open: true
-      } */, {
+      } *//* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Lisa Baumgarten & Imad Gebrayel</div></div>',
         content: {
           name: 'Lisa & <br> Imad',
           description: '<p><a href="https://lisabaumgarten.de/Info" target="_blank">Lisa Baumgarten</a> <a href="https://www.instagram.com/lis.baum/" target="_blank">@lis.baum</a> is a Designer, Researcher and Lecturer. She currently offers seminars in design history and practice at UdK Berlin, HfK Bremen, and HTW Berlin. <a href="https://www.imadgebrayel.com/" target="_blank">Imad Gebrayel</a> <a href="https://www.instagram.com/imadgebrayel/" target="_blank">@imadgebrayel</a> is a Designer, Ph.D candidate in European Ethnology at HU Berlin, and lecturer at UdK Berlin, HfK Bremen, and design Akademie Berlin.</p>',
           image: 'baumgarten-gebrayel.jpg'
+        },
+        width: 900,
+        open: true
+      } */, {
+        type: 'speaker',
+        title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Dr. Luiza Prado de O. Martins</div></div>',
+        content: {
+          name: 'Dr. Luiza Prado <br> de O. Martins',
+          description: '<p><a href="https://www.luiza-prado.com/" target="_blank">Dr. Luiza Prado de O. Martins</a> <a href="https://www.instagram.com/luizap/" target="_blank">@luizap</a> is an artist, writer, and researcher whose work examines themes around fertility, reproduction, coloniality, gender, and race.</p>',
+          image: 'luiza-prado.jpg'
         },
         width: 900,
         open: true

@@ -51,6 +51,9 @@
           <button class="inline">
             <a href="https://www.instagram.com/attendingtofutures/" target="_blank">@attendingtofutures</a>
           </button>
+          <!-- <button class="inline">
+            <a href="https://www.instagram.com/attendingtofutures/" target="_blank">call-for-papers.pdf</a>
+          </button> -->
         </div>
       </div>
       <div class="logo-container">
