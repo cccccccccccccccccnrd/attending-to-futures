@@ -59,6 +59,10 @@ export default {
         name: 'Dr. Luiza Prado de O. Martins',
         description: '<p><a href="https://www.luiza-prado.com/" target="_blank">Dr. Luiza Prado de O. Martins</a> <a href="https://www.instagram.com/luizap/" target="_blank">@luizap</a> is an artist, writer, and researcher whose work examines themes around fertility, reproduction, coloniality, gender, and race. In her doctoral dissertation she approaches the control over fertility and reproduction as a foundational biopolitical gesture for the establishment of the colonial/modern gender system, theorizing the emergence of ‘technoecologies of birth control’ as a framework for observing—and resisting, disrupting, troubling—colonial domination. Her ongoing artistic research project, “A Topography of Excesses,” looks into encounters between human and plant beings within the context of herbalist reproductive medicine, approaching these practices as expressions of radical care. Since 2019, she has broadened the scope of this research, developing a body of work that offers a critique of the racist concept of ‘overpopulation’ in the context of the current climate crisis.</p>',
         image: 'luiza-prado.jpg'
+      }, {
+        name: 'Danah Abdulla',
+        description: '<p><a href="https://www.dabdulla.com/" target="_blank">Danah Abdulla</a> <a href="https://www.instagram.com/danah.abdulla/" target="_blank">@danah.abdulla</a> is a designer, educator, and researcher—not in any particular order but always all three. She is Programme Director of Graphic Design at Camberwell, Chelsea, and Wimbledon Colleges of Art (University of the Arts London). Danah holds a Ph.D. in Design from Goldsmiths, University of London and is a founding member of the Decolonising Design platform. In 2010, she founded Kalimat Magazine, an independent, nonprofit publication about Arab thought and culture. Her research focuses on decolonising design, possibilities of design education, design culture(s) with a focus on the Arab region, the politics of design, publishing, and social design.</p>',
+        image: 'danah-abdulla.jpg'
       }]
     }
   },

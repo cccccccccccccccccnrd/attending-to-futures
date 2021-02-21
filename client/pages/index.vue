@@ -69,7 +69,7 @@ export default {
         },
         width: 900,
         open: true
-      } */, {
+      } *//* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Dr. Luiza Prado de O. Martins</div></div>',
         content: {
@@ -78,6 +78,16 @@ export default {
           image: 'luiza-prado.jpg'
         },
         width: 900,
+        open: true
+      } */, {
+        type: 'speaker',
+        title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Danah Abdulla</div></div>',
+        content: {
+          name: 'Danah <br> Abdulla',
+          description: '<p><a href="https://www.dabdulla.com/" target="_blank">Danah Abdulla</a> <a href="https://www.instagram.com/danah.abdulla/" target="_blank">@danah.abdulla</a> is a designer, educator, and researcher—not in any particular order but always all three.</p>',
+          image: 'danah-abdulla.jpg'
+        },
+        width: 800,
         open: true
       }]
     }
