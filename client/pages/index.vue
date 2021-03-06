@@ -79,7 +79,7 @@ export default {
         },
         width: 900,
         open: true
-      } */, {
+      } *//* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Danah Abdulla</div></div>',
         content: {
@@ -88,6 +88,16 @@ export default {
           image: 'danah-abdulla.jpg'
         },
         width: 800,
+        open: true
+      } */, {
+        type: 'speaker',
+        title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Silvy Chakkalakal</div></div>',
+        content: {
+          name: 'Silvy <br> Chakkalakal',
+          description: '<p><a href="https://www.euroethno.hu-berlin.de/de/institut/personen/chakkalakal" target="_blank">Silvy Chakkalakal</a> is a Junior Professor at the Institute of European Ethnology and at the Center of Transdisciplinary Gender Studies at Humboldt-Universität zu Berlin.</p>',
+          image: 'silvy-chakkalakal.jpg'
+        },
+        width: 900,
         open: true
       }]
     }

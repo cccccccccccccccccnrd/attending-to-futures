@@ -63,6 +63,10 @@ export default {
         name: 'Danah Abdulla',
         description: '<p><a href="https://www.dabdulla.com/" target="_blank">Danah Abdulla</a> <a href="https://www.instagram.com/danah.abdulla/" target="_blank">@danah.abdulla</a> is a designer, educator, and researcher—not in any particular order but always all three.</p><p>She is Programme Director of Graphic Design at Camberwell, Chelsea, and Wimbledon Colleges of Art (University of the Arts London). Danah holds a Ph.D. in Design from Goldsmiths, University of London and is a founding member of the Decolonising Design platform. In 2010, she founded Kalimat Magazine, an independent, nonprofit publication about Arab thought and culture. Her research focuses on decolonising design, possibilities of design education, design culture(s) with a focus on the Arab region, the politics of design, publishing, and social design.</p>',
         image: 'danah-abdulla.jpg'
+      }, {
+        name: 'Silvy Chakkalakal',
+        description: '<p><a href="https://www.euroethno.hu-berlin.de/de/institut/personen/chakkalakal" target="_blank">Silvy Chakkalakal</a> is a Junior Professor at the Institute of European Ethnology and at the Center of Transdisciplinary Gender Studies at Humboldt-Universität zu Berlin.</p><p>She teaches in the fields of postcolonial and gender studies, anthropology and literature, popular culture and aesthetics. She is the author of Die Welt in Bildern. Erfahrung und Evidenz in Friedrich J. Bertuchs \'Bilderbuch für Kinder\' (1790-1830) (Wallstein 2014). Her second monograph, Indienliebe. Die frühe Ethnographie und ihre Bilder is due to be published by Kadmos in 2021. Her research focus lies on questions of creativity, cooperation, time and temporality in cultural anthropology, with special interest on anthropology’s socio-political engagements. Currently, she is working on ethnographic projects on education, antiracism and decoloniality as well as anthropology of the future.</p>',
+        image: 'silvy-chakkalakal.jpg'
       }]
     }
   },
