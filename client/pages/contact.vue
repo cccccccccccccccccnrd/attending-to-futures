@@ -16,6 +16,8 @@
       <br>
       <h3>Organisation</h3>
       <p>David Allrich, Hannah Böker, Michael Gais, Jost Goldschmitt, Carolin Höfler, Luise Kanein, Philip Lehmann, Yvonne Lober, Johanna Mehl, Daniela Meinhardt, Philipp Pätzold, David Sieverding, Martin Sistig, Conrad Weise, Kjell Wistoff</p>
+      <p>Selection committee: Carolin Höfler, Dina Benbrahim, Johanna Mehl, Michael Gais</p>
+      <p>Advisory board: Mawena Yehouessi</p>
       <p>The typeface is Marguerite by <a href="http://charlotterohde.de">Charlotte Rohde</a>.</p>
       <br>
       <h3>Privacy Policy</h3>
