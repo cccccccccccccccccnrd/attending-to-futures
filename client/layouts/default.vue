@@ -21,6 +21,12 @@
             Keynotes
           </nuxt-link>
           <nuxt-link
+            to="/lecture"
+            @click.native="handleNavClick"
+          >
+            Lecture Series
+          </nuxt-link>
+          <nuxt-link
             to="/submissions"
             @click.native="handleNavClick"
           >
@@ -38,6 +44,7 @@
           >
             Contact
           </nuxt-link>
+
         </nav>
         <div class="description">
           <p>A conference for design practitioners, researchers, educators, students, scholars, and activists, who engage in a political reprogramming of design!</p>
