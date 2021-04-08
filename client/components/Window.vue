@@ -38,6 +38,7 @@
       </div>
       <div
         v-if="open && type ==='standard'"
+        :style="`background: linear-gradient(${deg}deg, var(--gradient-colors));`"
         class="content"
         v-html="content"
       ></div>
@@ -160,6 +161,14 @@ export default {
 .bar .button svg {
   width: 50%;
   height: 50%;
+}
+
+.content /deep/ .pill {
+  margin: 0 0 0.2em 0;
+}
+
+.content /deep/ .pill:last-of-type {
+  margin: 0;
 }
 
 .content {

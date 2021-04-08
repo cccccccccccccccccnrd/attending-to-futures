@@ -361,6 +361,25 @@ aside .description {
   overflow-y: auto;
 }
 
+.pill {
+  width: fit-content;
+  padding: 0.5em 1em;
+  background: none;
+  border-radius: 10px;
+  font-size: 1em;
+  color: var(--dark-text-color);
+  /* background: var(--background-color); */
+  border: 1px solid;
+  line-height: 1;
+}
+
+.pill.invert {
+  /* filter: invert(100); */
+  color: var(--background-color);
+  border-color: var(--dark-text-color);
+  background: var(--dark-text-color);
+}
+
 @media screen and (max-width: 450px) {
   body {
     font-size: 14px;
