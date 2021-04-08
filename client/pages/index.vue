@@ -41,15 +41,15 @@ export default {
   },
   data () {
     return {
-      terms: Array.apply(null, Array(1)).map((e) => ['Matters of Politics in Design Education, Research, Practice', 'apply now']),
+      terms: Array.apply(null, Array(1)).map((e) => ['Matters of Politics in Design Education, Research, Practice', 'Join the lecture series']),
       index: 0,
-      windows: [{
+      windows: [/* {
         type: 'standard',
         title: 'Call for Submissions',
         content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05, 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400,
         open: false
-      }/* , {
+      } *//* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Mindy Seu</div></div>',
         content: {
@@ -89,7 +89,7 @@ export default {
         },
         width: 800,
         open: true
-      } */, {
+      } *//* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Silvy Chakkalakal</div></div>',
         content: {
@@ -99,7 +99,13 @@ export default {
         },
         width: 900,
         open: true
-      }]
+      } *//* {
+        type: 'lecture-series',
+        title: 'lecture series',
+        content: '<a href="/attending-to-futures-cfp.pdf" target="_blank"><button>@foundland_collective</button></a><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Archive Afterlife</button></a><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Wednesday, April 14, 5:30 pm (CET)</button></a>',
+        width: 400,
+        open: true
+      } */]
     }
   },
   mounted () {

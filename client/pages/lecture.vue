@@ -26,7 +26,12 @@ export default {
 .indent {
   max-width: 600px;
 }
+
 p {
   margin: 1em 0;
+}
+
+p:first-of-type {
+  margin: 0;
 }
 </style>

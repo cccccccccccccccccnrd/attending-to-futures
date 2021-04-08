@@ -22,7 +22,7 @@
       <p>&rarr; Other formats</p>
       <br>
       <h2>Key dates</h2>
-      <p>Submission of abstracts<br>April 05, 2021</p>
+      <p>Submission of abstracts<br><span style="text-decoration: line-through;">April 05, 2021</span></p>
       <p>Abstract feedback<br>May 07, 2021</p>
       <p>Conference<br>November 18–20, 2021</p>
       <br>
