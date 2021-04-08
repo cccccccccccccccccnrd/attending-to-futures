@@ -35,7 +35,6 @@
       </div>
     </div>
     <div class="appendix">
-      <p>More keynotes to be announced soon!</p>
     </div>
   </div>
 </template>
