@@ -102,7 +102,7 @@ export default {
       } */{
         type: 'standard',
         title: 'upcoming lecture',
-        content: '<div style="display: flex; flex-flow: column wrap;"><div class="pill">14.04.2021</div><div class="pill">05:30pm (ECT)</div><div class="pill">Foundland Collective</div><div class="pill">Lauren Alexander</div><div class="pill">Ghalia Elsrakbi</div><div class="pill invert">Archive Afterlife</div></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+        content: '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/91059/" target="_blank"><div class="pill">14.04.2021</div><div class="pill">05:30pm (ECT)</div><div class="pill">Foundland Collective</div><div class="pill">Lauren Alexander</div><div class="pill">Ghalia Elsrakbi</div><div class="pill invert">Archive Afterlife</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
         width: 330,
         open: true
       }]
