@@ -3,10 +3,12 @@
     <div class="indent" style="padding: 1rem 0 0 1rem;">
       <p>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design.</p>
       <p>This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</p>
-      <p>The KISDtalks take place on Tuesdays or Wednesdays at 5:30 pm (ECT). They are a public and will take place via zoom. Stay tuned for the zoom link and timetable!</p>
+      <p>The KISDtalks take place on Tuesdays or Wednesdays at 5:30 pm (ECT). They are a public and will take place via zoom.</p>
+      <p>via Zoom: <a href="https://th-koeln.zoom.us/j/88240480389" target="_blank">https://th-koeln.zoom.us/j/88240480389</a><br>Meeting-ID: 882 4048 0389<br>Code: KISDtalks</p>
     </div>
     <div
       class="table"
+      :class="{ current: lecture.current, done: lecture.done }"
       v-for="(lecture, index) in lectures"
       :key="`lecture-${index}`"
     >
@@ -28,7 +30,7 @@
           v-else
         >{{lecture.name[0]}}</p>
       </div>
-      <div
+      <!-- <div
         v-if="lecture.school[0] && lecture.school[1]"
         class="tb school"
       >
@@ -40,7 +42,7 @@
         <p
           v-else
         >{{lecture.school[0]}}</p>
-      </div>
+      </div> -->
       <div class="tb event">
         <a
           v-if="lecture.event[1]"
@@ -77,7 +79,8 @@ export default {
         name: ['Frederick van Amstel', 'http://fredvanamstel.com'],
         school: ['UTFPR, Brazil', 'https://dadin.ct.utfpr.edu.br'],
         event: ['Designing for Liberation', 'https://kisd.de/termine/designing-for-liberation/'],
-        recording: null
+        recording: null,
+        done: true
       }, {
         date: '14.04.2021',
         name: ['Ghalia Elsrakbi, Lauren Alexander', 'http://www.foundland.info'],
@@ -144,10 +147,6 @@ p:first-of-type {
   margin: 0;
 }
 
-.tb-container {
-  /* border-top: 1px solid var(--dark-text-color); */
-}
-
 .table {
   display: flex;
   flex-wrap: nowrap;
@@ -166,18 +165,45 @@ p:first-of-type {
   align-items: center;
   flex-grow: 1;
   padding: 0.5em;
-  border-bottom: 1px solid var(--dark-text-color);
+  border-top: 1px solid var(--dark-text-color);
 }
 
-a:not(.recording a) {
-  padding: 0.5em 0.75em;
+.table a:not(.recording a) {
+  padding: 0.5em;
   border: 1px solid var(--dark-text-color);
   border-radius: 10px;
 }
 
-a:not(.recording a):hover {
+.table a:not(.recording a):hover {
   color: var(--background-color);
   background: var(--dark-text-color);
+}
+
+.table.current a:not(.recording a) {
+  color: var(--background-color);
+  background: var(--dark-text-color);
+}
+
+.table.done {
+  --done: silver;
+}
+
+.table.done {
+  color: var(--done);
+}
+
+.table.done a {
+  color: var(--done);
+  border-color: var(--done) !important;
+}
+
+.table.done a:not(.recording a):hover {
+  color: var(--background-color);
+  background: var(--done);
+}
+
+.table.done .circle {
+  border-color: var(--done);
 }
 
 .circle {

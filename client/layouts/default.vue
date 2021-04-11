@@ -21,7 +21,7 @@
             Keynotes
           </nuxt-link>
           <nuxt-link
-            to="/lecture"
+            to="/lectures"
             @click.native="handleNavClick"
           >
             Lecture Series
