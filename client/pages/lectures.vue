@@ -92,7 +92,7 @@ export default {
         date: '12.05.2021',
         name: ['Maziar Rezai', 'https://www.hbk-bs.de'],
         school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
-        event: ['t.b.a.', null],
+        event: ['Design Activism and Democracy', null],
         recording: null
       }, {
         date: '19.05.2021',
@@ -110,7 +110,7 @@ export default {
         date: '09.06.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: [null, null],
-        event: ['t.b.a.', null],
+        event: ['The Heart', null],
         recording: null
       }, {
         date: '23.06.2021',
