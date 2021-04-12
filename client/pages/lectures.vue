@@ -85,7 +85,7 @@ export default {
         date: '14.04.2021',
         name: ['Ghalia Elsrakbi, Lauren Alexander', 'http://www.foundland.info'],
         school: ['foundland', null],
-        event: ['Archive Afterlife', 'https://kisd.de/termine/91059/'],
+        event: ['Archive Afterlife', 'https://kisd.de/termine/archive-afterlife/'],
         recording: null,
         current: true
       }, {
