@@ -90,8 +90,8 @@ export default {
         current: true
       }, {
         date: '12.05.2021',
-        name: ['Maziar Rezai', null],
-        school: ['HBK Braunschweig', 'https://dadin.ct.utfpr.edu.br'],
+        name: ['Maziar Rezai', 'https://www.hbk-bs.de'],
+        school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
         event: ['t.b.a.', null],
         recording: null
       }, {
@@ -114,7 +114,7 @@ export default {
         recording: null
       }, {
         date: '23.06.2021',
-        name: ['Åså Stahl, Kristina Lindström', null],
+        name: ['Åså Stahl, Kristina Lindström', 'http://www.unmakingstudio.se/about/'],
         school: ['Un/Making Studio', 'http://www.unmakingstudio.se/about/'],
         event: ['t.b.a.', null],
         recording: null
