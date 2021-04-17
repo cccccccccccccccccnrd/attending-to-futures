@@ -87,13 +87,14 @@ export default {
         school: ['foundland', null],
         event: ['Archive Afterlife', 'https://kisd.de/termine/archive-afterlife/'],
         recording: null,
-        current: true
+        done: true
       }, {
         date: '12.05.2021',
         name: ['Maziar Rezai', 'https://www.hbk-bs.de'],
         school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
         event: ['Design Activism and Democracy', null],
-        recording: null
+        recording: null,
+        current: true
       }, {
         date: '19.05.2021',
         name: ['Andrea Sick', 'https://www.andreasick.de'],
