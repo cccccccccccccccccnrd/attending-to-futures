@@ -92,7 +92,7 @@ export default {
         date: '12.05.2021',
         name: ['Maziar Rezai', 'https://www.hbk-bs.de'],
         school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
-        event: ['Design Activism and Democracy', null],
+        event: ['Design Activism and Democracy', 'https://kisd.de/termine/online-kisdtalk-design-activism-and-democracy/'],
         recording: null,
         current: true
       }, {

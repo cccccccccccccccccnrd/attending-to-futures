@@ -37,19 +37,23 @@ import News from '@/components/News.vue'
 export default {
   components: {
     Window,
-    News
+    News,
   },
-  data () {
+  data() {
     return {
-      terms: Array.apply(null, Array(1)).map((e) => ['Matters of Politics in Design Education, Research, Practice', 'Join the lecture series']),
+      terms: Array.apply(null, Array(1)).map((e) => [
+        'Matters of Politics in Design Education, Research, Practice',
+        'Join the lecture series',
+      ]),
       index: 0,
-      windows: [/* {
+      windows: [
+        /* {
         type: 'standard',
         title: 'Call for Submissions',
         content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05, 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400,
         open: false
-      } *//* , {
+      } */ /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Mindy Seu</div></div>',
         content: {
@@ -59,7 +63,7 @@ export default {
         },
         width: 800,
         open: true
-      } *//* , {
+      } */ /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Lisa Baumgarten & Imad Gebrayel</div></div>',
         content: {
@@ -69,7 +73,7 @@ export default {
         },
         width: 900,
         open: true
-      } *//* , {
+      } */ /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Dr. Luiza Prado de O. Martins</div></div>',
         content: {
@@ -79,7 +83,7 @@ export default {
         },
         width: 900,
         open: true
-      } *//* , {
+      } */ /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Danah Abdulla</div></div>',
         content: {
@@ -89,7 +93,7 @@ export default {
         },
         width: 800,
         open: true
-      } *//* , {
+      } */ /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Silvy Chakkalakal</div></div>',
         content: {
@@ -99,16 +103,26 @@ export default {
         },
         width: 900,
         open: true
-      } */{
-        type: 'standard',
-        title: 'upcoming lecture',
-        content: '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/91059/" target="_blank"><div class="pill">14.04.2021</div><div class="pill">05:30pm (ECT)</div><div class="pill">Foundland Collective</div><div class="pill">Lauren Alexander</div><div class="pill">Ghalia Elsrakbi</div><div class="pill invert">Archive Afterlife</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
-        width: 330,
-        open: true
-      }]
+      } */
+        //{
+        //   type: 'standard',
+        //   title: 'upcoming lecture',
+        //   content: '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/91059/" target="_blank"><div class="pill">14.04.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">Foundland Collective</div><div class="pill">Lauren Alexander</div><div class="pill">Ghalia Elsrakbi</div><div class="pill invert">Archive Afterlife</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+        //   width: 330,
+        //   open: true
+        // },
+        {
+          type: 'standard',
+          title: 'upcoming lecture',
+          content:
+            '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/online-kisdtalk-design-activism-and-democracy/" target="_blank"><div class="pill">12.05.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">HBK Braunschweig</div><div class="pill">Maziar Rezai</div><div class="pill invert">Design Activism and Democracy</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+          width: 400,
+          open: true,
+        },
+      ],
     }
   },
-  mounted () {
+  mounted() {
     if (this.socket) this.send(['get-drag-init', {}])
 
     setInterval(() => {
@@ -123,12 +137,12 @@ export default {
   computed: {
     ...mapGetters({
       socket: 'socket/socket',
-      stats: 'stats/all'
+      stats: 'stats/all',
     }),
-    rond () {
+    rond() {
       if (!process.browser) return
-      return ((this.stats.mouseX - 0) / (window.innerWidth - 0) * (900 - 0) + 0)
-    }
+      return ((this.stats.mouseX - 0) / (window.innerWidth - 0)) * (900 - 0) + 0
+    },
   },
   methods: {
     ...mapActions({
@@ -137,10 +151,10 @@ export default {
     ...mapMutations({
       setElement: 'drags/setElement',
     }),
-    onDrag (event) {
+    onDrag(event) {
       this.send(['drag', event])
-    }
-  }
+    },
+  },
 }
 </script>
 
