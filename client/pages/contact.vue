@@ -15,10 +15,10 @@
       </p>
       <br>
       <h3>Organisation</h3>
-      <p>David Allrich, Hannah Böker, Michael Gais, Jost Goldschmitt, Carolin Höfler, Luise Kanein, Philip Lehmann, Yvonne Lober, Johanna Mehl, Daniela Meinhardt, Philipp Pätzold, David Sieverding, Martin Sistig, Conrad Weise, Kjell Wistoff</p>
-      <p>Selection committee: Carolin Höfler, Dina Benbrahim, Johanna Mehl, Michael Gais</p>
+      <p>David Allrich, Lisa-Marie Bosbach, Hannah Böker, Malte Carbow, Michael Gais, Jost Goldschmitt, Carolin Höfler, Luise Kanein, Philip Lehmann, Yvonne Lober, Johanna Mehl, Daniela Meinhardt, Mariam Mikadze, Philipp Pätzold, Abies Doreen Robinson, Kay Sahin, David Sieverding, Martin Sistig, Valentina Marie Stahnke, Bea Sofie Timmermann, Laura Lucia Torres Parra, Leon Vogler, Conrad Weise, Kjell Wistoff</p>
+      <p>Selection committee: Dina Benbrahim, Lisa-Marie Bosbach, Michael Gais, Carolin Höfler, Johanna Mehl, Mariam Mikadze, Abies Doreen Robinson, Valentina Marie Stahnke</p>
       <!-- <p>Advisory board: Mawena Yehouessi</p> -->
-      
+
       <p>The typeface is Marguerite by <a href="http://charlotterohde.de">Charlotte Rohde</a>.</p>
       <br>
       <h3>Privacy Policy</h3>
