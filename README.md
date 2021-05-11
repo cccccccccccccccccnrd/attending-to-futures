@@ -3,8 +3,8 @@
 A website for the confernce Attenting [to] Futures.
 
 ## Table of Contents
-	- [Install](#install)
-	- [Update](#update)
+- [Install](#install)
+- [Update](#update)
 
 ## Install
 
