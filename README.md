@@ -12,11 +12,11 @@ Download to your project directory:
 
 ```sh
 git clone git@github.com:cccccccccccccccccnrd/attending-to-futures.git
+npm install
 ```
 
-
 ## Update
-Make sure your SSH key is added to repo.
+Make sure your SSH key is added to the server.
 
 Commit your changes:
 ```sh
