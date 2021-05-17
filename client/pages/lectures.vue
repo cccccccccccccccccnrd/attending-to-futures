@@ -94,13 +94,14 @@ export default {
         school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
         event: ['Design Activism and Democracy', 'https://kisd.de/termine/online-kisdtalk-design-activism-and-democracy/'],
         recording: null,
-        current: true
+        done: true
       }, {
         date: '19.05.2021',
         name: ['Andrea Sick', 'https://www.andreasick.de'],
         school: ['HfK Bremen', 'https://www.hfk2020.de'],
-        event: ['Kollaborative und performative Wissensproduktion', 'https://www.thedynamicarchive.net'],
-        recording: null
+        event: ['Kollaborative und Performative Wissensproduktion', 'https://www.thedynamicarchive.net'],
+        recording: null,
+        current: true
       }, {
         date: '25.05.2021',
         name: ['Ben Schmitz', null],
