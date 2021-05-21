@@ -96,26 +96,27 @@ export default {
         recording: null,
         done: true
       }, {
-        date: '19.05.2021',
+				date: '19.05.2021',
         name: ['Andrea Sick', 'https://www.andreasick.de'],
         school: ['HfK Bremen', 'https://www.hfk2020.de'],
         event: ['Kollaborative und Performative Wissensproduktion', 'https://www.thedynamicarchive.net'],
         recording: null,
-        current: true
+        done: true,
       },
       // {
-      //   date: '25.05.2021',
+				//   date: '25.05.2021',
       //   name: ['Ben Schmitz', null],
       //   school: [null, null],
       //   event: ['t.b.a.', null],
       //   recording: null
       // },
       {
-        date: '09.06.2021',
+				date: '09.06.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: [null, null],
         event: ['The Heart', null],
-        recording: null
+        recording: null,
+        current: true
       }, {
         date: '23.06.2021',
         name: ['Åså Stahl, Kristina Lindström', 'http://www.unmakingstudio.se/about/'],
