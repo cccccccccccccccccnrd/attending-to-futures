@@ -119,14 +119,14 @@ export default {
         //   width: 400,
         //   open: true,
         // },
-        {
-          type: 'standard',
-          title: 'upcoming lecture',
-          content:
-            '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/kollaborative-und-performative-wissensproduktion/" target="_blank"><div class="pill">19.05.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">HfK Bremen</div><div class="pill">Andrea Sick</div><div class="pill invert">Kollaborative und Performative Wissensproduktion</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
-          width: 400,
-          open: true,
-        },
+        // {
+        //   type: 'standard',
+        //   title: 'upcoming lecture',
+        //   content:
+        //     '<div style="display: flex; flex-flow: column wrap;"><a href="https://kisd.de/termine/kollaborative-und-performative-wissensproduktion/" target="_blank"><div class="pill">19.05.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">HfK Bremen</div><div class="pill">Andrea Sick</div><div class="pill invert">Kollaborative und Performative Wissensproduktion</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+        //   width: 400,
+        //   open: true,
+        // },
       ],
     }
   },
