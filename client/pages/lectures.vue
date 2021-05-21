@@ -102,13 +102,15 @@ export default {
         event: ['Kollaborative und Performative Wissensproduktion', 'https://www.thedynamicarchive.net'],
         recording: null,
         current: true
-      }, {
-        date: '25.05.2021',
-        name: ['Ben Schmitz', null],
-        school: [null, null],
-        event: ['t.b.a.', null],
-        recording: null
-      }, {
+      },
+      // {
+      //   date: '25.05.2021',
+      //   name: ['Ben Schmitz', null],
+      //   school: [null, null],
+      //   event: ['t.b.a.', null],
+      //   recording: null
+      // },
+      {
         date: '09.06.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: [null, null],
