@@ -79,7 +79,7 @@ export default {
         name: ['Frederick van Amstel', 'http://fredvanamstel.com'],
         school: ['UTFPR, Brazil', 'https://dadin.ct.utfpr.edu.br'],
         event: ['Designing for Liberation', 'https://kisd.de/termine/designing-for-liberation/'],
-        recording: null,
+        recording: 'https://vimeo.com/551364476',
         done: true
       }, {
         date: '14.04.2021',
@@ -93,7 +93,7 @@ export default {
         name: ['Maziar Rezai', 'https://www.hbk-bs.de'],
         school: ['HBK Braunschweig', 'https://www.hbk-bs.de'],
         event: ['Design Activism and Democracy', 'https://kisd.de/termine/online-kisdtalk-design-activism-and-democracy/'],
-        recording: null,
+        recording: 'https://vimeo.com/553657976',
         done: true
       }, {
 				date: '19.05.2021',
