@@ -236,7 +236,7 @@ button {
   padding: 0.5em 1em;
   background: none;
   border: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   text-transform: uppercase;
   font-size: 1em;
   color: var(--dark-text-color);

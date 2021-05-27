@@ -57,6 +57,7 @@
         <a
           v-if="lecture.recording"
           :href="lecture.recording"
+          title="Recording"
           target="_blank"
         ><div class="circle"></div></a>
         <div
@@ -171,12 +172,19 @@ p:first-of-type {
   flex-grow: 1;
   padding: 0.5em;
   border-top: 1px solid var(--dark-text-color);
+  white-space: nowrap;
 }
+/* .event, .name {
+  flex-shrink: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	min-width: 200px;
+} */
 
 .table a:not(.recording a) {
-  padding: 0.5em;
+  padding: 0.5em 0.875em;
   border: 1px solid var(--dark-text-color);
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .table a:not(.recording a):hover {
