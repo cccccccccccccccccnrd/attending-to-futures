@@ -365,7 +365,7 @@ aside .description {
   width: fit-content;
   padding: 0.5em 1em;
   background: none;
-  border-radius: 10px;
+  border-radius: 30px;
   font-size: 1em;
   color: var(--dark-text-color);
   /* background: var(--background-color); */
