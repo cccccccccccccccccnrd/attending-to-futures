@@ -127,6 +127,14 @@ export default {
         //   width: 400,
         //   open: true,
         // },
+        {
+          type: 'standard',
+          title: 'upcoming lecture',
+          content:
+            '<div style="display: flex; flex-flow: column wrap;"><a href="https://www.dinabenbrahim.com" target="_blank"><div class="pill">9.06.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">Dina Benbrahim</div><div class="pill invert">The Heart</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+          width: 400,
+          open: true,
+        },
       ],
     }
   },
