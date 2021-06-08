@@ -112,7 +112,7 @@ export default {
       //   recording: null
       // },
       {
-				date: '09.06.2021',
+				date: '16.06.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: [null, null],
         event: ['The Heart', null],
