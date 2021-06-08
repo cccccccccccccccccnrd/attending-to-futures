@@ -30,7 +30,7 @@
             to="/submissions"
             @click.native="handleNavClick"
           >
-            Call for submissions
+           <span style="text-decoration: line-through;">Call for submissions</span>
           </nuxt-link>
           <nuxt-link
             to="/tickets"
