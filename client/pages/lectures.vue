@@ -125,7 +125,7 @@ export default {
         event: ['t.b.a.', null],
         recording: null
       }, {
-        date: '30.06.2021',
+        date: '07.07.2021',
         name: ['Ani Liu', 'https://ani-liu.com'],
         school: [null, null],
         event: ['t.b.a.', null],
