@@ -122,7 +122,7 @@ export default {
         date: '23.06.2021',
         name: ['Åså Stahl, Kristina Lindström', 'http://www.unmakingstudio.se/about/'],
         school: ['Un/Making Studio', 'http://www.unmakingstudio.se/about/'],
-        event: ['t.b.a.', null],
+        event: ['Un/Making Matters, Practices and Imaginaries', null],
         recording: null
       }, {
         date: '07.07.2021',
