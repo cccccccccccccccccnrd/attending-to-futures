@@ -23,12 +23,13 @@
       <br>
       <h2>Key dates</h2>
       <p>Submission of abstracts<br><span style="text-decoration: line-through;">April 05, 2021</span></p>
-      <p>Abstract feedback<br>May 07, 2021</p>
+      <p>Abstract feedback<br><span style="text-decoration: line-through;">May 07, 2021</span></p>
       <p>Conference<br>November 18–20, 2021</p>
       <br>
       <h2>Submission modalities</h2>
-      <p>Abstract of submission (500 words max., if needed, up to 5 images can be included). Short biography (200 words max.)</p>
-      <p>PDF file via e-mail to <a href="mailto:submissions@attendingtofutures.de">submissions@attendingtofutures.de</a></p>
+			<p>The submission period has ended.<br>Thank you for your submissions. We're in the process of reviewing them and setting up the conference programme.</p>
+      <!-- <p>Abstract of submission (500 words max., if needed, up to 5 images can be included). Short biography (200 words max.)</p>
+      <p>PDF file via e-mail to <a href="mailto:submissions@attendingtofutures.de">submissions@attendingtofutures.de</a></p> -->
       <br>
       <a href="/attending-to-futures-cfp.pdf" target="_blank">
         <button style="max-width: 50%;">Download pdf</button>
