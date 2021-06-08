@@ -112,18 +112,18 @@ export default {
       //   recording: null
       // },
       {
+        date: '23.06.2021',
+        name: ['Åså Stahl, Kristina Lindström', 'http://www.unmakingstudio.se/about/'],
+        school: ['Un/Making Studio', 'http://www.unmakingstudio.se/about/'],
+        event: ['Un/Making Matters, Practices and Imaginaries', null],
+        recording: null
+      }, {
 				date: '30.06.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: [null, null],
         event: ['The Heart', null],
         recording: null,
         current: true
-      }, {
-        date: '23.06.2021',
-        name: ['Åså Stahl, Kristina Lindström', 'http://www.unmakingstudio.se/about/'],
-        school: ['Un/Making Studio', 'http://www.unmakingstudio.se/about/'],
-        event: ['Un/Making Matters, Practices and Imaginaries', null],
-        recording: null
       }, {
         date: '07.07.2021',
         name: ['Ani Liu', 'https://ani-liu.com'],
