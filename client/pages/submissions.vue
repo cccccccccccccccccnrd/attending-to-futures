@@ -1,6 +1,9 @@
 <template>
   <div class="page page-conference">
     <div class="indent">
+      <h2>The submission period has ended</h2>
+			<p>Thank you for your submissions. We're in the process of reviewing them and setting up the conference programme.</p>
+			<br>
       <h2>We ask for contributions that are related to but not limited to the following questions and topics</h2>
       <p>&rarr; How are design practices embedded in socio-political contexts and hegemonic power structures and how do they (re-)produce exclusion?</p>
       <p>&rarr; How can persistent structures of systemic oppression and privilege in design be recognized and changed?</p>
@@ -25,9 +28,6 @@
       <p>Submission of abstracts<br><span style="text-decoration: line-through;">April 05, 2021</span></p>
       <p>Abstract feedback<br><span style="text-decoration: line-through;">May 07, 2021</span></p>
       <p>Conference<br>November 18–20, 2021</p>
-      <br>
-      <h2>Submission modalities</h2>
-			<p>The submission period has ended.<br>Thank you for your submissions. We're in the process of reviewing them and setting up the conference programme.</p>
       <!-- <p>Abstract of submission (500 words max., if needed, up to 5 images can be included). Short biography (200 words max.)</p>
       <p>PDF file via e-mail to <a href="mailto:submissions@attendingtofutures.de">submissions@attendingtofutures.de</a></p> -->
       <br>
