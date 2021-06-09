@@ -114,6 +114,7 @@ export default {
 }
 
 .keynote .gradient-bar {
+	display: none;
   width: 100%;
   flex: 1;
 }
