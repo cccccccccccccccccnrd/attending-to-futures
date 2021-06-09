@@ -119,17 +119,17 @@ export default {
         recording: null,
         current: true
       }, {
-				date: '30.06.2021',
-        name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
-        school: [null, null],
-        event: ['The Heart', null],
-        recording: null,
-      }, {
         date: '07.07.2021',
         name: ['Ani Liu', 'https://ani-liu.com'],
-        school: [null, null],
-        event: ['t.b.a.', null],
+        school: ['Columbia University', null],
+        event: ['Art Driven Research and Design', null],
         recording: null
+      }, {
+				date: '14.07.2021',
+        name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
+        school: ['SUNY, Buffalo', 'https://arts-sciences.buffalo.edu/art/faculty/directory/Benbrahim-Dina.html'],
+        event: ['The Heart', null],
+        recording: null,
       }]
     }
   },
