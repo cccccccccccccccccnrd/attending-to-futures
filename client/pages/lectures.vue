@@ -101,11 +101,11 @@ export default {
         name: ['Andrea Sick', 'https://www.andreasick.de'],
         school: ['HfK Bremen', 'https://www.hfk2020.de'],
         event: ['Kollaborative und Performative Wissensproduktion', 'https://www.thedynamicarchive.net'],
-        recording: null,
+        recording: 'https://vimeo.com/561242736',
         done: true,
       },
       // {
-				//   date: '25.05.2021',
+      //   date: '25.05.2021',
       //   name: ['Ben Schmitz', null],
       //   school: [null, null],
       //   event: ['t.b.a.', null],
@@ -117,19 +117,21 @@ export default {
         school: ['Un/Making Studio', 'http://www.unmakingstudio.se/about/'],
         event: ['Un/Making Matters, Practices and Imaginaries', null],
         recording: null,
-        current: true
+        done: true,
       }, {
         date: '07.07.2021',
         name: ['Ani Liu', 'https://ani-liu.com'],
         school: ['Columbia University', null],
         event: ['Art Driven Research and Design', null],
-        recording: null
+        recording: null,
+        done: true,
       }, {
-				date: '14.07.2021',
+        date: '14.07.2021',
         name: ['Dina Benbrahim', 'https://www.dinabenbrahim.com'],
         school: ['SUNY, Buffalo', 'https://arts-sciences.buffalo.edu/art/faculty/directory/Benbrahim-Dina.html'],
         event: ['The Heart', null],
         recording: null,
+        current: true
       }]
     }
   },
