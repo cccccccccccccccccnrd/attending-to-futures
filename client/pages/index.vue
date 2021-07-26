@@ -53,7 +53,8 @@ export default {
         content: 'Join our conference as a speaker! We accept and encourage submissions of different formats and diverse approaches. Apply until April 05, 2021.<br/><br/><a href="/attending-to-futures-cfp.pdf" target="_blank"><button>Download pdf</button></a>',
         width: 400,
         open: false
-      } */ /* , {
+      } */
+        /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Mindy Seu</div></div>',
         content: {
@@ -63,7 +64,8 @@ export default {
         },
         width: 800,
         open: true
-      } */ /* , {
+      } */
+        /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Lisa Baumgarten & Imad Gebrayel</div></div>',
         content: {
@@ -73,7 +75,8 @@ export default {
         },
         width: 900,
         open: true
-      } */ /* , {
+      } */
+        /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Dr. Luiza Prado de O. Martins</div></div>',
         content: {
@@ -83,7 +86,8 @@ export default {
         },
         width: 900,
         open: true
-      } */ /* , {
+      } */
+        /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Danah Abdulla</div></div>',
         content: {
@@ -93,7 +97,8 @@ export default {
         },
         width: 800,
         open: true
-      } */ /* , {
+      } */
+        /* , {
         type: 'speaker',
         title: '<div style="display: flex; justify-content: space-between; width: 100%;"><div>Speaker announcement</div><div style="font-variation-settings: \'rond\' 900">Silvy Chakkalakal</div></div>',
         content: {
@@ -135,14 +140,14 @@ export default {
         //   width: 400,
         //   open: true,
         // },
-        {
-          type: 'standard',
-          title: 'upcoming lecture',
-          content:
-            '<div style="display: flex; flex-flow: column wrap;"><a href="https://www.dinabenbrahim.com" target="_blank"><div class="pill">14.07.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">Dina Benbrahim</div><div class="pill invert">The Heart</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
-          width: 400,
-          open: true,
-        },
+        // {
+        //   type: 'standard',
+        //   title: 'upcoming lecture',
+        //   content:
+        //     '<div style="display: flex; flex-flow: column wrap;"><a href="https://www.dinabenbrahim.com" target="_blank"><div class="pill">14.07.2021</div><div class="pill">05:30pm (CET)</div><div class="pill">Dina Benbrahim</div><div class="pill invert">The Heart</div></a></div><br><small>Every semester KISD hosts a series of talks on different approaches, realms, and perspectives of design. This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor and lead up to the conference in November.</small>',
+        //   width: 400,
+        //   open: true,
+        // },
       ],
     }
   },
