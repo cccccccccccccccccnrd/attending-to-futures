@@ -36,7 +36,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/drag.js', ssr: false }
+    { src: '~/plugins/drag.js', ssr: false },
+    { src: '~/plugins/vue-calendar.client.js', ssr: false },
   ],
 
   /*

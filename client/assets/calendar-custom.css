@@ -1,0 +1,87 @@
+:root {
+	--schedule-border-radius: 0px;
+	--schedule-margin: 0.5px;
+	--schedule-padding: 5px;
+	/* --schedule-padding: 5px; */
+}
+
+.program-container .tui-full-calendar-time-date-schedule-block {
+	opacity: 1;
+  transform: scale(1);
+  transition: 500ms;
+	transition-property: opacity, transform;
+}
+.program-container.hide .tui-full-calendar-time-date-schedule-block {
+	opacity: 0;
+	transform: scaleY(0.95);
+  transition: 0;
+}
+
+.tui-full-calendar-vlayout-container {
+	border-top: 1px solid #e5e5e5;
+}
+.tui-full-calendar-vlayout-container, .tui-full-calendar-vlayout-container > * {
+	height: initial !important;
+}
+
+.tui-full-calendar-timegrid-container, .tui-full-calendar-dayname-container {
+	overflow: initial !important;
+}
+
+.tui-full-calendar-time-date-schedule-block-wrap {
+	margin: 0 !important;
+}
+.tui-full-calendar-time-schedule {
+	height: calc(100% + 1px - (var(--schedule-margin) * 2));
+	width: calc(100% - (var(--schedule-margin) * 2));
+	top: var(--schedule-margin);
+	left: var(--schedule-margin) !important;
+	padding: calc(var(--schedule-margin) * 1.25) var(--schedule-margin);
+	border-radius: var(--schedule-border-radius) !important;
+}
+.tui-full-calendar-dayname-layout {
+	/* display: none; */
+	height: 0;
+	overflow: hidden;
+	position: sticky;
+	top: -17px;
+	background: #fff;
+	z-index: 10;
+}
+.tui-full-calendar-time-schedule-content {
+	height: 100% !important;
+	margin: calc(var(--schedule-margin) * -1);
+	padding: var(--schedule-padding);
+}
+.tui-full-calendar-time-schedule-content > * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+.tui-full-calendar-time-schedule-content .inline {
+	flex-direction: row;
+	gap: 10px;
+}
+.panel .tui-full-calendar-time-schedule-content > * {
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.tui-full-calendar-time-schedule-content .keynote .title {
+	font-size: 1rem;
+	line-height: 1.6;
+}
+.tui-full-calendar-time-date-schedule-block {
+	width: var(--width) !important;
+	left: var(--left) !important;
+	padding-left: var(--padding-left) !important;
+}
+
+
+.tui-full-calendar-popup-detail .tui-full-calendar-schedule-title {
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.2;
+	word-break: break-word;
+}

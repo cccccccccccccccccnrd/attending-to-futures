@@ -21,6 +21,12 @@
             Keynotes
           </nuxt-link>
           <nuxt-link
+            to="/program"
+            @click.native="handleNavClick"
+          >
+            Program
+          </nuxt-link>
+          <nuxt-link
             to="/lectures"
             @click.native="handleNavClick"
           >
@@ -180,6 +186,7 @@ html {
   --dark-text-color: rgb(0, 0, 0);
   --highlight-text-color: rgb(0, 0, 0);
   --gradient-colors: rgb(139, 156, 130) 0%, rgb(197, 194, 86) 20%, rgb(210, 144, 98) 50%, rgb(19, 14, 241) 70%, rgb(3, 9, 73) 90%, rgb(3, 10, 50);
+  --font-family: 'M', Arial, sans-serif;
 }
 
 html, body {
@@ -188,7 +195,7 @@ html, body {
 }
 
 body {
-  font-family: 'M', Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   line-height: 1;
   -ms-text-size-adjust: 100%;
@@ -244,9 +251,10 @@ button {
   border: 1px solid;
   line-height: 1;
   cursor: pointer;
+  font-family: var(--font-family);
 }
 
-button:hover {
+button:hover, button.active {
   color: var(--background-color);
   background: var(--dark-text-color);
 }
@@ -275,7 +283,9 @@ aside {
   justify-content: space-between;
   width: 100%;
   max-width: 330px;
+  min-width: 220px;
   border-right: 1px solid var(--dark-text-color);
+  overflow-y: auto;
 }
 
 nav {

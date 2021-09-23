@@ -6,18 +6,8 @@
         perspectives of design.
       </p>
       <p>
-        This summer term, the KISDtalk series will be part of the Attending [to] Futures endeavor
+        This summer term, the KISDtalk series were part of the Attending [to] Futures endeavor
         and lead up to the conference in November.
-      </p>
-      <p>
-        The KISDtalks take place on Tuesdays or Wednesdays at 5:30 pm (ECT). They are a public and
-        will take place via zoom.
-      </p>
-      <p>
-        via Zoom:
-        <a href="https://th-koeln.zoom.us/j/88240480389" target="_blank"
-          >https://th-koeln.zoom.us/j/88240480389</a
-        ><br />Meeting-ID: 882 4048 0389<br />Code: KISDtalks
       </p>
     </div>
     <div
