@@ -20,12 +20,12 @@
           >
             Keynotes
           </nuxt-link>
-          <nuxt-link
+          <!-- <nuxt-link
             to="/program"
             @click.native="handleNavClick"
           >
             Program
-          </nuxt-link>
+          </nuxt-link> -->
           <nuxt-link
             to="/lectures"
             @click.native="handleNavClick"
