@@ -56,7 +56,7 @@ export default {
         image: 'mindy-seu.jpg'
       }, {
         name: 'Lisa Baumgarten',
-        description: '<p><a href="https://lisabaumgarten.de/Info" target="_blank">Lisa Baumgarten</a> (<a href="https://www.instagram.com/lis.baum/" target="_blank">@lis.baum</a>) is a Designer, Researcher and Lecturer. She currently offers seminars in design history and practice at UdK Berlin, HfK Bremen, and HTW Berlin. In 2019 she co-founded the research platform Teaching Design – a collectively gathered bibliography focusing on design education from intersectional feminist & decolonial perspectives. In this context Lisa investigates the potential of conversational formats as means to transform design education. Next to her creative practice Lisa is doing her second M.A. at in Cultural Studies at HU Berlin. Her current M.A. research focuses on design education, its entanglements with neoliberalism and student activism within design schools.</p>',
+        description: '<p><a href="http://www.lisabaumgarten.de/">Lisa Baumgarten</a> (<a href="http://www.instagram.com/lis.baum">@lis.baum</a>) is a critical design mediator working in design, research, as writer and as teacher/learner. She is the co-creator of the participatory research platform <a href="http://www.teaching-design.net/">Teaching Design</a> which focuses on design education from intersectional feminist and decolonial perspectives. In the course of the platform Lisa has been facilitating a <a href="https://teaching-design.net/About-Conversations-continued">conversational series</a>together with Judith Leijdekkers funded by the Stimuleringsfonds.</p><p>Lisa has been teaching design theory and practice as adjunct lecturer at German and international design universities since 2017. In October 2021 Lisa started her position as interims professor of Design Sciences (Verwaltung der Professur Designwissenschaften) at the <a href="https://www.hbk-bs.de/einrichtungen/institute/idf/">Institute of Design Research at University of the Arts Braunschweig</a> where she teaches in the M.A. program &bdquo;Transformation Design&ldquo;.</p><p>Next to her <a href="https://lisabaumgarten.de/Creative">creative practice</a> Lisa is doing her second M.A. in Cultural Studies at Humboldt-University Berlin. Her current research focuses on design education, its entanglements with neoliberalism and formats of resonating and emancipatory teaching-/learning experiences. Lisas research and writing has been published and presented amongst others at <a href="https://creative-bodies.uni-graz.at/en/">Creative Bodies&mdash;Creative Minds Conference</a>, Graz (AU), <a href="https://www.burg-halle.de/hochschule/einrichtungen/fempower/designsymposium/">Designsymposium &ldquo;Kompliz*innen&rdquo;</a> at BURG Halle (DE), the <a href="http://www.dgtf.de/english">The German Society for Design Theory and Research (DGTF)</a> as well as <a href="https://form.de/">form design magazine</a>. Her most recent essay (form, n&deg;293), written in collaboration with design philosopher <a href="https://www.mararecklies.de/">Mara Recklies</a>, is concerned with digital teaching tools and their effects on teaching-/learning spaces in design education.</p>',
         image: 'lisa-baumgarten.jpg'
       }, {
         name: 'Imad Gebrayel',
@@ -129,6 +129,10 @@ export default {
 
 .keynote .description >>> p {
   margin: 1em 0 0 0;
+}
+
+.keynote .description >>> a {
+  color: blue;
 }
 
 .keynote .description >>> .full {
