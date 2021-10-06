@@ -7,7 +7,7 @@
 
 .program-container .tui-full-calendar-time-date-schedule-block {
 	opacity: 1;
-  transition: 500ms;
+  transition: 200ms;
 	transition-property: opacity;
 	cursor: pointer;
 }
@@ -30,9 +30,12 @@
 	top: 0;
 }
 .tui-full-calendar-time-date-schedule-block [data-panel-id="4"] {
-	transform: rotate(-90deg) translateY(-150px);
+	--width: 300px;
+	transform: rotate(-90deg) translateY(calc(var(--width) * -1));
 	transform-origin: 100% 0%;
-	width: 150px;
+	width: var(--width);
+	align-items: center !important;
+	height: 1rem;
 }
 .tui-full-calendar-time-date-schedule-block [data-panel-id="4"]::after {
 	margin: calc(var(--schedule-padding) * -2) calc(var(--schedule-padding) * -1);
@@ -81,12 +84,26 @@
 	z-index: 10;
 }
 .tui-full-calendar-time-schedule-content {
-	height: calc(100% + (var(--schedule-margin) * 2)) !important;
+	height: calc(100% + (var(--schedule-margin) * 3)) !important;
 	margin: calc(var(--schedule-margin) * -1);
 	padding: var(--schedule-padding);
 	padding-left: calc(var(--schedule-padding) * 2);
 	border: none;
 	box-shadow: var(--color-gradient);
+}
+
+.program-container .tui-full-calendar-time-date-schedule-block:hover .tui-full-calendar-time-schedule-content {
+	background: currentColor;
+	background: black;
+	box-shadow: none;
+}
+.program-container .tui-full-calendar-time-date-schedule-block:hover .tui-full-calendar-time-schedule-content * {
+	color: white;
+}
+.program-container .tui-full-calendar-time-date-schedule-block:hover .tui-full-calendar-time-schedule-content .time {
+	color: var(--color);
+	color: black;
+	background: white;
 }
 .tui-full-calendar-time-schedule-content > * {
 	display: flex;

@@ -155,7 +155,7 @@ export default {
       if (schedule.raw.type) {
         classesArray.push(schedule.raw.type)
       }
-      if (durationMins < 20) {
+      if (durationMins < 20 || schedule.raw.panelId === '4') {
         classesArray.push('inline')
       }
       const uc = (s) => s[0].toUpperCase() + s.substring(1)
@@ -184,7 +184,7 @@ export default {
           </svg>
         </div>`
 
-      const panel = schedule.raw.panelId && schedule.raw.panelId !== 4 ? `<span class="panel" style="margin-left: auto;"><span>${this.panels[schedule.raw.panelId]}</span><span>${schedule.raw.panelId}</span></span>` : ''
+      const panel = schedule.raw.panelId && schedule.raw.panelId !== 4 ? `<span class="panel" style="margin-left: auto;" title="Panel ${schedule.raw.panelId}: ${this.panels[schedule.raw.panelId]}"><span>${this.panels[schedule.raw.panelId]}</span><span>${schedule.raw.panelId}</span></span>` : ''
       const bar = `<div class="bar">${type}${closeBtn}</div>`
 
       const abstract = schedule.raw.abstract ? `<p class="abstract">${schedule.raw.abstract}</p>` : ''
@@ -244,7 +244,7 @@ export default {
         const durationEl = schedule.querySelector('[data-duration]')
         const duration = durationEl ? durationEl.getAttribute('data-duration') : false
 
-        let exhibition = 10
+        let exhibition = 6
         let width = 100 - exhibition
         let left = 0
         let paddingLeft = 0
