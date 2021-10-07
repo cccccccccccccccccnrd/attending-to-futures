@@ -114,10 +114,10 @@
 }
 .tui-full-calendar-time-schedule-content .inline {
 	flex-direction: row;
-	gap: 10px;
 }
 .tui-full-calendar-time-schedule-content .inline > * {
 	margin: 0;
+	margin-left: 10px;
 }
 .panel .tui-full-calendar-time-schedule-content > * {
 	align-items: flex-start;
