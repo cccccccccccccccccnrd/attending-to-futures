@@ -39,15 +39,6 @@ export default {
     },
   },
   computed: {
-    openSchedule() {
-      return {
-        type: 'standard',
-        title: 'Title',
-        content: 'Content',
-        width: 400,
-        opened: true
-      }
-    },
     schedules() {
       if (!this.events) return
       // console.log(this.events.filter(e => !e.abstract && e.type && !['break', 'exhibition'].includes(e.type)))
@@ -89,6 +80,9 @@ export default {
     this.ready = false
     this.$nextTick(() => {
       setTimeout(() => this.arrangePanels(), 100)
+      setInterval(() => {
+        this.arrangePanels()
+      }, 1000);
       document.addEventListener('click', (e) => {
         if (e.target.classList.contains('close-button')) {
           e.target.closest(".tui-full-calendar-popup").remove()
@@ -98,7 +92,6 @@ export default {
   },
   update() {
     this.arrangePanels()
-    document.querySelectorAll('.close-button').forEach(e => console.log(e))
   },
   data() {
     return {

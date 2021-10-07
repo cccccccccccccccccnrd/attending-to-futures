@@ -66,12 +66,18 @@ export default {
     return {
       selectedDate: null,
       hues: {
-        default: 'hsl(50, 80%, 40%)',
-        keynote: 'hsl(35, 70%, 50%)',
-        talk: 'hsl(110, 20%, 50%)',
-        workshop: 'hsl(230, 100%, 40%)',
+        default: 'hsl(56, 61%, 55%)',
+        keynote: 'hsl(30, 89%, 60%)',
+        talk: 'hsl(102, 26%, 63%)',
+        workshop: 'hsl(240, 100%, 50%)',
         exhibition: 'hsl(320, 50%, 40%)',
-        break: 'hsl(250, 0%, 50%)',
+        break: 'hsl(0, 0%, 50%)',
+        // default: 'hsl(50, 80%, 40%)',
+        // keynote: 'hsl(35, 70%, 50%)',
+        // talk: 'hsl(110, 20%, 50%)',
+        // workshop: 'hsl(230, 100%, 40%)',
+        // exhibition: 'hsl(320, 50%, 40%)',
+        // break: 'hsl(250, 0%, 50%)',
       },
       panels: {
         1: 'Contested Histories',
@@ -660,10 +666,10 @@ h1 {
     flex-direction: column;
   }
   .button-container button {
+    margin-top: 10px;
     font-size: 1rem;
   }
   .button-container button + button {
-    margin-top: 10px;
     margin-left: 0;
   }
 }
