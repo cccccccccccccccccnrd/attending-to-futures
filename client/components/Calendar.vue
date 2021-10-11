@@ -34,7 +34,7 @@ export default {
     hues: {
       type: Object,
     },
-    panels: {
+    tracks: {
       type: Object,
     },
   },
@@ -67,8 +67,8 @@ export default {
         bgColor: 'transparent',
         borderColor: this.hues[e.type] || this.hues.default || this.defaultHue,
         raw: {
-          panelId: e.panelId,
-          sharedPanel: e.sharedPanel,
+          trackId: e.trackId,
+          sharedTrack: e.sharedTrack,
           type: e.type,
           speaker: e.speaker ? this.list(e.speaker) : '',
           abstract: e.abstract
@@ -79,9 +79,9 @@ export default {
   mounted() {
     this.ready = false
     this.$nextTick(() => {
-      setTimeout(() => this.arrangePanels(), 100)
+      setTimeout(() => this.arrangeTracks(), 100)
       setInterval(() => {
-        this.arrangePanels()
+        this.arrangeTracks()
       }, 1000);
       document.addEventListener('click', (e) => {
         if (e.target.classList.contains('close-button')) {
@@ -91,7 +91,7 @@ export default {
     })
   },
   update() {
-    this.arrangePanels()
+    this.arrangeTracks()
   },
   data() {
     return {
@@ -134,9 +134,9 @@ export default {
   },
   methods: {
     scheduleTemplate(schedule, compact = false) {
-      const panelId = schedule.raw.panelId ? `data-panel-id="${schedule.raw.panelId}"` : ''
-      const sharedPanel = schedule.raw.sharedPanel
-        ? `data-shared-panel="${schedule.raw.sharedPanel}"`
+      const trackId = schedule.raw.trackId ? `data-track-id="${schedule.raw.trackId}"` : ''
+      const sharedTrack = schedule.raw.sharedTrack
+        ? `data-shared-track="${schedule.raw.sharedTrack}"`
         : ''
       const time = `<span class="time">${this.getTime(schedule)}</span>`
 
@@ -148,7 +148,7 @@ export default {
       if (schedule.raw.type) {
         classesArray.push(schedule.raw.type)
       }
-      if (durationMins < 20 || schedule.raw.panelId === '4') {
+      if (durationMins < 20 || schedule.raw.trackId === '4') {
         classesArray.push('inline')
       }
       const uc = (s) => s[0].toUpperCase() + s.substring(1)
@@ -177,7 +177,7 @@ export default {
           </svg>
         </div>`
 
-      const panel = schedule.raw.panelId && schedule.raw.panelId !== 4 ? `<span class="panel" style="margin-left: auto;" title="Panel ${schedule.raw.panelId}: ${this.panels[schedule.raw.panelId]}"><span>${this.panels[schedule.raw.panelId]}</span><span>${schedule.raw.panelId}</span></span>` : ''
+      const track = schedule.raw.trackId && schedule.raw.trackId !== 4 ? `<span class="track" style="margin-left: auto;" title="Track ${schedule.raw.trackId}: ${this.tracks[schedule.raw.trackId]}"><span>${this.tracks[schedule.raw.trackId]}</span><span>${schedule.raw.trackId}</span></span>` : ''
       const bar = `<div class="bar">${type}${closeBtn}</div>`
 
       const abstract = schedule.raw.abstract ? `<p class="abstract">${schedule.raw.abstract}</p>` : ''
@@ -191,7 +191,7 @@ export default {
       } else {
         content = `
           ${bar}
-          <span style="display: flex; width: 100%; flex-wrap: wrap; align-items: center;">${time}${panel}</span>
+          <span style="display: flex; width: 100%; flex-wrap: wrap; align-items: center;">${time}${track}</span>
           
           <span class="header">
             ${speaker}
@@ -200,7 +200,7 @@ export default {
           ${abstract}
         `
       }
-      return `<div ${panelId} ${sharedPanel} ${duration} ${classes} ${style}>${content}</div>`
+      return `<div ${trackId} ${sharedTrack} ${duration} ${classes} ${style}>${content}</div>`
     },
     list(array, glue = 'and') {
       return array.reduce(
@@ -225,15 +225,15 @@ export default {
       const endDate = new Date(end).toLocaleTimeString(locale, format)
       return `${startDate} &ndash; ${endDate}`.toLowerCase()
     },
-    arrangePanels() {
+    arrangeTracks() {
       const schedules = this.$refs.calendar.$el.querySelectorAll(
         '.tui-full-calendar-time-date-schedule-block'
       )
       schedules.forEach((schedule) => {
-        const panelIdEl = schedule.querySelector('[data-panel-id]')
-        const panelId = panelIdEl ? panelIdEl.getAttribute('data-panel-id') : false
-        const sharedPanelEl = schedule.querySelector('[data-panel-id]')
-        const sharedPanel = sharedPanelEl ? sharedPanelEl.getAttribute('data-shared-panel') : false
+        const trackIdEl = schedule.querySelector('[data-track-id]')
+        const trackId = trackIdEl ? trackIdEl.getAttribute('data-track-id') : false
+        const sharedTrackEl = schedule.querySelector('[data-track-id]')
+        const sharedTrack = sharedTrackEl ? sharedTrackEl.getAttribute('data-shared-track') : false
         const durationEl = schedule.querySelector('[data-duration]')
         const duration = durationEl ? durationEl.getAttribute('data-duration') : false
 
@@ -242,15 +242,15 @@ export default {
         let left = 0
         let paddingLeft = 0
 
-        if (panelId) {
+        if (trackId) {
           width /= 3
-          left = (panelId - 1) * width
-          schedule.classList.add('panel')
-          if (panelId === '4') width = exhibition
+          left = (trackId - 1) * width
+          schedule.classList.add('track')
+          if (trackId === '4') width = exhibition
         }
-        if (sharedPanel) {
+        if (sharedTrack) {
           width /= 2
-          left += (sharedPanel - 1) * width
+          left += (sharedTrack - 1) * width
         }
         schedule.style.setProperty('--width', `${width}%`)
         schedule.style.setProperty('--left', `${left}%`)
