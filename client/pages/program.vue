@@ -167,6 +167,7 @@ export default {
           title: 'Welcome Address',
           start: '2021-11-18T10:00',
           end: '2021-11-18T10:30',
+          abstract: `<ul><li>Prof. Dr. Sylvia Heuchemer (Vice President for Academic Affair, TH Köln)</li><li>Johanna Mehl, Prof. Dr. Carolin Höfler & Prof. Michael Gais (Köln International School of Design, TH Köln)</li></ul>`,
         },
         {
           speaker: ['Silvy Chakkalakal'],

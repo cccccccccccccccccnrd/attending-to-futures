@@ -180,7 +180,7 @@ export default {
       const track = schedule.raw.trackId && schedule.raw.trackId !== 4 ? `<span class="track" style="margin-left: auto;" title="Track ${schedule.raw.trackId}: ${this.tracks[schedule.raw.trackId]}"><span>${this.tracks[schedule.raw.trackId]}</span><span>${schedule.raw.trackId}</span></span>` : ''
       const bar = `<div class="bar">${type}${closeBtn}</div>`
 
-      const abstract = schedule.raw.abstract ? `<p class="abstract">${schedule.raw.abstract}</p>` : ''
+      const abstract = schedule.raw.abstract ? `<div class="abstract">${schedule.raw.abstract}</div>` : ''
       let content
       if (compact) {
         content = `
