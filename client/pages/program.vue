@@ -479,7 +479,7 @@ export default {
           type: 'keynote',
         },
         {
-          speaker: ['Ngọc Triêu'],
+          speaker: ['Ngọc Triệu'],
           pronouns: 'she/her',
           title: 'Eastbound: Towards the Decolonial Future(s) of Vietnamese Design',
           start: '2021-11-20T11:15',
