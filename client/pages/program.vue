@@ -127,6 +127,14 @@ export default {
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
         },
         {
+          title: 'Commited to Presents',
+          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
+          start: '2021-11-18T20:00',
+          end: '2021-11-18T21:00',
+          type: 'exhibition',
+          trackId: '3',
+        },
+        {
           title: 'Mariah: Acts of Resistance',
           speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
           start: '2021-11-19T20:00',
@@ -145,6 +153,14 @@ export default {
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
         },
         {
+          title: 'Commited to Presents',
+          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
+          start: '2021-11-19T20:00',
+          end: '2021-11-19T21:00',
+          type: 'exhibition',
+          trackId: '3',
+        },
+        {
           title: 'Mariah: Acts of Resistance',
           speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
           start: '2021-11-20T20:00',
@@ -161,6 +177,14 @@ export default {
           type: 'exhibition',
           trackId: '2',
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
+        },
+        {
+          title: 'Commited to Presents',
+          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
+          start: '2021-11-20T20:00',
+          end: '2021-11-20T21:00',
+          type: 'exhibition',
+          trackId: '3',
         },
         // THURSDAY
         {
