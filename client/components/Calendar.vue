@@ -41,11 +41,24 @@ export default {
   computed: {
     schedules() {
       if (!this.events) return
+      // const tracks = []
+      const events = [...this.events]
+      // const tracks = [...Array(3).keys()].map(e =>
+      //   ({
+      //     start: '2021-11-18T09:00',
+      //     end: '2021-11-18T09:30',
+      //     type: 'track',
+      //     trackId: String(e+1)
+      //   })
+      // )
+      // console.log(events)
+      // events.push(...tracks)
+      // console.log(events)
       // console.log(this.events.filter(e => !e.abstract && e.type && !['break', 'exhibition'].includes(e.type)))
       // const tmp = []
       // const double = []
       // this.events.forEach(e => {
-      //   if (e.speaker) {
+      //   if (e.speaker) { 
       //     e.speaker.forEach(f => {
       //       if (tmp.includes(f)) double.push(f)
       //       tmp.push(f)
@@ -55,7 +68,7 @@ export default {
       // console.log(tmp)
       // console.log(double)
 
-      return this.events.map((e, i) => ({
+      return events.map((e, i) => ({
         start: e.start,
         end: e.end,
         body: ' ',
@@ -134,11 +147,11 @@ export default {
   },
   methods: {
     scheduleTemplate(schedule, compact = false) {
-      const trackId = schedule.raw.trackId ? `data-track-id="${schedule.raw.trackId}"` : ''
+      const trackId = schedule.raw.trackId ? `data-track-id="${schedule.raw.trackId}" data-track="${this.tracks[schedule.raw.trackId]}"` : ''
       const sharedTrack = schedule.raw.sharedTrack
         ? `data-shared-track="${schedule.raw.sharedTrack}"`
         : ''
-      const time = `<span class="time">${this.getTime(schedule)}</span>`
+      const time = schedule.raw.type === 'track' ? '' : `<span class="time">${this.getTime(schedule)}</span>`
 
       const durationMins = Math.ceil(
         Math.abs(new Date(schedule.end._date) - new Date(schedule.start._date)) / (1000 * 60)
@@ -209,6 +222,7 @@ export default {
     },
     setDate(date) {
       if (
+        date &&
         new Date(this.$refs.calendar.invoke('getDate')._date).toDateString() !== date.toDateString()
       ) {
         this.ready = false

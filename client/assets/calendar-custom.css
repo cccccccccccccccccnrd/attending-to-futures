@@ -12,7 +12,7 @@
 	cursor: pointer;
 }
 
-.program-container .track .tui-full-calendar-time-schedule-content > *::after {
+.program-container .track .tui-full-calendar-time-schedule-content > *:not(:is(.track, .exhibition))::after {
 	position: absolute;
 	display: flex;
 	align-items: center;

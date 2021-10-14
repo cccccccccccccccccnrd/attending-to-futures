@@ -89,22 +89,22 @@ export default {
         // ALL DAY
         {
           title: 'Online Exhibition',
-          start: '2021-11-18T09:00',
-          end: '2021-11-18T21:00',
+          start: '2021-11-18T00:00',
+          end: '2021-11-18T24:00',
           type: 'exhibition',
           trackId: '4'
         },
         {
           title: 'Online Exhibition',
-          start: '2021-11-19T09:00',
-          end: '2021-11-19T21:00',
+          start: '2021-11-19T00:00',
+          end: '2021-11-19T24:00',
           type: 'exhibition',
           trackId: '4'
         },
         {
           title: 'Online Exhibition',
-          start: '2021-11-20T09:00',
-          end: '2021-11-20T21:00',
+          start: '2021-11-20T00:00',
+          end: '2021-11-20T24:00',
           type: 'exhibition',
           trackId: '4'
         },
@@ -133,6 +133,7 @@ export default {
           end: '2021-11-18T21:00',
           type: 'exhibition',
           trackId: '3',
+          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
         },
         {
           title: 'Mariah: Acts of Resistance',
@@ -159,6 +160,7 @@ export default {
           end: '2021-11-19T21:00',
           type: 'exhibition',
           trackId: '3',
+          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
         },
         {
           title: 'Mariah: Acts of Resistance',
@@ -185,6 +187,7 @@ export default {
           end: '2021-11-20T21:00',
           type: 'exhibition',
           trackId: '3',
+          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
         },
         // THURSDAY
         {
@@ -296,7 +299,7 @@ export default {
           end: '2021-11-18T16:15',
           type: 'workshop',
           trackId: '3',
-          abstract: `What is intersectionality and how is it related to design? The talk will critically address how design (re-)produces differences in power as well as highlight design's potential role within the intersectional discourse. In the following workshop attendees will collectively redesign well-intentioned but discriminatory posters and reflect on their own designs from an intersectional perspective. Its aim is to create a sensitivity for potentially discriminatory designs and find creative alternatives.`
+          abstract: `What is intersectionality and how is it related to design? In the workshop attendees will collectively redesign well-intentioned but discriminatory posters and reflect on their own designs from an intersectional perspective. Its aim is to create a sensitivity for potentially discriminatory designs and find creative alternatives.`
         },
         {
           speaker: ['Lauren Williams'],
@@ -563,13 +566,13 @@ export default {
           abstract: 'In a workshops two aspects could be the center of attention. Firstly, works of design and the arts repeatedly show common traits and characteristics bound to time, material, possibilities, politics and circumstance, which result in more or less distinct styles. Those blossom and fade. Form, creators, impact and endurance may vary, works remain and continue to be seen heard, experienced, forgotten, (re)imagined and (re)experienced. Secondly, a workshop could hold the space to take a look back and focus on two examples of communities which brought to life design and art which still occupy recipients imagination today and will most likely do so in the future. Historically, communities have served as loci of creation, favouring the continuance of work and extending the body of work. Two communities created very different approaches and practices concerning their works in the realms of design and art. Still recognisable and distinct today the styles and pieces of work created in these two contexts continue to be relevant in contemporary discourse. In the US, the Shakers transformed religious beliefs and teachings, as well as the labour of everyday work and life into pieces of design with artistic qualities, which remain visible and recognised today. In stark contrast the Black Mountain College transformed ties to art and design still present in the teachings of the Bauhaus and cut them loose in favour of a new approach to art and visual studies. This transformation resulted in innovative and distinctly independent pieces of art. Both styles were - among other influences such as individual disposition or economic factors - created within, without, despite or within a community.'
         },
         {
-          speaker: ['Zoë Rush', 'Francisca Lucas', 'Carolina Ornelas'],
-          title: 'Patio',
+          speaker: ['Assol Hernandez Uribe', 'Carolina Ornelas', 'Diego Alatorre', 'Francisca Lucas', 'Oliver Baron', 'Zoe Rush'],
+          title: 'PATIO: Design & Crafts – building encounters',
           start: '2021-11-20T14:45',
           end: '2021-11-20T16:15',
           type: 'workshop',
           trackId: '2',
-          abstract: `Patio is a Mexican-German collaborative platform that brings thinkers and makers together to consider the root causes and meanings of things before ideating creative and implementable solutions to our world's challenges. We aim to prototype and iterate a space of potentiality and alterity through the design of a horizontal learning space, where participants and co-creators from different cultures and backgrounds come together to consider and express the plurality of ways forward. This creates an ecosystem of shared ideas, from microactions to radical rethinking of our structures, some of which Patio takes forward into future iterations.`
+          abstract: `Through an inclusive and fluid collaboration, we aim to prototype and iterate through Patio a space of potentiality and alterity. We host workshops, convening people interested in systems of learning and making to explore how these could transition to future autonomy and sustainability.<br><br>This workshop has its focus on reconstructing design education, through the inclusion of artisans' knowledge in learning environments. We attempt to construct a meeting point between artisans and designers.<br><br><strong>Requirements:</strong> To participate in this workshop you need an additional hour in the week before to complete an audiowalk and upload your reflections to a shared platform.`
         },
         {
           speaker: ['Elvia Vasconcelos', 'Danae Tapia'],
