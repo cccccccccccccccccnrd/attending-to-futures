@@ -257,7 +257,7 @@
 	pointer-events: none;
 }
 
-.bar {
+.tui-full-calendar-popup .bar {
 	margin-left: calc(var(--schedule-padding) * -4);
 	margin-top: calc(var(--schedule-padding) * -2);
 	margin-bottom: calc(var(--schedule-padding) * 4);
@@ -267,7 +267,7 @@
 	width: calc(100% + var(--schedule-padding) * 8);
 }
 
-.bar .type {
+.tui-full-calendar-popup .bar .type {
   flex: 1;
   padding: var(--schedule-padding) calc(var(--schedule-padding) * 4);
   font-size: 0.875rem;
@@ -277,7 +277,7 @@
 	margin-bottom: 0;
 }
 
-.bar .close-button {
+tui-full-calendar-popup. .bar .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +289,7 @@
 	margin-left: auto;
 }
 
-.bar .close-button svg {
+.tui-full-calendar-popup .bar .close-button svg {
   width: 50%;
   height: 50%;
 }

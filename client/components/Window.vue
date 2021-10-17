@@ -3,7 +3,7 @@
     class="window"
     :style="`max-width: ${width}px;`"
   >
-    <div class="shadow-container">
+    <div class="shadow-container" :class="type">
       <div
         class="bar"
         :class="{ 'border-bottom': open }"
@@ -37,9 +37,15 @@
         </div>
       </div>
       <div
-        v-if="open && type ==='standard'"
+        v-if="open && type ==='plain'"
+        class="content"
+        v-html="content"
+      ></div>
+      <div
+        v-if="open && type ==='gradient'"
         :style="`background: linear-gradient(${deg}deg, var(--gradient-colors));`"
         class="content"
+        :class="type"
         v-html="content"
       ></div>
       <div
@@ -83,7 +89,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  props: ['type', 'title', 'content', 'width', 'opened'],
+  props: ['type', 'title', 'content', 'classes', 'width', 'opened'],
   components: {},
   data () {
     return {
@@ -117,7 +123,7 @@ export default {
   position: relative;
 }
 
-.shadow-container::after {
+.shadow-container.gradient::after {
   content: '';
   position: absolute;
   z-index: -1;
