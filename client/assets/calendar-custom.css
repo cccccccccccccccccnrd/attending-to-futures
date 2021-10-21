@@ -273,9 +273,9 @@
   padding: var(--schedule-padding) calc(var(--schedule-padding) * 4);
   font-size: 0.875rem;
   text-transform: uppercase;
+	margin-bottom: 0;
 	display: flex;
 	align-items: center;
-	margin-bottom: 0;
 }
 
 tui-full-calendar-popup. .bar .close-button {
