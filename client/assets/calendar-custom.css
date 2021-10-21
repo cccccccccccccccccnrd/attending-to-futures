@@ -278,7 +278,7 @@
 	align-items: center;
 }
 
-tui-full-calendar-popup. .bar .close-button {
+.tui-full-calendar-popup .bar .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
