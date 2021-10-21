@@ -280,7 +280,7 @@ export default {
           end: '2021-11-18T16:15',
           type: 'workshop',
           trackId: '3',
-          abstract: `What is intersectionality and how is it related to design? <br> In the workshop, attendees will collectively redesign well-intentioned but discriminatory posters and reflect on their own designs from an intersectional perspective. Its aim is to create sensitivity for potentially discriminatory designs and find creative alternatives.`,
+          abstract: `The workshop attendees will collectively redesign well-intentioned but discriminatory posters and reflect on their own designs from an intersectional perspective.<br><br>Its aim is to create a sensitivity for potentially discriminatory designs and find creative alternatives. There will be a lot of room for discussions and reflections.`,
         },
         {
           speaker: ['Lauren Williams'],
