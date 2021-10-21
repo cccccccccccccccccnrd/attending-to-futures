@@ -72,12 +72,6 @@ export default {
         workshop: 'hsl(240, 100%, 50%)',
         exhibition: 'hsl(320, 50%, 40%)',
         break: 'hsl(0, 0%, 50%)',
-        // default: 'hsl(50, 80%, 40%)',
-        // keynote: 'hsl(35, 70%, 50%)',
-        // talk: 'hsl(110, 20%, 50%)',
-        // workshop: 'hsl(230, 100%, 40%)',
-        // exhibition: 'hsl(320, 50%, 40%)',
-        // break: 'hsl(250, 0%, 50%)',
       },
       tracks: {
         1: 'Contested Histories',
@@ -221,15 +215,15 @@ export default {
           trackId: '2',
           abstract: `Based on critiques of the paradigm of the nature-culture divide, contemporary struggles seem to be nothing less than an onto-ecological quest. For earthly survival, it is necessary to question core assumptions of 'our' being-with-the-world. Through the lens of Viveiros de Castro, Shamanism shed light on the multiplicity of histories of world-making. It is a fruitful path to reflect on 'our' struggles – to stay with the trouble (Haraway) of processual thinking, designerly aspirations, and equivocations.`
         },
-        {
-          speaker: ['Johannes Breuer', 'Marlene Bart', 'Stefanie Holzheu'],
-          title: 'The Atlas of Data Bodies – Cross-Institutional Design Education.',
-          start: '2021-11-18T11:30',
-          end: '2021-11-18T12:15',
-          type: 'talk',
-          trackId: '3',
-          abstract: `What data do we collect (consciously and unconsciously) about ourselves and how is it presented? The project Atlas of Data Bodies deals with the de-, re-, and new construction of body images in the digital age and takes place in a cooperation between Bauhaus-Universität Weimar and Futurium Berlin. It includes a cross-faculty seminar at the Bauhaus-University, an associated digital exhibition at the Futurium Berlin and an art- and design-journal, which is going to be published annually.`
-        },
+        // {
+        //   speaker: ['Johannes Breuer', 'Marlene Bart', 'Stefanie Holzheu'],
+        //   title: 'The Atlas of Data Bodies – Cross-Institutional Design Education.',
+        //   start: '2021-11-18T11:30',
+        //   end: '2021-11-18T12:15',
+        //   type: 'talk',
+        //   trackId: '3',
+        //   abstract: `What data do we collect (consciously and unconsciously) about ourselves and how is it presented? The project Atlas of Data Bodies deals with the de-, re-, and new construction of body images in the digital age and takes place in a cooperation between Bauhaus-Universität Weimar and Futurium Berlin. It includes a cross-faculty seminar at the Bauhaus-University, an associated digital exhibition at the Futurium Berlin and an art- and design-journal, which is going to be published annually.`
+        // },
         {
           title: 'Coffee Break',
           start: '2021-11-18T12:15',
@@ -544,6 +538,7 @@ export default {
           start: '2021-11-20T12:15',
           end: '2021-11-20T13:15',
           type: 'keynote',
+          abstract: `What does it look like to take a step beyond decolonization towards reindigenization? How does designing through an ethic of Radical Love bring us closer to right-relationship with one another and the land?<br><br>Weaving together Natasha Myers’ conceptualization of the Planthroposcene, Robyn Wall Kimmerer’s teachings from Braiding Sweetgrass, and Leah Lakshmi Piepzna-Samarasinha’s lessons from the disability justice movement; this keynote explores how centering indigenous values of care through affective design can provide a blueprint for deconstructing the elaborate technology of colonialism.`
         },
         {
           title: 'Lunch Break',
