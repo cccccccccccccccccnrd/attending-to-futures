@@ -117,7 +117,7 @@ export default {
           end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '2',
-          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
+          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
         },
         // {
         //   title: 'Commited to Presents',
@@ -185,7 +185,7 @@ export default {
           end: '2021-11-18T12:15',
           type: 'talk',
           trackId: '1',
-          abstract: `The history of design has produced countless artifacts that exclude or otherwise discriminate against people – and it is quite obvious to identify reasons for this problem: the structure of those who design and the rather undefined process of how they do it.<br><br>This leads to the question: Don’t we still need to think of the design process as more rigorous and regimented – and establish models that ensure we have a design “for all«? Wouldn’t we need to demand and promote critical discourse on ethics and elaborate theoretical foundations for ethical decision-making?`,
+          abstract: `The history of design has produced countless artifacts that exclude or otherwise discriminate against people – and it is quite obvious to identify reasons for this problem: the structure of those who design and the rather undefined process of how they do it.<br><br>This leads to the question: Don’t we still need to think of the design process as more rigorous and regimented – and establish models that ensure we have a design »for all«? Wouldn’t we need to demand and promote critical discourse on ethics and elaborate theoretical foundations for ethical decision-making?`,
         },
         {
           speaker: ['Marius Förster'],
@@ -228,7 +228,7 @@ export default {
           end: '2021-11-18T13:15',
           type: 'talk',
           trackId: '2',
-          abstract: `“When crisis occurs, the actions that are taken depend on the ideas that are lying around.«<br>Both Milton Friedman and Naomi Klein see crisis as a transformative moment. What are the new affordances and anti-affordances exposed by this pandemic? How can we exploit them to design the day after the pandemic to promote more sustainable, equatable, and just futures?<br>The talk will touch on some of the theory behind the practice and give a taste of previous speculative collaborations and workshops with policy makers and artists.`,
+          abstract: `»When crisis occurs, the actions that are taken depend on the ideas that are lying around.«<br>Both Milton Friedman and Naomi Klein see crisis as a transformative moment. What are the new affordances and anti-affordances exposed by this pandemic? How can we exploit them to design the day after the pandemic to promote more sustainable, equatable, and just futures?<br>The talk will touch on some of the theory behind the practice and give a taste of previous speculative collaborations and workshops with policy makers and artists.`,
         },
         {
           speaker: [
@@ -242,7 +242,7 @@ export default {
           end: '2021-11-18T13:15',
           type: 'performance',
           trackId: '3',
-          abstract: `The mobilization attempts of the New Right are characterized by numerous discourse sovereignty appropriation tactics. This also applies to the re/interpretation and staging of symbolic spaces. How can the authoritarian appropriation of the right be countered by design strategies?<br><br>The starting point for the thematic discussion with and in this lecture-performance is a bouncy castle. As a materialized metaphor, the bouncy castle brings together our different research perspectives in productive friction. The bouncy castle itself symbolizes the observation that the self-image of a society is increasingly negotiated on the basis of and performed in symbolic spaces. “Bouncing” in this sense can be understood as a breaking out of rigid knowledge productions, as paralogy – displaced logos. The childish bouncing undermines the adult (academic) epistemological seriousness. Insight takes off, gets out of balance and when it arrives again it easily finds itself somewhere else, offset.<br><br>The bouncy castle can also point to aspects of a chaotic space, that is, to interdependencies, the recognition of complexity and unpredictability, and in this respect also poses the question of how we move in and through such spaces. For a movement of reduction and authoritarian appropriation does not fit this diverse and complex world. The bouncy castle is an attempt to develop an understanding of places as places of knowledge, of spaces as spaces of negotiation, of things as things of meaning. What (epistemological, design, theoretical) tools do we have at our disposal? What tools can we – as designers, artists, philosophers, social scientists– make available without these, in turn, being rigidly fixed, predetermined?<br><br>A specially made version of Hambach Castle (which is at the same time a symbol of »German democracy« and right-wing appropriation) as a bouncy castle – for this performative lecture – presents itself as a deliberately wobbly materialized demand to bring unrest into knowledge and entrenched thought practices.`,
+          abstract: `The mobilization attempts of the New Right are characterized by numerous discourse sovereignty appropriation tactics. This also applies to the re/interpretation and staging of symbolic spaces. How can the authoritarian appropriation of the right be countered by design strategies?<br><br>The starting point for the thematic discussion with and in this lecture-performance is a bouncy castle. As a materialized metaphor, the bouncy castle brings together our different research perspectives in productive friction. The bouncy castle itself symbolizes the observation that the self-image of a society is increasingly negotiated on the basis of and performed in symbolic spaces. »Bouncing« in this sense can be understood as a breaking out of rigid knowledge productions, as paralogy – displaced logos. The childish bouncing undermines the adult (academic) epistemological seriousness. Insight takes off, gets out of balance and when it arrives again it easily finds itself somewhere else, offset.<br><br>The bouncy castle can also point to aspects of a chaotic space, that is, to interdependencies, the recognition of complexity and unpredictability, and in this respect also poses the question of how we move in and through such spaces. For a movement of reduction and authoritarian appropriation does not fit this diverse and complex world. The bouncy castle is an attempt to develop an understanding of places as places of knowledge, of spaces as spaces of negotiation, of things as things of meaning. What (epistemological, design, theoretical) tools do we have at our disposal? What tools can we – as designers, artists, philosophers, social scientists– make available without these, in turn, being rigidly fixed, predetermined?<br><br>A specially made version of Hambach Castle (which is at the same time a symbol of »German democracy« and right-wing appropriation) as a bouncy castle – for this performative lecture – presents itself as a deliberately wobbly materialized demand to bring unrest into knowledge and entrenched thought practices.`,
         },
         {
           title: 'Lunch Break',
@@ -257,7 +257,7 @@ export default {
         },
         {
           speaker: ['Kim Tran', 'Fernande Bodo'],
-          title: '“Architecture is a white discipline« - A Critical Rethinking of Design Education',
+          title: '»Architecture is a white discipline« - A Critical Rethinking of Design Education',
           start: '2021-11-18T14:45',
           end: '2021-11-18T16:15',
           type: 'workshop',
@@ -275,7 +275,7 @@ export default {
         },
         {
           speaker: ['Mira Schmitz'],
-          title: '“Design: An Intersectional Entanglement” - Redesigning Difference',
+          title: '»Design: An Intersectional Entanglement« - Redesigning Difference',
           start: '2021-11-18T14:45',
           end: '2021-11-18T16:15',
           type: 'workshop',
@@ -322,7 +322,7 @@ export default {
           start: '2021-11-18T17:15',
           end: '2021-11-18T18:15',
           type: 'keynote',
-          abstract: `Despite the currency of design thinking from the early noughties to today, where design has become the secret weapon of businesses and governments, the designed world looks and feels almost the same. Design thinking does not magically rid the world of bias, it is now masking it under the guise of innovation. Design thinking has crippled designers to generic tools and methods. If you take away the post-it notes, the A3 papers, and the markers, can the designer <em>think?</em><br>Inspired by the late Michael Sorkin’s essay »Two Hundred and Fifty Things an Architect Should Know”, this keynote compiles a list of things designers should know to think and know critically in their commitment to make the world a better place.`,
+          abstract: `Despite the currency of design thinking from the early noughties to today, where design has become the secret weapon of businesses and governments, the designed world looks and feels almost the same. Design thinking does not magically rid the world of bias, it is now masking it under the guise of innovation. Design thinking has crippled designers to generic tools and methods. If you take away the post-it notes, the A3 papers, and the markers, can the designer <em>think?</em><br>Inspired by the late Michael Sorkin’s essay »Two Hundred and Fifty Things an Architect Should Know«, this keynote compiles a list of things designers should know to think and know critically in their commitment to make the world a better place.`,
         },
         {
           title: 'Good Bye',
@@ -448,7 +448,7 @@ export default {
           end: '2021-11-19T17:00',
           type: 'talk',
           trackId: '1',
-          abstract: `»What if graphic design history were to center the banal genre of the document? What would this mean for how design students and practitioners imagine themselves and what they do? Counterposing “Publicity« (think posters and websites) to ›Immutability‹ (think passports and money) figures a ground against which to posit on a third—›Poetry‹—charged by what Paulo Freire calls ›naming the world‹. It speculates on the possibility of a pedagogy oriented against the capitalist and colonial entanglements of the others.«`,
+          abstract: `»What if graphic design history were to center the banal genre of the document? What would this mean for how design students and practitioners imagine themselves and what they do? Counterposing »Publicity« (think posters and websites) to ›Immutability‹ (think passports and money) figures a ground against which to posit on a third—›Poetry‹—charged by what Paulo Freire calls ›naming the world‹. It speculates on the possibility of a pedagogy oriented against the capitalist and colonial entanglements of the others.«`,
         },
         {
           speaker: ['Kalyani Jayant Tupkary'],
