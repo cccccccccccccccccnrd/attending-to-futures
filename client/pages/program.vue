@@ -70,6 +70,8 @@ export default {
         keynote: 'hsl(30, 89%, 60%)',
         talk: 'hsl(102, 26%, 63%)',
         workshop: 'hsl(240, 100%, 50%)',
+        performance: 'hsl(102, 26%, 33%)',
+        ['round table']: 'hsl(240, 100%, 20%)',
         exhibition: 'hsl(320, 50%, 40%)',
         break: 'hsl(0, 0%, 50%)',
       },
@@ -105,8 +107,8 @@ export default {
         {
           title: 'Mariah: Acts of Resistance',
           speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
-          start: '2021-11-18T20:00',
-          end: '2021-11-18T21:00',
+          start: '2021-11-18T19:00',
+          end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '1',
           abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`
@@ -114,26 +116,44 @@ export default {
         {
           title: 'Unrealized Archive: Future Histories',
           speaker: ['Jon Sueda', 'Chris Hamamoto'],
-          start: '2021-11-18T20:00',
-          end: '2021-11-18T21:00',
+          start: '2021-11-18T19:00',
+          end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '2',
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
         },
+        // {
+        //   title: 'Commited to Presents',
+        //   speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
+        //   start: '2021-11-18T19:00',
+        //   end: '2021-11-18T20:00',
+        //   type: 'exhibition',
+        //   trackId: '3',
+        //   abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
+        // },
         {
-          title: 'Commited to Presents',
-          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
-          start: '2021-11-18T20:00',
-          end: '2021-11-18T21:00',
+          title: 'Mariah: Acts of Resistance',
+          speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
+          start: '2021-11-19T19:00',
+          end: '2021-11-19T20:00',
           type: 'exhibition',
-          trackId: '3',
-          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
+          trackId: '1',
+          abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`
+        },
+        {
+          title: 'Unrealized Archive: Future Histories',
+          speaker: ['Jon Sueda', 'Chris Hamamoto'],
+          start: '2021-11-19T19:00',
+          end: '2021-11-19T20:00',
+          type: 'exhibition',
+          trackId: '2',
+          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
         },
         {
           title: 'Mariah: Acts of Resistance',
           speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
-          start: '2021-11-19T20:00',
-          end: '2021-11-19T21:00',
+          start: '2021-11-20T19:00',
+          end: '2021-11-20T20:00',
           type: 'exhibition',
           trackId: '1',
           abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`
@@ -141,47 +161,11 @@ export default {
         {
           title: 'Unrealized Archive: Future Histories',
           speaker: ['Jon Sueda', 'Chris Hamamoto'],
-          start: '2021-11-19T20:00',
-          end: '2021-11-19T21:00',
+          start: '2021-11-20T19:00',
+          end: '2021-11-20T20:00',
           type: 'exhibition',
           trackId: '2',
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
-        },
-        {
-          title: 'Commited to Presents',
-          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
-          start: '2021-11-19T20:00',
-          end: '2021-11-19T21:00',
-          type: 'exhibition',
-          trackId: '3',
-          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
-        },
-        {
-          title: 'Mariah: Acts of Resistance',
-          speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
-          start: '2021-11-20T20:00',
-          end: '2021-11-20T21:00',
-          type: 'exhibition',
-          trackId: '1',
-          abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`
-        },
-        {
-          title: 'Unrealized Archive: Future Histories',
-          speaker: ['Jon Sueda', 'Chris Hamamoto'],
-          start: '2021-11-20T20:00',
-          end: '2021-11-20T21:00',
-          type: 'exhibition',
-          trackId: '2',
-          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers “unrealized” graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`
-        },
-        {
-          title: 'Commited to Presents',
-          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
-          start: '2021-11-20T20:00',
-          end: '2021-11-20T21:00',
-          type: 'exhibition',
-          trackId: '3',
-          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
         },
         // THURSDAY
         {
@@ -253,7 +237,7 @@ export default {
           title: 'Design of Unrest: Right-wing Metapolitics – Paralogy – Knowledge Spaces – Chaos',
           start: '2021-11-18T12:30',
           end: '2021-11-18T13:15',
-          type: 'talk',
+          type: 'performance',
           trackId: '3',
           abstract: `The mobilization attempts of the New Right are characterized by numerous discourse sovereignty appropriation tactics. This also applies to the re/interpretation and staging of symbolic spaces. How can the authoritarian appropriation of the right be countered by design strategies?<br><br>The starting point for the thematic discussion with and in this lecture performance is a bouncy castle. As a materialized metaphor, the bouncy castle brings together our different research perspectives in productive friction. The bouncy castle itself symbolizes the observation that the self-image of a society is increasingly negotiated on the basis of and performed in symbolic spaces. “Bouncing” in this sense can be understood as a breaking out of rigid knowledge productions, as paralogy – displaced logos. The childish bouncing undermines the adult (academic) epistemological seriousness. Insight takes off, gets out of balance and when it arrives again it easily finds itself somewhere else, offset.<br><br>The bouncy castle can also point to aspects of a chaotic space, that is, to interdependencies, the recognition of complexity and unpredictability, and in this respect also poses the question of how we move in and through such spaces. For a movement of reduction and authoritarian appropriation does not fit this diverse and complex world. The bouncy castle is an attempt to develop an understanding of places as places of knowledge, of spaces as spaces of negotiation, of things as things of meaning. What (epistemological, design, theoretical) tools do we have at our disposal? What tools can we – as designers, artists, philosophers, social scientists– make available without these in turn being rigidly fixed, predetermined?<br><br>A specially made version of Hambach Castle (which is at the same time a symbol of “German democracy” and right-wing appropriation) as a bouncy castle – for this performative lecture – presents itself as a deliberately wobbly materialized demand to bring unrest into knowledge and entrenched thought practices.`
         },
@@ -341,11 +325,11 @@ export default {
           start: '2021-11-18T18:15',
           end: '2021-11-18T18:30',
         },
-        {
-          title: 'Get Together On Site / Dinner & Drinks',
-          start: '2021-11-18T19:00',
-          end: '2021-11-18T20:00',
-        },
+        // {
+        //   title: 'Get Together On Site / Dinner & Drinks',
+        //   start: '2021-11-18T19:00',
+        //   end: '2021-11-18T20:00',
+        // },
         // FRIDAY
         {
           title: 'Welcome Address',
@@ -416,7 +400,7 @@ export default {
           title: 'Wicked Problems, Wicked Designs',
           start: '2021-11-19T14:45',
           end: '2021-11-19T16:15',
-          type: 'workshop',
+          type: 'performance',
           trackId: '1',
           abstract: 'The proposal is to stage a Theater Forum play on the Attending to Futures Youtube channel, accompanied by a chat debate on colonial relations in design. Theater Forum is a technique developed by Augusto Boal to make structural oppression visible through acting while also rehearsing liberation from oppression. Design & Oppression network will stage the play and mediate the debate so that the audience can interact with the characters through chat. The characters will wear digital masks built with augmented reality to express the faces of wickedness in design.<br>Theater Forum is the best-known technique from the Theater of the Oppressed, an arsenal of subversive techniques created by Augusto Boal and his collaborators to fight oppression with the whole body. The forum session will be the apex of a collaborative process of investigating and understanding the colonialist oppression in design. The Design & Oppression network will host weekly rehearsals and laboratories from September to November. Those who are interested in joining the rehearsals and going through the whole process are more than welcome.<br><br>Who: Design & Oppression is a network of students, professors, and practitioners interested in joining forces against any kind of oppression in and through design. The network includes an online weekly reading group, a series of Youtube videos, and an orchestrated participation in design events and conferences. The network is woven by an expanding group of volunteer complicators spread across Brazil. This Theater Forum session will be complicated by Frederick van Amstel (UTFPR), Bibiana Serpa (UFRJ), Marco Mazarotto (UTFPR), and Rafaela Angelon (UTFPR). Learn more about the network at <a href="http://www.designeopressao.org">http://www.designeopressao.org</a>'
         },
@@ -482,11 +466,11 @@ export default {
           start: '2021-11-19T18:15',
           end: '2021-11-19T18:30',
         },
-        {
-          title: 'Get Together On Site / Dinner & Drinks',
-          start: '2021-11-19T19:00',
-          end: '2021-11-19T20:00',
-        },
+        // {
+        //   title: 'Get Together On Site / Dinner & Drinks',
+        //   start: '2021-11-19T19:00',
+        //   end: '2021-11-19T20:00',
+        // },
         // SATURDAY
         {
           title: 'Welcome Address',
@@ -567,7 +551,19 @@ export default {
           end: '2021-11-20T16:15',
           type: 'workshop',
           trackId: '2',
+          sharedTrack: '1',
           abstract: `Through an inclusive and fluid collaboration, we aim to prototype and iterate through Patio a space of potentiality and alterity. We host workshops, convening people interested in systems of learning and making to explore how these could transition to future autonomy and sustainability.<br><br>This workshop has its focus on reconstructing design education, through the inclusion of artisans' knowledge in learning environments. We attempt to construct a meeting point between artisans and designers.<br><br><strong>Requirements:</strong> To participate in this workshop you need an additional hour in the week before to complete an audiowalk and upload your reflections to a shared platform.`
+        },
+
+        {
+          title: 'Commited to Presents',
+          speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
+          start: '2021-11-20T14:45',
+          end: '2021-11-20T16:15',
+          type: 'round table',
+          trackId: '2',
+          sharedTrack: '2',
+          abstract: `Committed to Presents wishes to be a platform to prolong Attending [to] Futures conversations on the conference›s fringes. The aim is to foster collective reflections and discuss points of undoing and unlearning. Seeking Situated Knowledge, participants of this space can discuss their thoughts, learnings, and questions inspired and provoked by the conference. Committed to Presents wants to debate contrasts between present realities and possible futures.`
         },
         {
           speaker: ['Elvia Vasconcelos', 'Danae Tapia'],

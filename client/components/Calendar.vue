@@ -58,7 +58,7 @@ export default {
       // const tmp = []
       // const double = []
       // this.events.forEach(e => {
-      //   if (e.speaker) { 
+      //   if (e.speaker) {
       //     e.speaker.forEach(f => {
       //       if (tmp.includes(f)) double.push(f)
       //       tmp.push(f)
@@ -124,7 +124,7 @@ export default {
 
       week: {
         hourStart: 10,
-        hourEnd: 21,
+        hourEnd: 20,
       },
       disableDblClick: true,
       isReadOnly: true,
@@ -165,7 +165,7 @@ export default {
         classesArray.push('inline')
       }
       const uc = (s) => s[0].toUpperCase() + s.substring(1)
-      const type = ['keynote', 'talk', 'workshop', 'break', 'exhibition'].includes(schedule.raw.type) ? `<span class='type'>${uc(schedule.raw.type)}</span>` : ''
+      const type = ['keynote', 'talk', 'workshop', 'break', 'performance', 'round table', 'exhibition'].includes(schedule.raw.type) ? `<span class='type'>${uc(schedule.raw.type)}</span>` : ''
       const classes = `class="${classesArray.join(' ')}"`
       const style = `style="--color: ${schedule.color};"`
 
@@ -205,7 +205,7 @@ export default {
         content = `
           ${bar}
           <span style="display: flex; width: 100%; flex-wrap: wrap; align-items: center;">${time}${track}</span>
-          
+
           <span class="header">
             ${speaker}
             ${title}
