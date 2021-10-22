@@ -120,12 +120,23 @@ export default {
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
         },
         {
+          title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
+          speaker: ['Åsa Ståhl', 'Bianca Elzenbaumer', 'Eeva Houtbeckers', 'Svenja Keune', 'Evren Uzer', 'Saoirse Higgins', 'Tania Pérez-Bustos'],
+          start: '2021-11-18T19:00',
+          end: '2021-11-18T20:00',
+          type: 'exhibition',
+          trackId: '3',
+          sharedTrack: '1',
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+        },
+        {
           title: 'Attending [to] Futures. Student Works.',
           speaker: ['KISD Students'],
           start: '2021-11-18T19:00',
           end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '3',
+          sharedTrack: '2',
           abstract: `Displayed on site.`
         },
         {
@@ -147,12 +158,23 @@ export default {
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
         },
         {
+          title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
+          speaker: ['Åsa Ståhl', 'Bianca Elzenbaumer', 'Eeva Houtbeckers', 'Svenja Keune', 'Evren Uzer', 'Saoirse Higgins', 'Tania Pérez-Bustos'],
+          start: '2021-11-19T19:00',
+          end: '2021-11-19T20:00',
+          type: 'exhibition',
+          trackId: '3',
+          sharedTrack: '1',
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+        },
+        {
           title: 'Attending [to] Futures. Student Works.',
           speaker: ['KISD Students'],
           start: '2021-11-19T19:00',
           end: '2021-11-19T20:00',
           type: 'exhibition',
           trackId: '3',
+          sharedTrack: '2',
           abstract: `Displayed on site.`
         },
         {
@@ -174,12 +196,23 @@ export default {
           abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
         },
         {
+          title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
+          speaker: ['Åsa Ståhl', 'Bianca Elzenbaumer', 'Eeva Houtbeckers', 'Svenja Keune', 'Evren Uzer', 'Saoirse Higgins', 'Tania Pérez-Bustos'],
+          start: '2021-11-20T19:00',
+          end: '2021-11-20T20:00',
+          type: 'exhibition',
+          trackId: '3',
+          sharedTrack: '1',
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+        },
+        {
           title: 'Attending [to] Futures. Student Works.',
           speaker: ['KISD Students'],
           start: '2021-11-20T19:00',
           end: '2021-11-20T20:00',
           type: 'exhibition',
           trackId: '3',
+          sharedTrack: '2',
           abstract: `Displayed on site.`
         },
         // THURSDAY
@@ -519,6 +552,7 @@ export default {
           start: '2021-11-20T10:15',
           end: '2021-11-20T11:15',
           type: 'keynote',
+          abstract: `Cyberfeminism cannot be reduced to women and technology. Nor is it about the diffusion of feminism through technology. Combining cyber and feminism was meant as an oxymoron or provocation, a critique of the cyberbabes and fembots that stocked the sci-fi landscapes of the 1980s. The term is self-reflexive: technology is not only the subject of cyberfeminism, but its means of transmission. It’s all about feedback.  Rooted as it is by feminism, cyberfeminism is an imperfect umbrella term. The history of feminism is dominated by Western attitudes, which makes it complicated and exclusionary. The reason I have chosen to use the term is because the combination of ‘cyber’ and ‘feminism’ allows novices to quickly connote its meaning and speaks to its lineage and evolution. This includes strands like black cyberfeminism, xenofeminism, post-cyber feminism, glitch feminism, and hackfeministas, among others. By tracing this network of online activism from the past three decades from the Cyberfeminism Index, we might see strategies for digital revolution.`
         },
         {
           speaker: ['Ngọc Triệu'],

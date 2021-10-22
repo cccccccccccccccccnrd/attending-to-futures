@@ -84,7 +84,7 @@ export default {
           sharedTrack: e.sharedTrack,
           type: e.type,
           speaker: e.speaker ? this.list(e.speaker) : '',
-          abstract: e.abstract
+          abstract: e.abstract ? e.abstract.replace( /[»«]/g, c => c == '»' ? '«' : '»' ) : '' // fixes swapped character in font
         },
       }))
     },
