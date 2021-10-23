@@ -37,7 +37,7 @@
         </div>
       </div>
       <div
-        v-if="open && type ==='plain'"
+        v-if="open && !['gradient', 'speaker'].includes(type)"
         class="content"
         v-html="content"
       ></div>
@@ -136,7 +136,6 @@ export default {
   filter: blur(10px);
   transition: all 0.2s;
 }
-
 .bar {
   display: flex;
   justify-content: space-between;

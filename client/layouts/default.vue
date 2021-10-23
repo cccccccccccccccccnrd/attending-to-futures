@@ -266,7 +266,7 @@ button.inline {
   text-transform: none;
 }
 
-button.inline:hover a {
+button:hover a, button.inline:hover a {
   color: var(--background-color);
 }
 
@@ -389,6 +389,17 @@ aside .description {
   border-color: var(--dark-text-color);
   background: var(--dark-text-color);
 }
+
+
+.drop-shadow {
+  --shadow: 5px;
+  box-shadow: var(--shadow) var(--shadow) 0 0 black;
+  transition: all 0.2s;
+}
+.drop-shadow:hover {
+  --shadow: 15px;
+}
+
 
 @media screen and (max-width: 450px) {
   body {

@@ -140,16 +140,14 @@ export default {
         //   width: 400,
         //   open: true,
         // },
-        // {
-        //   type: 'gradient',
-        //   title: 'announcment',
-        //   content:
-        //     `<h2 style="text-transform: uppercase; font-size: 4rem;">Program</h2>
-        //     <h2 style="text-transform: uppercase; font-size: 4rem;">out</h2>
-        //     <h2 style="text-transform: uppercase; font-size: 4rem;">now!</h2>`,
-        //   width: 400,
-        //   open: true,
-        // },
+        {
+          type: 'drop-shadow',
+          title: 'tickets',
+          content:
+            `<div style="display: flex; flex-flow: column wrap;"><p>The ticket sale is open.</p><br><button><a href="https://hopin.com/events/attending-to-futures-matters-of-politics-in-design-education-research-practice" target="_blank">Get your ticket now!</a></button>`,
+          width: 400,
+          open: true,
+        },
       ],
     }
   },

@@ -162,7 +162,13 @@
 	box-shadow: var(--color-gradient);
 }
 .tui-full-calendar-popup-detail .tui-full-calendar-popup-detail-item-separate {
+  --shadow: 5px;
 	margin-top: 0;
+  box-shadow: var(--shadow) var(--shadow) 0 0 black;
+  transition: all 0.2s;
+}
+.tui-full-calendar-popup-detail .tui-full-calendar-popup-detail-item-separate:hover {
+  --shadow: 15px;
 }
 .tui-full-calendar-popup-arrow-border,
 .tui-full-calendar-popup-top-line,
