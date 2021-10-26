@@ -127,7 +127,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -165,7 +165,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -203,7 +203,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students - and now us - on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: https://www.instagram.com/design_lnu/`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -309,7 +309,7 @@ export default {
         },
         {
           speaker: ['Kim Tran', 'Fernande Bodo'],
-          title: '»Architecture is a white discipline« - A Critical Rethinking of Design Education',
+          title: '»Architecture is a white discipline« – A Critical Rethinking of Design Education',
           start: '2021-11-18T14:45',
           end: '2021-11-18T16:15',
           type: 'workshop',
@@ -327,7 +327,7 @@ export default {
         },
         {
           speaker: ['Mira Schmitz'],
-          title: '»Design: An Intersectional Entanglement« - Redesigning Difference',
+          title: '»Design: An Intersectional Entanglement« – Redesigning Difference',
           start: '2021-11-18T14:45',
           end: '2021-11-18T16:15',
           type: 'workshop',
@@ -346,7 +346,7 @@ export default {
         {
           speaker: ['Edith Lázár'],
           title:
-            "Out of Stock. A Fashion Journal having 'Nothing to Wear' But Ready to Dress-up the Future",
+            "Out of Stock. A Fashion Journal having »Nothing to Wear« But Ready to Dress-up the Future",
           start: '2021-11-18T16:15',
           end: '2021-11-18T17:00',
           type: 'talk',
@@ -495,7 +495,7 @@ export default {
         },
         {
           speaker: ['Chris Lee'],
-          title: 'Centering the Document - Towards a Critical Studio Pedagogy in Graphic Design',
+          title: 'Centering the Document – Towards a Critical Studio Pedagogy in Graphic Design',
           start: '2021-11-19T16:15',
           end: '2021-11-19T17:00',
           type: 'talk',
@@ -509,7 +509,7 @@ export default {
           end: '2021-11-19T17:00',
           type: 'talk',
           trackId: '2',
-          abstract: `»<em>Calendar Collective</em> is a living archive of alternate calendars (real and imagined) traced through voicemails. It is a design-led research investigation that challenges the normative understanding of time as linear, objective, and neutral. I use the calendar as a subversive tool to dismantle current hegemonic time structures and rebuild plural structures. As a designer from a previously colonized country, I employ calendar as a decolonization tool to render time - one of the most invisible epistemologies in future work - visible.«`,
+          abstract: `»<em>Calendar Collective</em> is a living archive of alternate calendars (real and imagined) traced through voicemails. It is a design-led research investigation that challenges the normative understanding of time as linear, objective, and neutral. I use the calendar as a subversive tool to dismantle current hegemonic time structures and rebuild plural structures. As a designer from a previously colonized country, I employ calendar as a decolonization tool to render time – one of the most invisible epistemologies in future work – visible.«`,
         },
         {
           speaker: ['Chris Hamamoto', 'Federico Pérez Villoro'],
@@ -619,13 +619,13 @@ export default {
         {
           speaker: ['Ina Scheffler'],
           title:
-            'Re(programming) as a Community Venture and Process - Historical Attempts and Contemporary Pioneering',
+            'Re(programming) as a Community Venture and Process – Historical Attempts and Contemporary Pioneering',
           start: '2021-11-20T14:45',
           end: '2021-11-20T16:15',
           type: 'workshop',
           trackId: '1',
           abstract:
-            'In a workshop, two aspects will be the center of attention. Firstly, works of design and the arts repeatedly show common traits and characteristics bound to time, material, possibilities, politics, and circumstance, which result in more or less distinct styles. Those blossom and fade. Form, creators, impact, and endurance may vary, works remain and continue to be seen heard, experienced, forgotten, (re)imagined, and (re)experienced. <br> Secondly, the workshop will hold the space to take a look back and focus on two examples of communities that brought to life design and art which still occupy recipients imagination today and will most likely do so in the future. Historically, communities have served as loci of creation, favouring the continuance of work and extending the body of work. Two communities created very different approaches and practices concerning their works in the realms of design and art. Still recognisable and distinct today the styles and pieces of work created in these two contexts continue to be relevant in contemporary discourse. In the US, the Shakers transformed religious beliefs and teachings, as well as the labour of everyday work and life into pieces of design with artistic qualities, which remain visible and recognised today. In stark contrast, the Black Mountain College transformed ties to art and design still present in the teachings of the Bauhaus and cut them loose in favour of a new approach to art and visual studies. This transformation resulted in innovative and distinctly independent pieces of art. Both styles were - among other influences such as individual disposition or economic factors - created within, without, despite, or within a community.',
+            'In a workshop, two aspects will be the center of attention. Firstly, works of design and the arts repeatedly show common traits and characteristics bound to time, material, possibilities, politics, and circumstance, which result in more or less distinct styles. Those blossom and fade. Form, creators, impact, and endurance may vary, works remain and continue to be seen heard, experienced, forgotten, (re)imagined, and (re)experienced. <br> Secondly, the workshop will hold the space to take a look back and focus on two examples of communities that brought to life design and art which still occupy recipients imagination today and will most likely do so in the future. Historically, communities have served as loci of creation, favouring the continuance of work and extending the body of work. Two communities created very different approaches and practices concerning their works in the realms of design and art. Still recognisable and distinct today the styles and pieces of work created in these two contexts continue to be relevant in contemporary discourse. In the US, the Shakers transformed religious beliefs and teachings, as well as the labour of everyday work and life into pieces of design with artistic qualities, which remain visible and recognised today. In stark contrast, the Black Mountain College transformed ties to art and design still present in the teachings of the Bauhaus and cut them loose in favour of a new approach to art and visual studies. This transformation resulted in innovative and distinctly independent pieces of art. Both styles were – among other influences such as individual disposition or economic factors – created within, without, despite, or within a community.',
         },
         {
           speaker: [
@@ -729,7 +729,7 @@ export default {
         },
         {
           speaker: ['César Neri'],
-          title: 'Latinofuturism - Recontextualizing ',
+          title: 'Latinofuturism – Recontextualizing ',
           start: '2021-11-20T17:15',
           end: '2021-11-20T18:00',
           type: 'talk',
