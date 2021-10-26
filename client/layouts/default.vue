@@ -30,7 +30,7 @@
             to="/lectures"
             @click.native="handleNavClick"
           >
-            Lecture Series
+           <span style="text-decoration: line-through;">Lecture Series</span>
           </nuxt-link>
           <nuxt-link
             to="/submissions"
