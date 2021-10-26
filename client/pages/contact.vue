@@ -15,7 +15,7 @@
       </p>
       <br>
       <h3>Organisation</h3>
-      <p>David Allrich, Lisa-Marie Bosbach, Hannah Böker, Malte Carbow, Michael Gais, Jost Goldschmitt, Carolin Höfler, Luise Kanein, Philip Lehmann, Yvonne Lober, Johanna Mehl, Daniela Meinhardt, Mariam Mikadze, Philipp Pätzold, Abies Doreen Robinson, Kay Sahin, David Sieverding, Martin Sistig, Valentina Marie Stahnke, Bea Sofie Timmermann, Laura Lucia Torres Parra, Leon Vogler, Conrad Weise, Kjell Wistoff</p>
+      <p>David Allrich, Rosa Bateira, Lisa-Marie Bosbach, Hannah Böker, Ken Chen, Tomas Ignacio Corvalan Azocar, Michael Gais, Jost Goldschmitt, Cristiana Grácio, Julian Nikolaus Habermann, Carolin Höfler, Luise Kanein, Jiye Kim, Philip Lehmann, Yvonne Lober, Sally Loutfy, Johanna Mehl, Mariam Mikadze, Philipp Pätzold, Inês Ramos dos Santos, Meike Raupach, Abies Doreen Robinson, Maria Salvador Guinot, Jule Marie Schacht, David Sieverding, Martin Sistig, Valentina Marie Stahnke, Bea Sofie Timmermann, Laura Lucia Torres Parra, Marco Puzik, Leon Vogler, Conrad Weise, Kjell Wistoff</p>
       <p>Selection committee: Dina Benbrahim, Lisa-Marie Bosbach, Michael Gais, Carolin Höfler, Johanna Mehl, Mariam Mikadze, Abies Doreen Robinson, Valentina Marie Stahnke</p>
       <!-- <p>Advisory board: Mawena Yehouessi</p> -->
 
