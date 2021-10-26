@@ -223,6 +223,7 @@ export default {
           abstract: `<ul><li>Prof. Dr. Sylvia Heuchemer (Vice President for Academic Affair, TH Köln)</li><li>Johanna Mehl, Prof. Dr. Carolin Höfler & Prof. Michael Gais (Köln International School of Design, TH Köln)</li></ul>`,
         },
         {
+          title: 'Archives of Intervention – Im/Possibilities of Narrating and Anticipating the Future',
           speaker: ['Silvy Chakkalakal'],
           start: '2021-11-18T10:30',
           end: '2021-11-18T11:30',
@@ -526,6 +527,7 @@ export default {
           type: 'break',
         },
         {
+          title: 'A List of Longings',
           speaker: ['Luiza Prado de O. Martins'],
           start: '2021-11-19T17:15',
           end: '2021-11-19T18:15',
@@ -549,6 +551,7 @@ export default {
         },
         {
           speaker: ['Mindy Seu'],
+          title: 'Variant of Cyberfeminism(s)',
           start: '2021-11-20T10:15',
           end: '2021-11-20T11:15',
           type: 'keynote',
@@ -595,6 +598,7 @@ export default {
           type: 'break',
         },
         {
+          title: 'Reindigenizing Technology',
           speaker: ['Neema Githere'],
           start: '2021-11-20T12:15',
           end: '2021-11-20T13:15',

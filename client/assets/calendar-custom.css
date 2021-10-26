@@ -127,7 +127,14 @@
 	font-size: 1rem;
 	line-height: 1.6;
 	font-weight: bold;
+  margin-top: 1em;
 }
+
+.tui-full-calendar-time-schedule-content .header + .title {
+  font-weight: normal;
+  color: black;
+}
+
 .tui-full-calendar-time-date-schedule-block {
 	width: var(--width) !important;
 	left: var(--left) !important;
@@ -249,7 +256,6 @@
 .tui-full-calendar-popup-detail .title {
 	margin: 0.5em 0;
 }
-
 .close-button {
   display: flex;
   justify-content: center;

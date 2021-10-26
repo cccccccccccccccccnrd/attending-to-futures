@@ -171,7 +171,12 @@ export default {
 
 
       const speaker = schedule.raw.speaker ? `<span class="speaker">${schedule.raw.speaker}</span>` : ''
-      const title = schedule.title && (schedule.raw.type !== 'keynote' || !compact) ? `<span class="title">${schedule.title}</span>` : ''
+      let title = schedule.title ? `<span class="title">${schedule.title}</span>` : ''
+      let keynoteTitle = ''
+      if (schedule.raw.type === 'keynote' && compact) {
+        keynoteTitle = title
+        title = ''
+      }
       const closeBtn = `
         <div class="close-button" data-attr="asd" onclick="alert('asd')">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" xml:space="preserve">
@@ -200,6 +205,7 @@ export default {
           ${type}
           ${time}
           <span class="header">${speaker}${title}</span>
+          ${keynoteTitle}
         `
       } else {
         content = `
