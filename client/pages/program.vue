@@ -690,7 +690,7 @@ export default {
           end: '2021-11-20T17:00',
           type: 'talk',
           trackId: '1',
-          abstract: `The first two decades of the twenty-first century have been characterized by a growing perception of failure of the socio-political systems and their economic policies. Social researchers have argued that there is a need to move from the current democratic system based on opinion to a more active participation and democratic collective deliberation. This shift implies an effort to engage communities into active processes of analysis and ideation that can help them recognize their values and the visions of desirable futures and goals. <br><br>This paper presents a community-based case study that seeks to introduce a possible role of design in this process.`,
+          abstract: `The first two decades of the twenty-first century have been characterized by a growing perception of failure of the socio-political systems and their economic policies. Social researchers have argued that there is a need to move from the current democratic system based on opinion to a more active participation and democratic collective deliberation. This shift implies an effort to engage communities into active processes of analysis and ideation that can help them recognize their values and the visions of desirable futures and goals. <br><br>This talk presents a community-based case study that seeks to introduce a possible role of design in this process.`,
         },
         {
           speaker: ['Jordan Whitewood-Neal'],
@@ -703,7 +703,7 @@ export default {
           abstract: `Dreaming of space begins in architectural education, and disability of all kinds can lead us to enriched and vivid dreams of a city which preserves the disabled body as an agent of space. The Architectural Association represents a pedagogy focused on future making, but institutional boundaries are perpetuated by contradicting concepts of conservation and access, limiting some students from having a voice. <br><br> This talk, therefore, argues for the value of disabled students through a critical study of the school's past, and potential future.`,
         },
         {
-          speaker: ['Medelyn Capozzi', 'Joëlle Dubé'],
+          speaker: ['Madelyn Capozzi', 'Joëlle Dubé'],
           title: 'Inviting Future Generations into Present Negotiations',
           start: '2021-11-20T16:15',
           end: '2021-11-20T17:00',
