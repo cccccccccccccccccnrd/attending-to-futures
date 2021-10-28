@@ -646,7 +646,7 @@ export default {
         },
 
         {
-          title: 'Commited to Presents',
+          title: 'Committed to Presents',
           speaker: ['Dorsa Javaherian', 'Abigail Schreider'],
           start: '2021-11-20T14:45',
           end: '2021-11-20T16:15',
