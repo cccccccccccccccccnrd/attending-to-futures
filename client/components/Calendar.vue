@@ -72,7 +72,7 @@ export default {
         start: e.start,
         end: e.end,
         body: ' ',
-        title: e.title,
+        title: e.title.replace( /[»«]/g, c => c == '»' ? '«' : '»' ),
         calendarId: '1',
         id: String(i + 1),
         category: 'time',
