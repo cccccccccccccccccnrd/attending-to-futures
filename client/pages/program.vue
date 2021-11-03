@@ -789,9 +789,4 @@ h1 {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 450px) {
-  .program-container {
-    overflow-x: auto;
-  }
-}
 </style>

@@ -5,8 +5,11 @@
 	--color-gradient: inset 10px 0 10px -10px currentColor;
 }
 
+.program-container {
+  overflow-x: auto;
+}
 .program-container .tui-full-calendar-layout {
-  min-width: 640px;
+  min-width: 720px;
 }
 .program-container .tui-full-calendar-time-date-schedule-block {
 	opacity: 1;

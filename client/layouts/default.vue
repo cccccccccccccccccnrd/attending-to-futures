@@ -292,6 +292,9 @@ aside {
 
 nav {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 2px);
 }
 
 nav a {
@@ -303,7 +306,9 @@ nav a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   font-variation-settings: 'rond' 0;
-  transition: font-variation-settings 800ms ease-in-out;
+  transition: font-variation-settings 100ms ease-in-out;
+  padding: 10px 20px;
+  margin: 0 -20px;
 }
 
 nav a:last-of-type {
@@ -311,15 +316,15 @@ nav a:last-of-type {
 }
 
 nav a:hover {
-  font-variation-settings: 'rond' 900;
+  font-variation-settings: 'rond' 700;
 }
 
 nav a.nuxt-link-exact-active {
-  /* font-size: 1.5em; */
-  color: var(--highlight-text-color);
-  font-variation-settings: 'rond' 900;
+  font-variation-settings: 'rond' 700;
+  color: white;
+  border-color: var(--dark-text-color);
+  background: var(--dark-text-color);
 }
-
 .no-padding-pls {
   padding: 0 !important;
 }
@@ -426,24 +431,25 @@ aside .description {
     border-top: 1px solid var(--dark-text-color);
   }
 
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -0.5em;
+    width: 100%;
+  }
+
   nav a {
     display: table;
-    margin-top: 0.5em;
+    margin: 0.25em !important;
     padding: 0.5em 1em;
     line-height: 1.5;
     border: 1px solid var(--dark-text-color);
     border-radius: 100px;
+    padding: 10px 20px;
   }
 
   nav a:first-of-type {
     margin-top: 0;
-  }
-
-  nav a.nuxt-link-exact-active {
-    border-color: var(--dark-text-color);
-    color: white;
-    background: var(--dark-text-color);
-    box-shadow: 1em 1em 2em var(--highlight-text-color);
   }
 }
 </style>

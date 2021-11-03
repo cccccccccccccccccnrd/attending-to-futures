@@ -220,6 +220,8 @@ export default {
       return `${startDate} &ndash; ${endDate}`.toLowerCase()
     },
     arrangeTracks() {
+      if (!this.$refs.calendar) return
+      if (!this.$refs.calendar.$el) return
       const schedules = this.$refs.calendar.$el.querySelectorAll(
         '.tui-full-calendar-time-date-schedule-block'
       )
@@ -266,6 +268,5 @@ export default {
 <style scoped>
 .program-container {
   margin: 1rem -1rem -1rem;
-  width: calc(100% + 31px);
 }
 </style>
