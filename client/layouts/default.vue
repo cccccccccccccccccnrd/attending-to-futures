@@ -170,6 +170,7 @@ export default {
 ::-webkit-scrollbar {
   width: 0.75rem;
   height: 0.75rem;
+  border-top: 1px solid var(--dark-text-color);
   border-left: 1px solid var(--dark-text-color);
 }
 
@@ -275,6 +276,7 @@ main {
   flex-flow: column nowrap;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 aside {
@@ -405,7 +407,10 @@ aside .description {
   body {
     font-size: 14px;
   }
-
+  .page {
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
   .site {
     flex-flow: column nowrap;
     height: auto;

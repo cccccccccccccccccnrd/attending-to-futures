@@ -41,33 +41,7 @@ export default {
   computed: {
     schedules() {
       if (!this.events) return
-      // const tracks = []
       const events = [...this.events]
-      // const tracks = [...Array(3).keys()].map(e =>
-      //   ({
-      //     start: '2021-11-18T09:00',
-      //     end: '2021-11-18T09:30',
-      //     type: 'track',
-      //     trackId: String(e+1)
-      //   })
-      // )
-      // console.log(events)
-      // events.push(...tracks)
-      // console.log(events)
-      // console.log(this.events.filter(e => !e.abstract && e.type && !['break', 'exhibition'].includes(e.type)))
-      // const tmp = []
-      // const double = []
-      // this.events.forEach(e => {
-      //   if (e.speaker) {
-      //     e.speaker.forEach(f => {
-      //       if (tmp.includes(f)) double.push(f)
-      //       tmp.push(f)
-      //     })
-      //   }
-      // })
-      // console.log(tmp)
-      // console.log(double)
-
       return events.map((e, i) => ({
         start: e.start,
         end: e.end,

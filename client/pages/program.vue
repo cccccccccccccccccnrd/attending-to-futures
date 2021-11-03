@@ -757,9 +757,6 @@ export default {
 </script>
 
 <style scoped>
-.page-program {
-  min-width: 640px;
-}
 h1 {
   margin-right: auto;
 }
@@ -790,6 +787,11 @@ h1 {
   }
   .button-container button + button {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .program-container {
+    overflow-x: auto;
   }
 }
 </style>
