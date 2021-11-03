@@ -6,7 +6,13 @@
 }
 
 .program-container {
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 1062px) {
+  .program-container {
+    overflow-x: auto;
+  }
 }
 .program-container .tui-full-calendar-layout {
   min-width: 720px;
@@ -23,7 +29,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 0.2em;
 	color: white;
 	background-color: black;
 	box-sizing: border-box;
@@ -34,6 +39,11 @@
 	font-weight: bold;
 	right: -1px;
 	top: 0;
+}
+@supports not (-webkit-touch-callout: none) {
+  .program-container .track .tui-full-calendar-time-schedule-content > *:not(:is(.track, .exhibition))::after {
+    padding-bottom: 0.2em;
+  }
 }
 .tui-full-calendar-time-date-schedule-block [data-track-id="4"] {
 	--width: 300px;
@@ -97,6 +107,12 @@
 	border: none;
 	box-shadow: var(--color-gradient);
 }
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  .tui-full-calendar-time-schedule-content {
+    letter-spacing: -0.03em;
+  }
+}
 
 .program-container .tui-full-calendar-time-date-schedule-block:hover .tui-full-calendar-time-schedule-content {
 	background: currentColor;
@@ -158,12 +174,23 @@
 	background-color: none;
 	margin: var(--schedule-padding);
 	width: 480px;
-	min-width: 480px;
-	max-width: 80vw;
+	max-width: 90vw;
 }
 .tui-full-calendar-section-detail {
 	margin: 0;
-	box-shadow: 0 0 0 500vw rgb(0 0 0 / 50%);
+  z-index: 10;
+  position: relative;
+	/* box-shadow: 0 0 0 500vw rgb(0 0 0 / 50%); */
+}
+.tui-full-calendar-popup:after {
+  z-index: -1;
+  content: '';
+	position: fixed;
+  background: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .tui-full-calendar-popup-detail .tui-full-calendar-content > * {
 	border: 1px solid black;
@@ -201,17 +228,23 @@
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 0.1em;
 }
 .time {
 	background: var(--color);
 	color: white;
-	padding: 0.25em 0.75em 0.375em;
+	padding: 0.25em 0.75em;
 	font-size: 0.75rem;
 	border-radius: 1em;
 	margin-top: 0.125em;
 	margin-left: -0.125rem;
 	line-height: 1;
+}
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */
+  .time {
+    padding: 0.25em 0.75em 0.375em;
+  }
 }
 .header {
 	color: black;

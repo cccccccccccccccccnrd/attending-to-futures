@@ -282,7 +282,7 @@ main {
 aside {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
   max-width: 330px;
   min-width: 220px;
@@ -332,7 +332,7 @@ nav a.nuxt-link-exact-active {
 .site {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo-container {
