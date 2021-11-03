@@ -170,7 +170,7 @@ export default {
   padding: 1em;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 640px) {
   .keynote {
     flex-flow: column-reverse;
   }

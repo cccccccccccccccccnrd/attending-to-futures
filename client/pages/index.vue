@@ -209,7 +209,7 @@ h1 {
   user-select: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 640px) {
   .page-index {
     min-height: 100vh;
     overflow-y: hidden;

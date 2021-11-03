@@ -144,6 +144,7 @@
 .track .tui-full-calendar-time-schedule-content > * {
 	align-items: flex-start;
 	justify-content: flex-start;
+  height: calc(100% + 5px);
 }
 .tui-full-calendar-time-schedule-content .keynote .header {
 	font-size: 1rem;
@@ -294,6 +295,7 @@
 }
 .tui-full-calendar-popup-detail .title {
 	margin: 0.5em 0;
+  font-size: 1.5rem;
 }
 .close-button {
   display: flex;

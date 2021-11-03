@@ -133,7 +133,7 @@ export default {
       element.style.left = `${payload.left}px`
     },
     handleNavClick (event) {
-      if (window.innerWidth >= 450) return
+      if (window.innerWidth >= 640) return
 
       setTimeout(() => {
         window.scroll({
@@ -408,7 +408,7 @@ aside .description {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 640px) {
   body {
     font-size: 14px;
   }
