@@ -261,10 +261,16 @@ button:hover, button.active {
 }
 
 button.inline {
-  display: table;
+  display: inline-block;
   width: initial;
   padding: 0.25em 0.5em;
   text-transform: none;
+}
+
+@supports not (-webkit-touch-callout: none) {
+  button.inline{
+    padding-bottom: 0.375em;
+  }
 }
 
 button:hover a, button.inline:hover a {
