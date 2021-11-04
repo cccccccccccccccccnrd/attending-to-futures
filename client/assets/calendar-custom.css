@@ -51,7 +51,7 @@
 	transform-origin: 100% 0%;
 	width: var(--width);
 	align-items: center !important;
-	height: 1rem;
+	height: 1rem !important;
 }
 .tui-full-calendar-time-date-schedule-block [data-track-id="4"]::after {
 	margin: calc(var(--schedule-padding) * -2) calc(var(--schedule-padding) * -1);
