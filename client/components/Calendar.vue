@@ -233,7 +233,7 @@ export default {
         const durationEl = schedule.querySelector('[data-duration]')
         const duration = durationEl ? durationEl.getAttribute('data-duration') : false
 
-        let exhibition = 6
+        let exhibition = 0
         let width = 100 - exhibition
         let left = 0
         let paddingLeft = 0

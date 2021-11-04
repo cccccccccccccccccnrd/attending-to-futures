@@ -80,27 +80,27 @@ export default {
       },
       events: [
         // ALL DAY
-        {
-          title: 'Online Exhibition',
-          start: '2021-11-18T00:00',
-          end: '2021-11-18T24:00',
-          type: 'exhibition',
-          trackId: '4',
-        },
-        {
-          title: 'Online Exhibition',
-          start: '2021-11-19T00:00',
-          end: '2021-11-19T24:00',
-          type: 'exhibition',
-          trackId: '4',
-        },
-        {
-          title: 'Online Exhibition',
-          start: '2021-11-20T00:00',
-          end: '2021-11-20T24:00',
-          type: 'exhibition',
-          trackId: '4',
-        },
+        // {
+        //   title: 'Online Exhibition',
+        //   start: '2021-11-18T00:00',
+        //   end: '2021-11-18T24:00',
+        //   type: 'exhibition',
+        //   trackId: '4',
+        // },
+        // {
+        //   title: 'Online Exhibition',
+        //   start: '2021-11-19T00:00',
+        //   end: '2021-11-19T24:00',
+        //   type: 'exhibition',
+        //   trackId: '4',
+        // },
+        // {
+        //   title: 'Online Exhibition',
+        //   start: '2021-11-20T00:00',
+        //   end: '2021-11-20T24:00',
+        //   type: 'exhibition',
+        //   trackId: '4',
+        // },
         {
           title: 'Mariah: Acts of Resistance',
           speaker: ['Heather Snyder Quinn', 'Adam DelMarcelle'],
