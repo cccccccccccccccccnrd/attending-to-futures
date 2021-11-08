@@ -58,7 +58,8 @@ export default {
           sharedTrack: e.sharedTrack,
           type: e.type,
           speaker: e.speaker ? this.list(e.speaker) : '',
-          abstract: e.abstract ? e.abstract.replace( /[»«]/g, c => c == '»' ? '«' : '»' ) : '' // fixes swapped character in font
+          abstract: e.abstract ? e.abstract.replace( /[»«]/g, c => c == '»' ? '«' : '»' ) : '', // fixes swapped character in font
+          online: e.online
         },
       }))
     },
@@ -71,7 +72,7 @@ export default {
         this.arrangeTracks()
       }, 1000);
       document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('close-button')) {
+        if (e.target.classList.contains('close-button') || e.target.classList.contains('tui-full-calendar-popup')) {
           e.target.closest(".tui-full-calendar-popup").remove()
         }
       })
@@ -151,8 +152,21 @@ export default {
         keynoteTitle = title
         title = ''
       }
+      let online = ''
+      if (schedule.raw.online) {
+        if (schedule.raw.type !== 'workshop') {
+          online = 'stream'
+        }
+      } else {
+        if (schedule.raw.type === 'workshop') {
+          online = 'only on-site'
+        } else {
+          // online = 'on-site & stream'
+        }
+      }
+
       const closeBtn = `
-        <div class="close-button" data-attr="asd" onclick="alert('asd')">
+        <div class="close-button">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" xml:space="preserve">
             <style type="text/css">
               .stroke {
@@ -180,6 +194,7 @@ export default {
           ${time}
           <span class="header">${speaker}${title}</span>
           ${keynoteTitle}
+          ${online ? `<span style='margin-top: 0.5em'>${online}</span>` : ''}
         `
       } else {
         content = `
@@ -190,6 +205,7 @@ export default {
             ${speaker}
             ${title}
           </span>
+          ${online ? `<span style='margin-bottom: 0.5em'>${online}</span>` : ''}
           ${abstract}
         `
       }

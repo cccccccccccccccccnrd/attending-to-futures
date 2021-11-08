@@ -228,6 +228,7 @@ export default {
           start: '2021-11-18T10:30',
           end: '2021-11-18T11:30',
           type: 'keynote',
+          online: true,
           abstract: `»In the field of science fiction literature the future appears to be a proactive and interventionist phenomenon. It does not seem to be anything we passively steer to, instead the future is generated and designed in an active manner. Drafting and discarding futures (Zukünfte entwerfen und verwerfen) occur not seldomly simultaneously. For instance, a programmatic vision of the future can be read as criticism of the present status quo by offering a redraft of this particular future. This makes apparent that futures are unequally distributed and the capacity to aspire (Arjun Appadurai) is attached to various resources, such as economic, cultural, and gendered capital. In this talk, I will discuss different interventionist and anticipatory narrations such as Octavia Butler’s novel ›Parable of the Sower‹; video interviews ›The Archive of Refuge‹, curated by Carolin Emcke and Manuela Bojadžijev at HKW, Berlin; and interventions of a three-semester ethnographic MA project about the Humboldt Lab (Humboldt University’s exhibition space in the newly opened Humboldt Forum, Berlin). What are the activating powers of these alternative archives? What are the tactics and fabrics of anticipation and intervention? These questions shall lead to a discussion about the possibilities of a public scholarship and its engagement in critical future-making.«`,
         },
         {
@@ -271,6 +272,7 @@ export default {
           end: '2021-11-18T13:15',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `This talk argues the neoliberal ideologies reproduced within graphic design culture are a logical contribution to the racialized economies of gentrification, helping materialize what George Lipsitz refers to as the »white spatial imaginary«. Designers craft imagery and atmospheres, bolstering white middle-class narratives that justify and enforce hierarchies of socio-spatial belonging. By examining these discourses and their implementation, I aim to make tangible design's capacity for violence.`,
         },
         {
@@ -280,6 +282,7 @@ export default {
           end: '2021-11-18T13:15',
           type: 'talk',
           trackId: '2',
+          online: true,
           abstract: `»When crisis occurs, the actions that are taken depend on the ideas that are lying around.«<br>Both Milton Friedman and Naomi Klein see crisis as a transformative moment. What are the new affordances and anti-affordances exposed by this pandemic? How can we exploit them to design the day after the pandemic to promote more sustainable, equatable, and just futures?<br>The talk will touch on some of the theory behind the practice and give a taste of previous speculative collaborations and workshops with policy makers and artists.`,
         },
         {
@@ -323,6 +326,7 @@ export default {
           end: '2021-11-18T16:15',
           type: 'workshop',
           trackId: '2',
+          online: true,
           abstract: `When crisis occurs, the actions that are taken depend on the ideas that are lying around."<br>Both Milton Friedman and Naomi Klein see crisis as a transformative moment. What are the new affordances and anti-affordances exposed by this pandemic? How can we exploit them to design the day after the pandemic to promote more sustainable, equatable and just futures?<br><br>The workshop will expose participants to the 4 Futures and backcasting methodology and direct them towards the new risks and opportunities brought forward by the pandemic.`,
         },
         {
@@ -341,6 +345,7 @@ export default {
           end: '2021-11-18T17:00',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `<em>Artifacts from/for a Liberated Detroit</em> is a collection of objects and experiences from a Detroit without policing, incarceration, jails, prisons, and detention centers. It is an archaeology of an abolitionist future: a gathering of the ubiquitous elements of everyday life from a world without police and incarceration, situated in a domestic space that unfolds a possible abolitionist narrative. Through design, it contends with and challenges the carceral infrastructures that surround us today.`,
         },
         {
@@ -351,6 +356,7 @@ export default {
           end: '2021-11-18T17:00',
           type: 'talk',
           trackId: '2',
+          online: true,
           abstract: `An »out of stock« is simultaneously a provisional state and an end of sorts. Yet, in the larger scheme, who gets to stock-up, how shortages manifest, or how scarcity gets apprehended, are all culturally and geographically embedded. <em>Out of Stock</em> is an artistic project posing as a speculative journal for fashion and design steaming from eastern-European sensibilities. Addressing »scarcity and shortages« as tools for reframing the everyday, it aimed at empowering imaginaries for future(s) ways of living. The project was developed in collaboration with graphic designer Ana Labudović.`,
         },
         {
@@ -360,6 +366,7 @@ export default {
           end: '2021-11-18T17:00',
           type: 'talk',
           trackId: '3',
+          online: true,
           abstract: `<em>The Patadesign School</em> is an autonomous institution that consciously brings out the pataphysical dimension of design, with the mission of offering a critical response to the role of design in the age of the artificial. Ethernity, the School's first edition, will take place in September 2021 (vulg.) and will coordinate between online exchanges and expeditions of design making. In the talk, we will share initial outcomes, challenges, underlying frameworks, and imaginary solutions that emerged.`,
         },
         {
@@ -476,6 +483,7 @@ export default {
           end: '2021-11-19T16:15',
           type: 'workshop',
           trackId: '2',
+          online: true,
           abstract: `What happens when we consider a matriarchal design pedagogy and create a non-hierarchical, non-linear approach to learning? Can the design field change from singular and privileged to more open and collaborative? Can we de-couple design from whiteness, capitalism, and competition? In this workshop, we will co-create an open-source publication with you—a set of holistic guiding principles and aspirations for a collective, matriarchal, anti-exceptional design future.`,
         },
         {
@@ -491,6 +499,7 @@ export default {
           end: '2021-11-19T16:15',
           type: 'workshop',
           trackId: '3',
+          online: true,
           abstract: `Black Design in America is a part of BIPOC Centered design history courses that shed light on moments of oppression and visibility. This workshop gives designers and educators tools to center previously marginalized designers, cultural figures, particularly Black, Indigenous, and People of Color (BIPOC), in their research, academic classes, and practices.<br><br>After a 30-minute presentation, we will facilitate an hour-long, organic discussion on responses to the critical topics.`,
         },
         {
@@ -500,6 +509,7 @@ export default {
           end: '2021-11-19T17:00',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `»What if graphic design history were to center the banal genre of the document? What would this mean for how design students and practitioners imagine themselves and what they do? Counterposing »Publicity« (think posters and websites) to ›Immutability‹ (think passports and money) figures a ground against which to posit on a third—›Poetry‹—charged by what Paulo Freire calls ›naming the world‹. It speculates on the possibility of a pedagogy oriented against the capitalist and colonial entanglements of the others.«`,
         },
         {
@@ -509,6 +519,7 @@ export default {
           end: '2021-11-19T17:00',
           type: 'talk',
           trackId: '2',
+          online: true,
           abstract: `»<em>Calendar Collective</em> is a living archive of alternate calendars (real and imagined) traced through voicemails. It is a design-led research investigation that challenges the normative understanding of time as linear, objective, and neutral. I use the calendar as a subversive tool to dismantle current hegemonic time structures and rebuild plural structures. As a designer from a previously colonized country, I employ calendar as a decolonization tool to render time – one of the most invisible epistemologies in future work – visible.«`,
         },
         {
@@ -518,6 +529,7 @@ export default {
           end: '2021-11-19T17:00',
           type: 'talk',
           trackId: '3',
+          online: true,
           abstract: `This lecture will explore computational models for facial recognition and the datasets with which they are trained. Putting into question the very act of organizing images of people based on conceptual classes, and the in-transferability of meaning between images and concepts and the amplification of social biases present in such processes. The artists will present artifacts at the margins of algorithmic vision and speculate on escaping the logics of computational representation`,
         },
         {
@@ -532,6 +544,7 @@ export default {
           start: '2021-11-19T17:15',
           end: '2021-11-19T18:15',
           type: 'keynote',
+          online: true,
         },
         {
           title: 'Good-Bye',
@@ -565,6 +578,7 @@ export default {
           end: '2021-11-20T12:00',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `<em>Eastbound: Towards the Decolonial Future(s) of Vietnamese Design</em> is as much a journal of one's identity quest as it is a research paper. Eastbound serves as a positionality, enabling the decolonial thought(s) and doing(s) appropriate to the context of Vietnam. In doing so, it provides an alternative way of comprehending the current state of Vietnamese design and explores the condition in which the question of decolonising Vietnamese design can be made possible.`,
         },
         {
@@ -574,6 +588,7 @@ export default {
           end: '2021-11-20T12:00',
           type: 'talk',
           trackId: '2',
+          online: true,
           abstract: `We are experiencing life-affirming transformations and cataclysmic ecological warnings. Extractive industries and excessive production chains are driving global ecological collapse. A comprehensive, radical approach towards; design, production, desires, and material custody is imperative in the planetary climate crisis age. It is time to review deeper environmental values, pursuing future design practice(s).<br><br>Designers are not only accountable for innovative solutions, but are also intertwined with; unsustainable growth, pervasive consumer culture and environmental collapse. By evading ecological implications, designers are complicit in (potential) problems they have created. Authors believe in the agency of designers; in a future discipline(s) supported with skills and tools to develop a ground-breaking path reducing impacts on environments, interventions reside within.<br><br>The talk will interrogate concepts of »reductionism« by problematising the simplification of prevalent ecological problem-framing proposing reduction as an ecological design strategy and a philosophical attitude. A subtractive future is not solely concerned with »efficiencies« but degrowth; strategies, change(s) in behaviour, re-connections and new economies that can be grown through »reductionism through design«.<br><br>Authors foresee triangulations between; a »post-industrial design« world, ecological systems (reliant on sustaining life), material reduction (diminishing our impact to the surrounding world), and community empowered responses. The proposition challenges; prevalent manufacturing processes, highlighting relevant alternative case studies and examples of alternative practice(s) of how »Industries of Design« can reduce its impact on ecological systems. These principles could offer some contextual strategies leading us out of an Anthropocentric (user-focused) design commercialism into more planet-centred derivatives. Authors perceive that reductive strategies will be critical for future ecological design and crafted understanding.`,
         },
         {
@@ -589,6 +604,7 @@ export default {
           end: '2021-11-20T12:00',
           type: 'talk',
           trackId: '3',
+          online: true,
           abstract: `<em>Microbial Cosmologies</em> is an immersive exploration into the future of mobility in a microbe-centric world where the microbiome defines our identity and citizenship. The world runs on Global Gut Technology, energy is produced from microbial biofuels harvested from the local environment, and human waste powers adaptive techno-natural machinery. Economies revolve around cultivating a unique human microbiome currency, and synthetic biology is used to program and govern this microbiopolitical state. Post-pandemic society has embraced artificial evolution and dramatic shifts in urban planning, notions of citizenship, biometric monitoring, and quarantine communities.`,
         },
         {
@@ -624,8 +640,8 @@ export default {
           end: '2021-11-20T16:15',
           type: 'workshop',
           trackId: '1',
-          abstract:
-            'In a workshop, two aspects will be the center of attention. Firstly, works of design and the arts repeatedly show common traits and characteristics bound to time, material, possibilities, politics, and circumstance, which result in more or less distinct styles. Those blossom and fade. Form, creators, impact, and endurance may vary, works remain and continue to be seen heard, experienced, forgotten, (re)imagined, and (re)experienced. <br> Secondly, the workshop will hold the space to take a look back and focus on two examples of communities that brought to life design and art which still occupy recipients imagination today and will most likely do so in the future. Historically, communities have served as loci of creation, favouring the continuance of work and extending the body of work. Two communities created very different approaches and practices concerning their works in the realms of design and art. Still recognisable and distinct today the styles and pieces of work created in these two contexts continue to be relevant in contemporary discourse. In the US, the Shakers transformed religious beliefs and teachings, as well as the labour of everyday work and life into pieces of design with artistic qualities, which remain visible and recognised today. In stark contrast, the Black Mountain College transformed ties to art and design still present in the teachings of the Bauhaus and cut them loose in favour of a new approach to art and visual studies. This transformation resulted in innovative and distinctly independent pieces of art. Both styles were – among other influences such as individual disposition or economic factors – created within, without, despite, or within a community.',
+          online: true,
+          abstract: `In a workshop, two aspects will be the center of attention. Firstly, works of design and the arts repeatedly show common traits and characteristics bound to time, material, possibilities, politics, and circumstance, which result in more or less distinct styles. Those blossom and fade. Form, creators, impact, and endurance may vary, works remain and continue to be seen heard, experienced, forgotten, (re)imagined, and (re)experienced. <br> Secondly, the workshop will hold the space to take a look back and focus on two examples of communities that brought to life design and art which still occupy recipients imagination today and will most likely do so in the future. Historically, communities have served as loci of creation, favouring the continuance of work and extending the body of work. Two communities created very different approaches and practices concerning their works in the realms of design and art. Still recognisable and distinct today the styles and pieces of work created in these two contexts continue to be relevant in contemporary discourse. In the US, the Shakers transformed religious beliefs and teachings, as well as the labour of everyday work and life into pieces of design with artistic qualities, which remain visible and recognised today. In stark contrast, the Black Mountain College transformed ties to art and design still present in the teachings of the Bauhaus and cut them loose in favour of a new approach to art and visual studies. This transformation resulted in innovative and distinctly independent pieces of art. Both styles were – among other influences such as individual disposition or economic factors – created within, without, despite, or within a community.`,
         },
         {
           speaker: [
@@ -642,6 +658,7 @@ export default {
           type: 'workshop',
           trackId: '2',
           sharedTrack: '1',
+          online: true,
           abstract: `»Through an inclusive and fluid collaboration, we aim to prototype and iterate through Patio a space of potentiality and alterity. We host workshops, convening people interested in systems of learning and making to explore how these could transition to future autonomy and sustainability.<br><br>This workshop has its focus on reconstructing design education, through the inclusion of artisans' knowledge in learning environments. We attempt to construct a meeting point between artisans and designers.<br><br><strong>Requirements:</strong> To participate in this workshop you need an additional hour in the week before to complete an audiowalk and upload your reflections to a shared platform.«`,
         },
 
@@ -663,6 +680,7 @@ export default {
           type: 'workshop',
           trackId: '3',
           sharedTrack: '1',
+          online: true,
           abstract:
             '»This is a session in which we will investigate the uses of live sketching combined with creative writing as the starting points of a design methodology of exchange. We will engage in a back and forth experiment between ourselves and the participants. The output will be a piece of fiction produced in the workshop plus the documentation of the exchange.«',
         },
@@ -700,6 +718,7 @@ export default {
           end: '2021-11-20T17:00',
           type: 'talk',
           trackId: '2',
+          online: true,
           abstract: `Dreaming of space begins in architectural education, and disability of all kinds can lead us to enriched and vivid dreams of a city which preserves the disabled body as an agent of space. The Architectural Association represents a pedagogy focused on future making, but institutional boundaries are perpetuated by contradicting concepts of conservation and access, limiting some students from having a voice. <br><br> This talk, therefore, argues for the value of disabled students through a critical study of the school's past, and potential future.`,
         },
         {
@@ -709,6 +728,7 @@ export default {
           end: '2021-11-20T17:00',
           type: 'talk',
           trackId: '3',
+          online: true,
           abstract: `»Our research starts from the premise that present-day decision-making structures systematically favor short-term decision-making and disregard the rights and voices of future generations by their very design.<br><br>Having investigated a range of creative counter-hegemonic projects that use decision-making as a medium, we believe arts-led approaches can open up the realm of discourse beyond what strict adherence to rationality allows, and bring a sense of radical relationality to the fore.«`,
         },
         {
@@ -725,6 +745,7 @@ export default {
           end: '2021-11-20T18:00',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `This talk identifies problematic preconditions in design history that regulate how we express design history and discusses how forces of political economy resist change. Underwriting these preconditions are assumptions that design reflects the society in which they are placed. In reality, much of the design we study has been invested in replicating an institutional status quo. To combat this, historians must develop narratives balancing affect with an understanding of economic/cultural power.`,
         },
         {
@@ -743,6 +764,7 @@ export default {
           end: '2021-11-20T18:00',
           type: 'talk',
           trackId: '3',
+          online: true,
           abstract: `<em>The Teachers Project</em> served as a collective healing space, where gathering together was desirable. Prompts and discussions explored the everyday creep of our complicity, of participating in institutional education, and the colonial system. How do we recov­er? How do we reflect upon on our tools, our gestures, our environments and our own authority as power structures?<br><br>This session will share the history of the project and will be an open discussion prompting participants to reflect on how we collectivelynegotiate the demands andexpectations of the institution with radically re-figured possibilities? How do we respond to surveillance and retribution in response to this kind of practice?`,
         },
         {
