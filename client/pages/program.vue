@@ -239,6 +239,7 @@ export default {
           end: '2021-11-18T12:15',
           type: 'talk',
           trackId: '1',
+          online: true,
           abstract: `The history of design has produced countless artifacts that exclude or otherwise discriminate against people – and it is quite obvious to identify reasons for this problem: the structure of those who design and the rather undefined process of how they do it.<br><br>This leads to the question: Don’t we still need to think of the design process as more rigorous and regimented – and establish models that ensure we have a design »for all«? Wouldn’t we need to demand and promote critical discourse on ethics and elaborate theoretical foundations for ethical decision-making?`,
         },
         {
@@ -388,6 +389,8 @@ export default {
           title: 'Good Bye',
           start: '2021-11-18T18:15',
           end: '2021-11-18T18:30',
+          abstract: `Johanna Mehl, Carolin Höfler, Michael Gais`,
+
         },
         // {
         //   title: 'Get Together On Site / Dinner & Drinks',
@@ -407,6 +410,7 @@ export default {
           start: '2021-11-19T10:15',
           end: '2021-11-19T11:15',
           type: 'keynote',
+          online: true,
           abstract: `»Institutionalized design education – as a formative stage of life that most future designers will go through – is decisive for the practical and discursive development of the field. Furthermore, channeling Arturo Escobars concept of Ontological Design and the ›relational dimension of life‹ (Escobar, 2018) it is decisive for shaping our present and future. In order to relate, however, we need to feel like the world concerns us – we need to experience ›resonance‹ (Rosa, 2016). According to Rosa, a caring relationship with the world can be facilitated or obstructed by education. Not only in school but also in design education, the way is paved for how we relate to the world and how we want to contribute to shaping the future.<br>So, how can design education mediate that the world concerns all of us?<br>Trying to find words to express my experiences in teaching/learning design I consulted Escobar’s and Rosa’s concepts which – brought together – opened up a new framework for my teaching/learning practice. <br><br>At ›Attending [To] Futures‹ I’d like to invite you to follow me through my thought processes, the hurdles I came across, and the questions that arose.«`,
         },
         {
@@ -551,6 +555,7 @@ export default {
           title: 'Good-Bye',
           start: '2021-11-19T18:15',
           end: '2021-11-19T18:30',
+          abstract: `Johanna Mehl, Carolin Höfler, Michael Gais`,
         },
         // {
         //   title: 'Get Together On Site / Dinner & Drinks',
@@ -769,9 +774,10 @@ export default {
           abstract: `<em>The Teachers Project</em> served as a collective healing space, where gathering together was desirable. Prompts and discussions explored the everyday creep of our complicity, of participating in institutional education, and the colonial system. How do we recov­er? How do we reflect upon on our tools, our gestures, our environments and our own authority as power structures?<br><br>This session will share the history of the project and will be an open discussion prompting participants to reflect on how we collectivelynegotiate the demands andexpectations of the institution with radically re-figured possibilities? How do we respond to surveillance and retribution in response to this kind of practice?`,
         },
         {
-          title: 'Final Words',
+          title: 'Closing Remarks',
           start: '2021-11-20T18:00',
           end: '2021-11-20T18:30',
+          abstract: 'Dorsa Javaherian and Abigail Schreider',
         },
       ],
     }

@@ -125,8 +125,6 @@ export default {
         ? `data-shared-track="${schedule.raw.sharedTrack}"`
         : ''
       const time = schedule.raw.type === 'track' ? '' : `<span class="time">${this.getTime(schedule)}</span>`
-      console.log(schedule.raw.start)
-      console.log(schedule.start)
       const durationMins = Math.ceil(
         Math.abs(new Date(schedule.end._date) - new Date(schedule.start._date)) / (1000 * 60)
       )

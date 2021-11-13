@@ -156,6 +156,7 @@
 .tui-full-calendar-time-schedule-content .header + .title {
   font-weight: normal;
   color: black;
+  text-align: center;
 }
 
 .tui-full-calendar-time-date-schedule-block {
