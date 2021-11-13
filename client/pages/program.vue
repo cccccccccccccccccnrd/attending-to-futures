@@ -109,7 +109,7 @@ export default {
           end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '1',
-          abstract: `A documentary short film about an augmented reality experience, <em>Mariah</em> narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the <em>Mariah</em> smartphone app.`,
+          abstract: `A documentary short film about an augmented reality experience, <em>Mariah</em> narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the <em>Mariah</em> smartphone app.<br /><br /><button class='inline'><a href='/mariah' target='_blank'>Go To Exhibition</a></button>`,
         },
         {
           title: 'Unrealized Archive: Future Histories',
@@ -118,7 +118,7 @@ export default {
           end: '2021-11-18T20:00',
           type: 'exhibition',
           trackId: '2',
-          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
+          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.<br /><br /><button class='inline'><a href='/unrealized-archive' target='_blank'>Go To Exhibition</a></button>`,
         },
         {
           title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
@@ -147,7 +147,7 @@ export default {
           end: '2021-11-19T20:00',
           type: 'exhibition',
           trackId: '1',
-          abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`,
+          abstract: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br><br>The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.<br /><br /><button class='inline'><a href='/mariah' target='_blank'>Go To Exhibition</a></button>`,
         },
         {
           title: 'Unrealized Archive: Future Histories',
@@ -156,7 +156,7 @@ export default {
           end: '2021-11-19T20:00',
           type: 'exhibition',
           trackId: '2',
-          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
+          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.<br /><br /><button class='inline'><a href='/unrealized-archive' target='_blank'>Go To Exhibition</a></button>`,
         },
         {
           title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
@@ -194,7 +194,7 @@ export default {
           end: '2021-11-20T20:00',
           type: 'exhibition',
           trackId: '2',
-          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.`,
+          abstract: `All Possible Futures: <em>Unrealized Archive</em>, uncovers »unrealized« graphic design projects that were never produced but are deserving of serious discussion. For ATTENDING [TO] FUTURES we will create an online exhibition showcasing projects created by designers in response to alternative futures that didn't come to pass.<br><br>This project would explore the development of a counter-factual history, challenge hegemonic structures in graphic design discipline and construct a more inclusive future history.<br /><br /><button class='inline'><a href='/unrealized-archive' target='_blank'>Go To Exhibition</a></button>`,
         },
         {
           title: 'Challenge: How can designers produce excess in their home environment – and share it in a fair way?',
@@ -600,18 +600,14 @@ export default {
         {
           speaker: [
             'Anastasiia Raina',
-            'Danlei Huang',
-            'Yimei Hu',
-            'Georgie Nolan',
-            'Meredith Binnette',
           ],
-          title: 'Microbial Cosmologies',
+          title: 'Designing for Viable Futures',
           start: '2021-11-20T11:15',
           end: '2021-11-20T12:00',
           type: 'talk',
           trackId: '3',
           online: true,
-          abstract: `<em>Microbial Cosmologies</em> is an immersive exploration into the future of mobility in a microbe-centric world where the microbiome defines our identity and citizenship. The world runs on Global Gut Technology, energy is produced from microbial biofuels harvested from the local environment, and human waste powers adaptive techno-natural machinery. Economies revolve around cultivating a unique human microbiome currency, and synthetic biology is used to program and govern this microbiopolitical state. Post-pandemic society has embraced artificial evolution and dramatic shifts in urban planning, notions of citizenship, biometric monitoring, and quarantine communities.`,
+          abstract: `The current understanding of what constitutes design is straining at the margins of the convention. The reach of design has moved beyond the materiality of objects to the biotechnological matter and encoded genetic information, from physical space to code and data. Human beings now live lives that are immersed in design.<br><br>In the face of accelerating biotechnological advancement, there is a radical urgency to develop thoughtful and wide-ranging approaches in the field of design that rewrite historical connections to production and consumption and cultivate new natures that can potentially survive human destruction.<br><br>This talk will illustrate design methodologies for viable futures that act as a catalyst to inspire and trigger innovative processes through designers’ active participation and production of scientific knowledge, corporate research, civil policy, and local economies.`,
         },
         {
           title: 'Coffee Break',

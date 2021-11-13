@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <aside v-if="$nuxt.$route.name !== 'exhibition'">
+    <aside v-if="!fullscreen">
       <div>
         <div class="logo-container">
           <nuxt-link to="/">
@@ -26,12 +26,12 @@
           >
             Program
           </nuxt-link>
-          <!-- <nuxt-link
-            to="/exhibition"
+          <nuxt-link
+            to="/exhibitions"
             @click.native="handleNavClick"
           >
-            Exhibition
-          </nuxt-link> -->
+            Exhibitions
+          </nuxt-link>
           <nuxt-link
             to="/lectures"
             @click.native="handleNavClick"
@@ -85,7 +85,7 @@
       </div> -->
     </aside>
     <main>
-      <news v-if="$nuxt.$route.name !== 'exhibition'"/>
+      <news v-if="!fullscreen"/>
       <nuxt/>
     </main>
   </div>
@@ -104,7 +104,9 @@ export default {
     News
   },
   data () {
-    return {}
+    return {
+
+    }
   },
   async mounted () {
     const app = this
@@ -153,7 +155,10 @@ export default {
     ...mapGetters({
       socket: 'socket/socket',
       stats: 'stats/all'
-    })
+    }),
+    fullscreen() {
+      return ['unrealized-archive', 'mariah', 'challenge'].includes(this.$nuxt.$route.name)
+    }
   }
 }
 </script>
