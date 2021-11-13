@@ -21,12 +21,9 @@
 </template>
 
 <script>
-import Window from '@/components/Window.vue'
 export default {
   name: 'Program',
-  components: {
-    Window,
-  },
+  components: {},
   props: {
     events: {
       type: Array,
@@ -83,6 +80,7 @@ export default {
   },
   data() {
     return {
+      timeZone: 'Europe/Berlin',
       ready: false,
       defaultHue: 'hsl(200, 50%, 90%)',
       calendarList: [{ id: '1' }],
@@ -127,7 +125,8 @@ export default {
         ? `data-shared-track="${schedule.raw.sharedTrack}"`
         : ''
       const time = schedule.raw.type === 'track' ? '' : `<span class="time">${this.getTime(schedule)}</span>`
-
+      console.log(schedule.raw.start)
+      console.log(schedule.start)
       const durationMins = Math.ceil(
         Math.abs(new Date(schedule.end._date) - new Date(schedule.start._date)) / (1000 * 60)
       )

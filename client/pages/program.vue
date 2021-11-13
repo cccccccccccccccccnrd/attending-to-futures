@@ -23,6 +23,7 @@
 
 <script>
 import Calendar from '@/components/Calendar.vue'
+import { DateTime } from 'luxon'
 
 export default {
   name: 'Program',
@@ -32,7 +33,7 @@ export default {
   computed: {
     days() {
       const d = Array.from(new Set(this.events.map((e) => e.start.split('T')[0])))
-      return d.map((e, i) => ({ key: i, date: new Date(e) }))
+      return d.map((e, i) => ({ key: i, date: new Date(DateTime.fromISO(e, { zone: this.timeZone })) }))
     },
   },
   methods: {

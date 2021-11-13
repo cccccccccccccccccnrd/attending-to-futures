@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <aside>
+    <aside v-if="$nuxt.$route.name !== 'exhibition'">
       <div>
         <div class="logo-container">
           <nuxt-link to="/">
@@ -26,6 +26,12 @@
           >
             Program
           </nuxt-link>
+          <!-- <nuxt-link
+            to="/exhibition"
+            @click.native="handleNavClick"
+          >
+            Exhibition
+          </nuxt-link> -->
           <nuxt-link
             to="/lectures"
             @click.native="handleNavClick"
@@ -79,7 +85,7 @@
       </div> -->
     </aside>
     <main>
-      <news/>
+      <news v-if="$nuxt.$route.name !== 'exhibition'"/>
       <nuxt/>
     </main>
   </div>
@@ -430,11 +436,11 @@ aside .description {
   aside {
     max-width: initial;
     border-right: 0;
+    border-bottom: 1px solid var(--dark-text-color);
   }
 
   main {
     min-height: 100vh;
-    border-top: 1px solid var(--dark-text-color);
   }
 
   nav {
