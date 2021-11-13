@@ -207,7 +207,6 @@ export default {
       this.now = DateTime.utc().setZone(this.timeZone)
     },
     reduce(value, interval, to = 2) {
-      console.log(value)
       value = (value - (value % interval)) / interval
       if (value > to) {
         value = this.reduce(value, interval)
