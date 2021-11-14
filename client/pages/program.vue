@@ -230,7 +230,7 @@ export default {
           end: '2021-11-18T11:30',
           type: 'keynote',
           online: true,
-          abstract: `»In the field of science fiction literature the future appears to be a proactive and interventionist phenomenon. It does not seem to be anything we passively steer to, instead the future is generated and designed in an active manner. Drafting and discarding futures (Zukünfte entwerfen und verwerfen) occur not seldomly simultaneously. For instance, a programmatic vision of the future can be read as criticism of the present status quo by offering a redraft of this particular future. This makes apparent that futures are unequally distributed and the capacity to aspire (Arjun Appadurai) is attached to various resources, such as economic, cultural, and gendered capital. In this talk, I will discuss different interventionist and anticipatory narrations such as Octavia Butler’s novel ›Parable of the Sower‹; video interviews ›The Archive of Refuge‹, curated by Carolin Emcke and Manuela Bojadžijev at HKW, Berlin; and interventions of a three-semester ethnographic MA project about the Humboldt Lab (Humboldt University’s exhibition space in the newly opened Humboldt Forum, Berlin). What are the activating powers of these alternative archives? What are the tactics and fabrics of anticipation and intervention? These questions shall lead to a discussion about the possibilities of a public scholarship and its engagement in critical future-making.«`,
+          abstract: `In the field of science fiction literature the future appears to be a proactive and interventionist phenomenon. It does not seem to be anything we passively steer to, instead the future is generated and designed in an active manner. Drafting and discarding futures (Zukünfte entwerfen und verwerfen) occur not seldomly simultaneously. For instance, a programmatic vision of the future can be read as criticism of the present status quo by offering a redraft of this particular future. This makes apparent that futures are unequally distributed and the capacity to aspire (Arjun Appadurai) is attached to various resources, such as economic, cultural, and gendered capital. In this talk, I will discuss different interventionist and anticipatory narrations such as Octavia Butler’s novel »Parable of the Sower«; video interviews »The Archive of Refuge«, curated by Carolin Emcke and Manuela Bojadžijev at HKW, Berlin; and interventions of a three-semester ethnographic MA project about the Humboldt Lab (Humboldt University’s exhibition space in the newly opened Humboldt Forum, Berlin). What are the activating powers of these alternative archives? What are the tactics and fabrics of anticipation and intervention? These questions shall lead to a discussion about the possibilities of a public scholarship and its engagement in critical future-making.`,
         },
         {
           speaker: ['Sven Quadflieg'],
@@ -411,7 +411,7 @@ export default {
           end: '2021-11-19T11:15',
           type: 'keynote',
           online: true,
-          abstract: `»Institutionalized design education – as a formative stage of life that most future designers will go through – is decisive for the practical and discursive development of the field. Furthermore, channeling Arturo Escobars concept of Ontological Design and the ›relational dimension of life‹ (Escobar, 2018) it is decisive for shaping our present and future. In order to relate, however, we need to feel like the world concerns us – we need to experience ›resonance‹ (Rosa, 2016). According to Rosa, a caring relationship with the world can be facilitated or obstructed by education. Not only in school but also in design education, the way is paved for how we relate to the world and how we want to contribute to shaping the future.<br>So, how can design education mediate that the world concerns all of us?<br>Trying to find words to express my experiences in teaching/learning design I consulted Escobar’s and Rosa’s concepts which – brought together – opened up a new framework for my teaching/learning practice. <br><br>At ›Attending [To] Futures‹ I’d like to invite you to follow me through my thought processes, the hurdles I came across, and the questions that arose.«`,
+          abstract: `Institutionalized design education – as a formative stage of life that most future designers will go through – is decisive for the practical and discursive development of the field. Furthermore, channeling Arturo Escobars concept of Ontological Design and the »relational dimension of life« (Escobar, 2018) it is decisive for shaping our present and future. In order to relate, however, we need to feel like the world concerns us – we need to experience »resonance« (Rosa, 2016). According to Rosa, a caring relationship with the world can be facilitated or obstructed by education. Not only in school but also in design education, the way is paved for how we relate to the world and how we want to contribute to shaping the future.<br>So, how can design education mediate that the world concerns all of us?<br>Trying to find words to express my experiences in teaching/learning design I consulted Escobar’s and Rosa’s concepts which – brought together – opened up a new framework for my teaching/learning practice. <br><br>At »Attending [To] Futures« I’d like to invite you to follow me through my thought processes, the hurdles I came across, and the questions that arose.`,
         },
         {
           speaker: ['Michaela Büsse'],
@@ -420,7 +420,7 @@ export default {
           end: '2021-11-19T12:00',
           type: 'talk',
           trackId: '1',
-          abstract: `»In my contribution, I will discuss design's autonomy as a reflection on and continuation of Arturo Escobar's (2017) decolonial project called ›autonomous design‹. A visual field note from the ›failed‹ land reclamation project Melaka Gateway in Malaysia aids as entry point for proposing an extended reading of design that critically engages the origins and effects of social, material, and economic power structures. My contribution is positioned as a plea for a situated and critical analysis that embraces design as an ambiguous and distributed practice.«`,
+          abstract: `In my contribution, I will discuss design's autonomy as a reflection on and continuation of Arturo Escobar's (2017) decolonial project called »autonomous design«. A visual field note from the »failed« land reclamation project Melaka Gateway in Malaysia aids as entry point for proposing an extended reading of design that critically engages the origins and effects of social, material, and economic power structures. My contribution is positioned as a plea for a situated and critical analysis that embraces design as an ambiguous and distributed practice.`,
         },
         {
           speaker: ['Jaione Cerrato', 'Jon Halls'],
@@ -429,7 +429,7 @@ export default {
           end: '2021-11-19T12:00',
           type: 'talk',
           trackId: '2',
-          abstract: `»We understand design as a social framework for the navigation of outcomes, rather than an outcome in itself. Utilising it as a social tool for critical engagement that goes beyond the institutional realm, we would like to present our views on how design can create the space for others to convey new possibilities. In this spirit, we will present ›Universal Species Suffrage‹, a project where the audience has a chance to create a world where all species have the right to vote and decide how society should function.«`,
+          abstract: `We understand design as a social framework for the navigation of outcomes, rather than an outcome in itself. Utilising it as a social tool for critical engagement that goes beyond the institutional realm, we would like to present our views on how design can create the space for others to convey new possibilities. In this spirit, we will present »Universal Species Suffrage«, a project where the audience has a chance to create a world where all species have the right to vote and decide how society should function.`,
         },
         // {
         //   speaker: ['Nina Juric'],
@@ -515,7 +515,7 @@ export default {
           type: 'talk',
           trackId: '1',
           online: true,
-          abstract: `»What if graphic design history were to center the banal genre of the document? What would this mean for how design students and practitioners imagine themselves and what they do? Counterposing »Publicity« (think posters and websites) to ›Immutability‹ (think passports and money) figures a ground against which to posit on a third—›Poetry‹—charged by what Paulo Freire calls ›naming the world‹. It speculates on the possibility of a pedagogy oriented against the capitalist and colonial entanglements of the others.«`,
+          abstract: `What if graphic design history were to center the banal genre of the document? What would this mean for how design students and practitioners imagine themselves and what they do? Counterposing »Publicity« (think posters and websites) to »Immutability« (think passports and money) figures a ground against which to posit on a third—»Poetry«—charged by what Paulo Freire calls »naming the world«. It speculates on the possibility of a pedagogy oriented against the capitalist and colonial entanglements of the others.`,
         },
         {
           speaker: ['Kalyani Jayant Tupkary'],
@@ -525,7 +525,7 @@ export default {
           type: 'talk',
           trackId: '2',
           online: true,
-          abstract: `»<em>Calendar Collective</em> is a living archive of alternate calendars (real and imagined) traced through voicemails. It is a design-led research investigation that challenges the normative understanding of time as linear, objective, and neutral. I use the calendar as a subversive tool to dismantle current hegemonic time structures and rebuild plural structures. As a designer from a previously colonized country, I employ calendar as a decolonization tool to render time – one of the most invisible epistemologies in future work – visible.«`,
+          abstract: `<em>Calendar Collective</em> is a living archive of alternate calendars (real and imagined) traced through voicemails. It is a design-led research investigation that challenges the normative understanding of time as linear, objective, and neutral. I use the calendar as a subversive tool to dismantle current hegemonic time structures and rebuild plural structures. As a designer from a previously colonized country, I employ calendar as a decolonization tool to render time – one of the most invisible epistemologies in future work – visible.`,
         },
         {
           speaker: ['Chris Hamamoto', 'Federico Pérez Villoro'],
@@ -661,7 +661,7 @@ export default {
           trackId: '2',
           sharedTrack: '1',
           online: true,
-          abstract: `»Through an inclusive and fluid collaboration, we aim to prototype and iterate through Patio a space of potentiality and alterity. We host workshops, convening people interested in systems of learning and making to explore how these could transition to future autonomy and sustainability.<br><br>This workshop has its focus on reconstructing design education, through the inclusion of artisans' knowledge in learning environments. We attempt to construct a meeting point between artisans and designers.<br><br><strong>Requirements:</strong> To participate in this workshop you need an additional hour in the week before to complete an audiowalk and upload your reflections to a shared platform.«`,
+          abstract: `Through an inclusive and fluid collaboration, we aim to prototype and iterate through Patio a space of potentiality and alterity. We host workshops, convening people interested in systems of learning and making to explore how these could transition to future autonomy and sustainability.<br><br>This workshop has its focus on reconstructing design education, through the inclusion of artisans' knowledge in learning environments. We attempt to construct a meeting point between artisans and designers.<br><br><strong>Requirements:</strong> To participate in this workshop you need an additional hour in the week before to complete an audiowalk and upload your reflections to a shared platform.`,
         },
 
         {
@@ -684,7 +684,7 @@ export default {
           sharedTrack: '1',
           online: true,
           abstract:
-            '»This is a session in which we will investigate the uses of live sketching combined with creative writing as the starting points of a design methodology of exchange. We will engage in a back and forth experiment between ourselves and the participants. The output will be a piece of fiction produced in the workshop plus the documentation of the exchange.«',
+            'This is a session in which we will investigate the uses of live sketching combined with creative writing as the starting points of a design methodology of exchange. We will engage in a back and forth experiment between ourselves and the participants. The output will be a piece of fiction produced in the workshop plus the documentation of the exchange.',
         },
         {
           speaker: ['Research Institute of Botanical Linguistics / Marius Förster', 'Meike Hardt'],
@@ -731,7 +731,7 @@ export default {
           type: 'talk',
           trackId: '3',
           online: true,
-          abstract: `»Our research starts from the premise that present-day decision-making structures systematically favor short-term decision-making and disregard the rights and voices of future generations by their very design.<br><br>Having investigated a range of creative counter-hegemonic projects that use decision-making as a medium, we believe arts-led approaches can open up the realm of discourse beyond what strict adherence to rationality allows, and bring a sense of radical relationality to the fore.«`,
+          abstract: `Our research starts from the premise that present-day decision-making structures systematically favor short-term decision-making and disregard the rights and voices of future generations by their very design.<br><br>Having investigated a range of creative counter-hegemonic projects that use decision-making as a medium, we believe arts-led approaches can open up the realm of discourse beyond what strict adherence to rationality allows, and bring a sense of radical relationality to the fore.`,
         },
         {
           title: 'Coffee Break',
