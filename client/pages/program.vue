@@ -752,7 +752,7 @@ export default {
         },
         {
           speaker: ['César Neri'],
-          title: 'Latinofuturism – Recontextualizing ',
+          title: 'Latinofuturism – Recontextualizing Modernity',
           start: '2021-11-20T17:15',
           end: '2021-11-20T18:00',
           type: 'talk',
