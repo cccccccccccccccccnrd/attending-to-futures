@@ -27,7 +27,15 @@
         <!-- top left -->
 
         <!-- bottom right -->
-
+      <window
+        :id="`window-about`"
+        :type="about.type"
+        :title="about.title"
+        :content="about.content"
+        :width="about.width"
+        :opened="about.open"
+        class="drag"
+      />
         <!-- bottom left / panel -->
         <div
           id="work"
@@ -82,57 +90,232 @@
 
 <script>
 import Logo from '@/components/Logo.vue'
+import Window from '@/components/Window.vue'
 import { DateTime, Duration } from 'luxon'
 
 export default {
-  components: { Logo },
+  components: { Logo, Window },
   data() {
     return {
-      now: DateTime.utc().setZone(this.timeZone),
+      now: DateTime.local().setZone(this.timeZone),
+      opens: 10,
+      closes: 18,
       timeZone: 'Europe/Berlin',
       showDescription: false,
+      about: {
+        type: 'drop-shadow',
+        title: 'About',
+        content:
+          `<em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.`,
+        width: 300,
+        open: false,
+      },
       works: [
         {
           title: 'Tessalate by William Sumrall',
-          image: 'tessalate.png',
-          description: `<img src="/exhibition/1a.jpg" />
+          image: '1-main.png',
+          description: `
           <p>
-            Tesselate is a generative tool for camouflage creation and experimentation. Tesselate is
-            intentionally designed so that its initial place of creative departure leaves room for
-            experimentation and unexpected discovery for its user.
+            Tesselate is a generative tool for camouflage creation and experimentation. Tesselate is intentionally designed so that its initial place of creative departure leaves room for experimentation and unexpected discovery for its user.
           </p>
-          <img src="/exhibition/1b.jpg" />
+          <img src="/exhibition/1-a.jpg" />
           <p>
-            The forms that make up this typeface are drawn in a 1x1 yard font space - an easy metric
-            for fabric application. Each symbol is drawn on a custom grid and mapped to the keys on
-            a keyboard. The kerning of the typeface is set to 0 so that letterforms overlap as the
-            user types.
+             The forms that make up this typeface are drawn in a 1x1 yard font space - an easy metric for fabric application. Each symbol is drawn on a custom grid and mapped to the keys on a keyboard. The kerning of the typeface is set to 0 so that letterforms overlap as the user types.
           </p>
-          <img src="/exhibition/1c.jpg" />
+          <img src="/exhibition/1-b.jpg" />
+          <img src="/exhibition/1-c.jpg" />
           <p>
-            Tesselate is designed to function as an inverse to a traditional family of letters which
-            are most often used to communicate, clarify, and / or explain when combined to form
-            words. Instead, tesselate tests the notion of language as a tool for obfuscation. The
-            length of a string of characters determine the complexity of the designs the typeface
-            generates. Embedded messages are disguised as formal patterns and compositions.
-          </p>`,
+            Tesselate is designed to function as an inverse to a traditional family of letters which are most often used to communicate, clarify, and / or explain when combined to form words. Instead, tesselate tests the notion of language as a tool for obfuscation. The length of a string of characters determine the complexity of the designs the typeface generates. Embedded messages are disguised as formal patterns and compositions.
+          </p>
+          <img src="/exhibition/1-d.gif" />
+          `,
         },
         {
-          title: 'Dancing On The Trackpad by Goeun Park',
-          image: 'dot.png',
-          description: `second`,
+          title: 'Data Patches by Kyle Neal',
+          image: '2-main.png',
+          description: `
+          <p>
+            Data Patches focuses on the fabrication and manipulation of reality through distributed media. Through smart clothes and tracking sensors, our physical bodies are captured and distorted into digital code. To visualize how our personal data is used and transformed by wearable technology, I created an automated process where I take an individual’s image and manipulate it’s data to create an image distorted beyond recognition.
+          </p>
+          <img src="/exhibition/2-a.png" />
+          <p>
+             The distorted image is then placed into an ID template which draws from the visual language of microchips, RFID tags and tracking sensors. The resulting graphic symbol represents the “data-fied” person, visualizing the ways an individual is quantified, controlled and used through data manipulation.
+          </p>
+          <img src="/exhibition/2-b.png" />
+          <p>
+             To distribute the graphic symbol, I transformed them into patches meant to be worn on a jacket, making the invisible nature of data collection more visible. A patch on a jacket makes a statement and a person wearing their own personal Data Patch shows an awareness and knowledge of the surveillance and data mining happening when using wearable technology. The analog patch made from personal data is fighting against the detailed forms of online monitoring occurring as we become more connected, as well as spreading information and creating conversations about the insidious nature of data collection and our participation in it via wearable technology. Data Patches explores issues of surveillance and data privacy and questions how a design intervention can be used to discuss a topic like surveillance capitalism.
+          </p>
+          <img src="/exhibition/2-c.png" />
+          <p>
+            If your project could propose a hypothetical state of the world, what would that be?
+          </p>
+          <p>
+            A world where there is a greater awareness of who owns our personal data, how it is being used and the impacts of surveillance capitalism. It is a world where individuals are able to take control of their data and wear it, spreading information and sharing knowledge in alternative, offline and analog ways, such as a jacket patch. In this hypothetical state, fashion is about self-expression and doesn’t require us to submit ourselves to increasingly detailed forms of data collection and online monitoring in order to wear what we want. This hypothetical state is one where data collection isn’t invisible and our personal data isn’t given up unwillingly but instead we are in control of how our data is used. The jacket patch that symbolizes our “data-fied” self shows this awareness.
+          </p>
+          `,
         },
         {
-          title: 'The Discrete Life of an Emoji',
-          image: 'emoji.png',
-          description: `third`,
+          title: 'Contrast by Jinhwa Oh',
+          image: '3-main.jpg',
+          description: `
+          <p>
+            Contrast is a moving poster discussing the relationship between two-dimensionality and three-dimensionality. Rather than regarding the relationship as a matter of “A or B,” I see infinite progressive stages between the two conditions, like a spectrum from low to high contrast.
+          </p>
+          <img src="/exhibition/3-a.jpg" />
+          <img src="/exhibition/3-b.jpg" />
+          <p>
+             Although this poster is a digital image, it resembles a sticker sheet, which is an ordinary object in the physical world. This poster is peeled off gradually, leaving different images that are invisible at first.
+          </p>
+          <img src="/exhibition/3-c.jpg" />
+          <img src="/exhibition/3-d.jpg" />
+          <p>
+            This poster also talks about the idea of national borders in which more than two countries are facing each other. All symbols in this poster are from national flags, and when the symbols on the front side are peeled off, symbols of different nations that are adjacent to the countries gradually appear.
+          </p>
+          <video src="/exhibition/3.mp4" autoplay muted />
+          `,
         },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        {
+          title: 'Dancing on The Track Pad by Goeun Park',
+          image: '4-main.jpg',
+          description: `
+          <p>
+            Dancing on the Trackpad is a project building a notation system to map the movements of trackpad gestures and alter them into a performance.
+          </p>
+          <img src="/exhibition/4-a.jpg" />
+          <p>
+             The system of notation is created based on Labanotation, which is a dancing notation of traditional ballet. In Labanotation, a person’s physical movements are divided into three parts; noun, verb, and adverb which is similar to how a sentence is structured.
+          </p>
+          <img src="/exhibition/4-b.jpg" />
+          <p>
+             The new notation system maps all the possible trackpad gestures in * Mac OS. For example, Opening Mission Control is described as three fingers (noun) swipe up (verb) the trackpad slowly (adverb).
+          </p>
+          <img src="/exhibition/4-c.jpg" />
+          <p>
+            The project transcribed functional hand gestures on the trackpad such as running a Google search for “smiley”or sending a friend request through Facebook, into the notations. Since every individuals uses the trackpad in different ways, the result of the transcription creates multiple patterns. They visualize the relationship between the hand, physical movement, and the trackpad.
+          </p>
+          <p>
+            * Mac OS has 14 different trackpad gestures: Look up & data detectors, Secondary click, Tap to click, Scroll direction, Zoom in or out, Smart zoom, Rotate, Swipe between pages, Swipe between full-screen apps, Notification Center, Mission Control, App Exposé, Launchpad, Show Desktop.
+          </p>
+          <p>
+            If your project could propose a hypothetical state of the world, what would that be?
+          </p>
+          <p>
+            Gestures are a main tool to use a device. The devices are not merely the screen these days, but they can be expanded into space; a room itself could be a device in the future. This project could propose this question; How does creating a notation system contribute to highlighting the physical relationship between body, movement and the future tool?
+          </p>
+          <p>
+            “Dance is an expressive gesture and body configurations through which non-verbal communication can be achieved. There is a clearly constructed grammar that defines the relationship of the movement words to each other and their given function in the movement sentence.“
+          </p>
+          <p>
+            - Excerpt from Labanotation: The System of Analyzing and Recording Movement Ann Hutchinson Guest 1954
+          </p>
+          <p>
+            “Space is experienced most intuitively through movement, and on a higher level through dance. Dance is at the same time a basic means of realizing a spatial design. It can consolidate a space, segment it: space expands, sinks and floats, fluctuates in all directions.”
+          </p>
+          <p>
+            - Excerpt from Human-Space-Machine: Stage: Experiments at the Bauhaus, Blume Torsten, Spector Books, 2014
+          </p>
+          `,
+        },
+        {
+          title: 'The Discreet Life of the Emoji by Everett Epstein',
+          image: '5-main.png',
+          description: `
+          <p>
+            <em>The Discreet Life of the Emoji</em> traces the “Smiling Face with Tear” emoji backwards, through the screen, through its code, across Lithium pools, to the mines of the Atacama Desert. Drawing on the research of Martín Arboleda, the website offers a materialist critique of a symbol, visualizing the supply chain behind a wholly digital language. Accompanying this map, I included a ribbon of text which reads:
+          </p>
+          <p>
+            <em>I’m speechless as I type emojis → from quarantine on a Macbook → built out of copper and lithium → mined and transported by precariat laborers → using wi-fi transmitted along fiber-optic cables → gradually superheated by an increasingly diseased climate → entering an insecure profession → in a country that helped destabilize the global south → such that I could type these words in the first place.</em>
+          </p>
+          <img src="/exhibition/5-a.png" />
+          <p>
+             If your project could propose a hypothetical state of the world, what would that be?
+          </p>
+          <p>
+             I hope that this project proposes a world more considerate of the alienated character of language. Emojis in particular—and digital type in general—are completely entangled in economies of precarity, and any solidarity with global worker movements must start with that recognition: my “voice” isn’t mine alone. The letters I type have never been so cheap to produce, never been so easily rendered, which should give us pause.
+          </p>
+          <img src="/exhibition/5-b.png" />
+          <p>
+             My hypothetical world would be one born in that pause, where speech fails us because the us has articulated itself. In other words, this project imagines a future suddenly quieted by Chilean dock workers striking, by Bolivian Lithium miners asserting national mineral rights, by Unicode employees just walking out, shutting down the servers. It’s an ambivalent future—an apocalyptic silence; and in 2021, that possibility is on the tip of our tongues.
+          </p>
+          <img src="/exhibition/5-c.png" />
+          <img src="/exhibition/5-d.png" />
+          `,
+        },
+        {
+          title: 'Martian Flags by Nick Lamkin',
+          image: '6-main.jpeg',
+          description: `
+          <p>
+            Elon Musk has used the word “colonize” when talking about human expansion into space and Mars. The use of this word itself implies there may be some similarities between human expansion into Mars and the colonization of the New World by European countries.
+          </p>
+          <img src="/exhibition/6-a.jpeg" />
+          <p>
+             However, this project utilizes a visual identity for a hypothetical Martian future that avoids the visual strategies of colonial powers on earth. In creating an automated graphic method to generate and distribute identity, the project rejects a top-down Colonial approach. The system refuses any singular mark of sovereignty or ownership (like the Union Jack) to make a cohesive system without national, religious, ideological, or corporate iconography.
+          </p>
+          <img src="/exhibition/6-b.jpeg" />
+          <p>
+             Each aspect of the flag template (composition and forms) is set to the multiplicity of two and four — two for the two moons of Mars and four for its position as fourth planet from the sun. The system generates flags by separating the shapes onto layers and toggling their positive/negative fill. The individual flags generated vary significantly and are compelling on their own. However, the methodology shows its merit when the flags are displayed alongside one another as patchwork. No single flag holds dominion over another, existing as equals united by a simple and abstract graphic system.
+          </p>
+          <img src="/exhibition/6-c.jpeg" />
+          <p>
+            If your project could propose a hypothetical state of the world, what would that be?
+          </p>
+          <p>
+            In some ways this project imagines a future that our present does not suggest. In this future, the powers involved with the "colonization" of Mars have learned from the errors of the past. The project hopes for a future world state that values unity and independence over division and sovereignty.
+          </p>
+          <img src="/exhibition/6-d.jpeg" />
+          `,
+        },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/c', image: 'x.png', description: '' },
+        {
+          title: 'Korean Unification Flag by Sora Won',
+          image: '7-main.jpg',
+          description: `
+          <p>
+            North and South Korea are still at war and the Korean peninsula is the only divided country in the world. Korean unification has long been the ultimate goal of the two Koreas but decades of division have created a huge economic and cultural gap. However, we all hope that peace can finally come to Korea. If that happens, how long would unification take? Would it be beneficial for both Koreas? What would Korean unification look like? and lastly, how do you feel about it?
+          </p>
+          <img src="/exhibition/7-main.jpg" />
+          <!-- <video src="/exhibition/7.mp4" autoplay muted /> -->
+          <p>
+             The goal of this project is to spark discourse and make a collective design work by encouraging people’s participation. This flag generator lets you create a flag by flipping the tile. The front side is the South Korean flag and the backside is the North Korean flag. Users can reflect their opinion about Korean unification by making a flag of their own interpretation. Users can decide which flag will be shown more based on how they imagine the unification would look like. When users actually play with it, they would realize flipping is tiring and time-consuming due to too many tiny tiles. This also reflects the fact that unification is a long and painful process. And that is what it takes to finally achieve peaceful unification.
+          </p>
+          <img src="/exhibition/7-a.jpg" />
+          <img src="/exhibition/7-b.jpg" />
+          <img src="/exhibition/7-c.jpg" />
+          <img src="/exhibition/7-d.jpg" />
+          `,
+        },
+        {
+          title: 'Juan Pablo Rahal Soto',
+          image: 'x.png',
+          description: ``,
+        },
+        {
+          title: 'MJ Balvanera',
+          image: 'x.png',
+          description: ``,
+        },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
+        // { title: '/', image: 'x.png', description: '' },
       ],
       countDown: {
         start: DateTime.fromISO(
           this.testToken ?
-          '2021-11-12T09:00:00.000+01:00' :
-          '2021-11-18T09:00:00.000+01:00',
+          '2021-11-16T10:00:00.000+01:00' :
+          '2021-11-18T10:00:00.000+01:00',
+          // '2021-11-18T10:00:00.000+01:00',
           { zone: this.timeZone }
         ),
         interval: 3, // hours
@@ -147,21 +330,21 @@ export default {
     },
     open() {
       if (this.testToken) return true
-      if (this.now < this.countDown.start) return
+      if (this.now > this.countDown.start) return true
       // get hour as integer
-      var hour = parseInt(this.now.toFormat('HH'))
+      // var hour = parseInt(this.now.toFormat('HH'))
       // check if outside of opening hours
-      return hour >= 9 || hour <= 18
+      // return hour >= this.opens && hour < this.closes
     },
     currentDay() {
       // check day of conference
       var day = parseInt(this.now.toFormat('d'))
       switch (day) {
-        case 18:
+        case this.countDown.start.day:
           return 1
-        case 19:
+        case this.countDown.start.day + 1:
           return 2
-        case 20:
+        case this.countDown.start.day + 2:
           return 3
         default:
           return 0
@@ -180,15 +363,15 @@ export default {
     now() {
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       const before = this.now.ts < this.countDown.start.ts
+      const h = 1000 * 60 * 60
       if (!before || this.testToken) {
-        const h = 1000 * 60 * 60
         const interval = this.countDown.interval * h
         const remainder = distance % interval
-        this.i = this.reduce(
-          Math.floor(distance / h) - Math.floor(remainder / h),
-          Math.floor(interval / h),
+        this.i = Math.max(this.reduce(
+          this.countDown.interval + Math.floor(distance / h) - Math.floor(remainder / h),
+          this.countDown.interval,
           this.works.length - 1
-        )
+        ) - 1, 0)
         distance = interval - remainder
       }
       this.distance = distance
@@ -204,20 +387,37 @@ export default {
   },
   methods: {
     getNow() {
-      this.now = DateTime.utc().setZone(this.timeZone)
+      this.now = DateTime.local().setZone(this.timeZone)
     },
     reduce(value, interval, to = 2) {
       value = (value - (value % interval)) / interval
       if (value > to) {
         value = this.reduce(value, interval)
       }
-      return value
+      return Math.max(value, 0)
     },
   },
 }
 </script>
 
 <style scoped>
+
+#window-about {
+  position: absolute;
+  top: 11rem;
+  right: 2rem;
+  width: calc(100vw - 4rem);
+  max-width: 300px;
+  font-size: 1rem;
+}
+#window-about >>> .title {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+#window-about >>> .content {
+  max-height: calc(100vh - 18rem);
+  overflow-y: auto
+}
 .page {
   padding: 0;
   display: flex;
@@ -296,6 +496,9 @@ export default {
     flex-basis: 100%;
     font-size: 1rem;
   }
+  #countdown {
+    bottom: 4rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .logo-container * {
@@ -313,7 +516,7 @@ export default {
   border: 1px solid black;
   background: white;
   transition: transform 500ms ease;
-  z-index: 999;
+  z-index: 99999;
 }
 .work-content {
   overflow-y: auto;
@@ -383,7 +586,8 @@ export default {
   margin: 1rem 0;
 }
 
-.desc >>> img {
+.desc >>> img,
+.desc >>> video {
   width: 100%;
   height: auto;
   display: block;
