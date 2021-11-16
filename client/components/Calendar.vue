@@ -86,9 +86,7 @@ export default {
       calendarList: [{ id: '1' }],
       timezones: [
         {
-          timezoneName: 'Europe/Berlin',
-          displayLabel: 'GMT+02:00',
-          // tooltip: 'Berlin'
+          timezoneName: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Berlin',
         },
       ],
       view: 'day',
