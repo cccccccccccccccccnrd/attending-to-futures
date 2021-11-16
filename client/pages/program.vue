@@ -490,7 +490,7 @@ export default {
           type: 'workshop',
           trackId: '2',
           online: true,
-          abstract: `What happens when we consider a matriarchal design pedagogy and create a non-hierarchical, non-linear approach to learning? Can the design field change from singular and privileged to more open and collaborative? Can we de-couple design from whiteness, capitalism, and competition? In this workshop, we will co-create an open-source publication with you—a set of holistic guiding principles and aspirations for a collective, matriarchal, anti-exceptional design future.`,
+          abstract: `What happens when we consider a matriarchal design pedagogy and create a non-hierarchical, non-linear approach to learning? Can the design field change from singular and privileged to more open and collaborative? Can we de-couple design from whiteness, capitalism, and competition? In this workshop, we will co-create an open-source publication with you—a set of holistic guiding principles and aspirations for a collective, matriarchal, anti-exceptional design future.<br/><br/><em>Open to all who wish to share and learn. Our workshop is not exclusive to those who associate with traditional definitions of ‘matriarchy’.</em>`,
         },
         {
           speaker: [
@@ -622,7 +622,7 @@ export default {
           start: '2021-11-20T12:15',
           end: '2021-11-20T13:15',
           type: 'keynote',
-          abstract: `What does it look like to take a step beyond decolonization towards reindigenization? How does designing through an ethic of Radical Love bring us closer to right-relationship with one another and the land?<br><br>Weaving together Natasha Myers’ conceptualization of the Planthroposcene, Robyn Wall Kimmerer’s teachings from Braiding Sweetgrass, and Leah Lakshmi Piepzna-Samarasinha’s lessons from the disability justice movement; this keynote explores how centering indigenous values of care through affective design can provide a blueprint for deconstructing the elaborate technology of colonialism.`,
+          abstract: `Hegemonic frameworks rooted in empire have come to dominate what we perceive to be "technology". What does it look like to take a step beyond decolonization towards reindigenization in the process of re-wiring this understanding? How does designing through an ethic of <em>Radical Love</em> bring us closer to right-relationship with one another and the land? Using what Donna Haraway terms "situated knowledge" as a departure point, this keynote explores how centering indigenous values of care and ritual can provide a blueprint for deconstructing the machinations of colonialism.`,
         },
         {
           title: 'Lunch Break',

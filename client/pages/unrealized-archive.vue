@@ -15,13 +15,20 @@
         </div>
       </div>
       <div id="countdown">
-        <span v-if="open">Next Work Shown In </span><span v-else>The Exhibition Will Open In </span
+        <span v-if="open">[{{this.i+1}}/{{this.works.length}}] Next Work Shown In </span><span v-else>The Exhibition Will Open In </span
         ><span id="next-time">{{ nextTime }}</span>
       </div>
       <div id="closed" v-if="!open">
         <p>The Exhibition is Closed.</p>
       </div>
       <div id="container" v-else>
+
+      <span
+        class="xl"
+        :style="`font-variation-settings: 'rond' ${rond};`"
+      >
+        Future Histories
+      </span>
         <!-- top right -->
 
         <!-- top left -->
@@ -35,6 +42,7 @@
         :width="about.width"
         :opened="about.open"
         class="drag"
+        v-drag="onDrag"
       />
         <!-- bottom left / panel -->
         <div
@@ -92,6 +100,7 @@
 import Logo from '@/components/Logo.vue'
 import Window from '@/components/Window.vue'
 import { DateTime, Duration } from 'luxon'
+import { mapActions, mapGetters, mapMutations } from 'vuex'
 
 export default {
   components: { Logo, Window },
@@ -107,7 +116,7 @@ export default {
         title: 'About',
         content:
           `<em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.`,
-        width: 300,
+        // width: 300,
         open: false,
       },
       works: [
@@ -283,8 +292,7 @@ export default {
           <p>
             North and South Korea are still at war and the Korean peninsula is the only divided country in the world. Korean unification has long been the ultimate goal of the two Koreas but decades of division have created a huge economic and cultural gap. However, we all hope that peace can finally come to Korea. If that happens, how long would unification take? Would it be beneficial for both Koreas? What would Korean unification look like? and lastly, how do you feel about it?
           </p>
-          <img src="/exhibition/7-main.jpg" />
-          <!-- <video src="/exhibition/7.mp4" autoplay muted /> -->
+          <video src="/exhibition/7.mp4" autoplay muted />
           <p>
              The goal of this project is to spark discourse and make a collective design work by encouraging people’s participation. This flag generator lets you create a flag by flipping the tile. The front side is the South Korean flag and the backside is the North Korean flag. Users can reflect their opinion about Korean unification by making a flag of their own interpretation. Users can decide which flag will be shown more based on how they imagine the unification would look like. When users actually play with it, they would realize flipping is tiring and time-consuming due to too many tiny tiles. This also reflects the fact that unification is a long and painful process. And that is what it takes to finally achieve peaceful unification.
           </p>
@@ -310,26 +318,35 @@ export default {
         // { title: '/', image: 'x.png', description: '' },
         // { title: '/', image: 'x.png', description: '' },
       ],
-      countDown: {
-        start: DateTime.fromISO(
-          this.testToken ?
-          '2021-11-16T10:00:00.000+01:00' :
-          '2021-11-18T10:00:00.000+01:00',
-          // '2021-11-18T10:00:00.000+01:00',
-          { zone: this.timeZone }
-        ),
-        interval: 3, // hours
-      },
       i: null,
       distance: 0,
     }
   },
   computed: {
+    ...mapGetters({
+      socket: 'socket/socket',
+      stats: 'stats/all',
+    }),
+
+    rond() {
+      if (!process.browser) return
+      return ((this.stats.mouseX - 0) / (window.innerWidth - 0)) * (900 - 0) + 0
+    },
+    countDown() {
+      return {
+        start: DateTime.fromISO(
+          this.testToken ?
+          '2021-11-16T10:00:00.000+01:00' :
+          '2021-11-18T10:00:00.000+01:00',
+          { zone: this.timeZone }
+        ),
+        interval: 2, // hours
+      }
+    },
     testToken() {
       return this.$route.query.token === 'ha8HAsb289a'
     },
     open() {
-      if (this.testToken) return true
       if (this.now > this.countDown.start) return true
       // get hour as integer
       // var hour = parseInt(this.now.toFormat('HH'))
@@ -364,13 +381,13 @@ export default {
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       const before = this.now.ts < this.countDown.start.ts
       const h = 1000 * 60 * 60
-      if (!before || this.testToken) {
+      if (!before) {
         const interval = this.countDown.interval * h
         const remainder = distance % interval
         this.i = Math.max(this.reduce(
           this.countDown.interval + Math.floor(distance / h) - Math.floor(remainder / h),
           this.countDown.interval,
-          this.works.length - 1
+          this.works.length
         ) - 1, 0)
         distance = interval - remainder
       }
@@ -378,6 +395,7 @@ export default {
     },
   },
   mounted() {
+    if (this.socket) this.send(['get-drag-init', {}])
     var timer = window.setInterval(
       function () {
         this.getNow()
@@ -386,6 +404,15 @@ export default {
     )
   },
   methods: {
+    ...mapActions({
+      send: 'socket/send',
+    }),
+    ...mapMutations({
+      setElement: 'drags/setElement',
+    }),
+    onDrag(event) {
+      // this.send(['drag', event])
+    },
     getNow() {
       this.now = DateTime.local().setZone(this.timeZone)
     },
@@ -404,10 +431,10 @@ export default {
 
 #window-about {
   position: absolute;
-  top: 11rem;
-  right: 2rem;
-  width: calc(100vw - 4rem);
-  max-width: 300px;
+  top: 30vh;
+  right: 10vw;
+  width: calc(100vw - 16rem);
+  max-width: 400px;
   font-size: 1rem;
 }
 #window-about >>> .title {
@@ -415,9 +442,22 @@ export default {
   font-weight: normal;
 }
 #window-about >>> .content {
-  max-height: calc(100vh - 18rem);
+  max-height: calc(100vh - 20rem);
   overflow-y: auto
 }
+@media screen and (max-width: 640px) {
+  #window-about {
+    position: relative;
+    right: initial;
+    left: 1rem;
+    max-width: 300px;
+    width: calc(100vw - 2rem);
+  }
+  #window-about >>> .content {
+    padding: 1em;
+  }
+}
+
 .page {
   padding: 0;
   display: flex;
@@ -435,6 +475,18 @@ export default {
 .logo-container > * {
   flex-basis: 30%;
 }
+.xl {
+  font-size: min(16vw, 35vh);
+  color: var(--highlight-text-color);
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #closed,
 #img-container {
   display: flex;
@@ -447,7 +499,7 @@ export default {
 }
 
 #container {
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -487,24 +539,6 @@ export default {
   padding: 1rem;
 }
 
-@media screen and (max-width: 640px) {
-  .logo-container * {
-    flex-basis: 45%;
-    text-align: left !important;
-  }
-  #clock {
-    flex-basis: 100%;
-    font-size: 1rem;
-  }
-  #countdown {
-    bottom: 4rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  .logo-container * {
-    flex-basis: 100%;
-  }
-}
 /* drawer */
 
 #work {
@@ -512,6 +546,8 @@ export default {
   top: 100vh;
   left: 20px;
   width: calc(50vw - 20px);
+  max-width: 640px;
+  min-width: 360px;
   height: 90vh;
   border: 1px solid black;
   background: white;
@@ -597,10 +633,27 @@ p {
   padding: 12px 0px 24px;
 }
 
-@media (max-width: 414px) {
+@media screen and (max-width: 640px) {
+  .logo-container * {
+    flex-basis: 45%;
+    text-align: left !important;
+  }
+  #clock {
+    flex-basis: 100%;
+    font-size: 1rem;
+  }
+  #countdown {
+    bottom: 4rem;
+  }
   #work {
     left: 10px;
     width: calc(100% - 20px);
   }
 }
+@media screen and (max-width: 320px) {
+  .logo-container * {
+    flex-basis: 100%;
+  }
+}
+
 </style>
