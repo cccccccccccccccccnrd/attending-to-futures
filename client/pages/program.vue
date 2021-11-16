@@ -1,5 +1,6 @@
 <template>
   <div class="page page-program">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.RelativeTimeFormat,Intl.RelativeTimeFormat.~locale.en"></script>
     <div class="">
       <div class="button-container">
         <h1>Program</h1>
