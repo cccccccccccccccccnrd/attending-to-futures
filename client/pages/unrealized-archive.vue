@@ -115,7 +115,22 @@ export default {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `<em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.`,
+          `<em>Unrealized Archive 6: Future Histories</em><br /><br />
+            Featured Designers:<br />
+            MJ Balvanera<br />
+            Everett Epstein<br />
+            Nick Lamkin<br />
+            Kyle Neal<br />
+            Jinhwa Oh<br />
+            Goeun Park<br />
+            Juan Pablo Rahal Soto<br />
+            William Sumrall<br />
+            Sora Won<br /><br />
+
+            Project organizers:<br />
+            Christopher Hamamoto and Jon Sueda<br /><br />
+
+          <em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.`,
         // width: 300,
         open: false,
       },
@@ -303,14 +318,45 @@ export default {
           `,
         },
         {
-          title: 'Juan Pablo Rahal Soto',
-          image: 'x.png',
-          description: ``,
+          title: 'Climate Countries by Juan Pablo Rahal Soto',
+          image: '8-main.png',
+          description: `
+          <p>
+            Climate Countries is a project and installation that aims to raise questions about the future of our borders, politics, currency—and ultimately—climate. In 2084 borders have fallen, or rather, their walls and fences have fallen.
+          </p>
+          <img src="/exhibition/8-a.png" />
+          <p>
+             The project proposes a world where the climate of the land dictates our political borders. Thus, borders are constantly changing and moving; they become a gradient and variable beyond human hands. Nature is the one that dictates our politics.
+          </p>
+          <img src="/exhibition/8-b.png" />
+          <p>
+             The installation happens inside and outside of a space. Outside, the audience is informed, through a poster and audio, how this future that they are about to enter will be. Inside, a completely different atmosphere is presented, representing three different scenes of this future. These three scenes are built through the projection of a small animated poster that interrupts the daily routine of a person’s day in a different and new country—people will need to adapt their lives to be a citizen of these new countries.
+          </p>
+          <p>
+             <a href="juanpablorahal.com" taret="_blank">juanpablorahal.com</a>
+          </p>
+          `,
         },
         {
-          title: 'MJ Balvanera',
-          image: 'x.png',
-          description: ``,
+          title: 'Collective Identity Flags by MJ Balvanera',
+          image: '9-main.gif',
+          description: `
+          <p>
+            As part of an ongoing exploration into the deep rooted issues in graphic design, this project explores the idea of user generated design as well as the concepts of breaking the grid and subverting the function of a digital tool. Using Google SpreadSheets, participants are asked to add their own flag, whatever interpretation one might have of it, to a database of flags which was then converted into a collective physical flag.
+
+          </p>
+          <img src="/exhibition/9-a.jpg" />
+          <p>
+             As of summer 2017, the participant flags were turned into a single, united and collaborative fabric flag, digitally printed on fabric (26" x 17", 66cm x 43cm) in an edition of 3.
+          </p>
+          <img src="/exhibition/9-b.jpg" />
+          <p>
+             Consider that the world has been globalised to the point of delusional collectiveness. If this project could propose a hypothetical state of the world, it would encourage viewers and participants to identify the vast diversity that we have erased through capitalist globalization, and, specifically, our role as designers perpetuating the expansion of these ideals. This notion should not be a hypothetical state, yet our understanding of diversity has shifted to the point where it's recognition is, by default, hypothetical.
+          </p>
+          <p>
+             <a href="mjbalvanera.com" taret="_blank">mjbalvanera.com</a>
+          </p>
+          `,
         },
         // { title: '/', image: 'x.png', description: '' },
         // { title: '/', image: 'x.png', description: '' },
@@ -336,7 +382,7 @@ export default {
       return {
         start: DateTime.fromISO(
           this.testToken ?
-          '2021-11-16T10:00:00.000+01:00' :
+          '2021-11-16T03:00:00.000+01:00' :
           '2021-11-18T10:00:00.000+01:00',
           { zone: this.timeZone }
         ),
@@ -558,6 +604,9 @@ export default {
   overflow-y: auto;
   height: 100%;
   margin-top: -1px;
+}
+.desc >>> p a:hover {
+  text-decoration: underline
 }
 
 #work.show {
