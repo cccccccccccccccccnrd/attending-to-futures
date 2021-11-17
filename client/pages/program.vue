@@ -71,6 +71,7 @@ export default {
         workshop: 'hsl(240, 100%, 50%)',
         performance: 'hsl(102, 26%, 33%)',
         ['round table']: 'hsl(240, 100%, 20%)',
+        ['audio walk']: 'hsl(240, 100%, 20%)',
         exhibition: 'hsl(320, 50%, 40%)',
         break: 'hsl(0, 0%, 50%)',
       },
@@ -129,7 +130,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button>`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button><br /><br /><button class='inline'><a href='/challenge' target='_blank'>Go To Exhibition</a></button>`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -167,7 +168,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button>`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button><br /><br /><button class='inline'><a href='/challenge' target='_blank'>Go To Exhibition</a></button>`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -205,7 +206,7 @@ export default {
           type: 'exhibition',
           trackId: '3',
           sharedTrack: '1',
-          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button>`
+          abstract: `An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020. For more, including student's answers to the challenge, see: <button class='inline'><a href='https://www.instagram.com/design_lnu/' target='_blank'>@design_lnu</a></button><br /><br /><button class='inline'><a href='/challenge' target='_blank'>Go To Exhibition</a></button>`
         },
         {
           title: 'Attending [to] Futures. Student Works.',
@@ -692,11 +693,11 @@ export default {
           title: 'Rehearsing interconnected design practices — Getting started with an audio walk',
           start: '2021-11-20T14:45',
           end: '2021-11-20T16:15',
-          type: 'workshop',
+          type: 'audio walk',
           trackId: '3',
           sharedTrack: '2',
           abstract:
-            'RIBL (Research Institute of Botanical Linguistics) invites you to an audio-walk in »nature«, followed by a discussion of posthuman design perspectives. We intend to de-center the human perspective while imagining alternative (co)existence and looking for sensitive, empathic, and interconnected ways of designing. <br><br> The workshop aims to enmesh the participants into a multi-sensory transdisciplinary exchange.',
+            `RIBL (Research Institute of Botanical Linguistics) invites you to an audio-walk in »nature«, followed by a discussion of posthuman design perspectives. We intend to de-center the human perspective while imagining alternative (co)existence and looking for sensitive, empathic, and interconnected ways of designing. <br><br> The workshop aims to enmesh the participants into a multi-sensory transdisciplinary exchange.<br /><br /><button class='inline'><a href='/audio-walk' target='_blank'>Listen To Audio</a></button>`,
         },
         {
           speaker: [

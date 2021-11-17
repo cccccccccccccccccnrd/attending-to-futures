@@ -151,10 +151,16 @@ export default {
       if (schedule.raw.online) {
         if (schedule.raw.type !== 'workshop') {
           online = 'stream'
+        } else {
+          online = 'online'
         }
       } else {
         if (schedule.raw.type === 'workshop') {
           online = 'only on-site'
+        } else if (schedule.raw.type === 'round table') {
+          online = 'hybrid'
+        } else if (schedule.raw.type === 'audio walk') {
+          online = 'on-site and online (exhibition)'
         } else {
           // online = 'on-site & stream'
         }
