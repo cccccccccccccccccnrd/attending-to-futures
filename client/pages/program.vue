@@ -416,12 +416,12 @@ export default {
         },
         {
           speaker: ['Michaela Büsse'],
-          title: 'Design Autonomy',
+          title: '<s>Autonomous</s> Design Autonomy',
           start: '2021-11-19T11:15',
           end: '2021-11-19T12:00',
           type: 'talk',
           trackId: '1',
-          abstract: `In my contribution, I will discuss design's autonomy as a reflection on and continuation of Arturo Escobar's (2017) decolonial project called Design Autonomy. A visual field note from the »failed« land reclamation project Melaka Gateway in Malaysia aids as entry point for proposing an extended reading of design that critically engages the origins and effects of social, material, and economic power structures. My contribution is positioned as a plea for a situated and critical analysis that embraces design as an ambiguous and distributed practice.`,
+          abstract: `In my contribution, I will discuss design's autonomy as a reflection on and continuation of Arturo Escobar's (2017) decolonial project called <s>Autonomous</s> Design Autonomy. A visual field note from the »failed« land reclamation project Melaka Gateway in Malaysia aids as entry point for proposing an extended reading of design that critically engages the origins and effects of social, material, and economic power structures. My contribution is positioned as a plea for a situated and critical analysis that embraces design as an ambiguous and distributed practice.`,
         },
         {
           speaker: ['Jaione Cerrato', 'Jon Halls'],
