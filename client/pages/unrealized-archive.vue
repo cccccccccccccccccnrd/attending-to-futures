@@ -13,6 +13,13 @@
           Online Exhibition<br /><span id="current-day" v-if="open">Day {{ currentDay }}, </span
           ><span id="current-time">{{ currentTime }}</span>
         </div>
+        <div id="testing" v-if="testToken">
+          Opens: <input v-model="opens" placeholder="opening hour" type="number" min="0" max="24"><br>
+          Closes: <input v-model="closes" placeholder="closing hour" type="number" min="0" max="24"><br>
+          Opening Day: <input v-model="openingDay" placeholder="opening Day" type="number" min="0" max="30"><br>
+          Interval (h): <input v-model="countDown.interval" placeholder="interval" type="number" min="1" max="10">
+        </div>
+
       </div>
       <div id="countdown">
         <span v-if="open">[{{this.i+1}}/{{this.works.length}}] Next Work Shown In </span><span v-else>The Exhibition Will Open In </span
@@ -107,8 +114,9 @@ export default {
   data() {
     return {
       now: DateTime.local().setZone(this.timeZone),
-      opens: 10,
-      closes: 18,
+      opens: 10, // 10
+      closes: 19, // 19
+      openingDay: 18,
       timeZone: 'Europe/Berlin',
       showDescription: false,
       about: {
@@ -197,11 +205,6 @@ export default {
           <video src="/exhibition/3.mp4" autoplay muted />
           `,
         },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
         {
           title: 'Dancing on The Track Pad by Goeun Park',
           image: '4-main.jpg',
@@ -294,11 +297,6 @@ export default {
           <img src="/exhibition/6-d.jpeg" />
           `,
         },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/c', image: 'x.png', description: '' },
         {
           title: 'Korean Unification Flag by Sora Won',
           image: '7-main.jpg',
@@ -357,11 +355,6 @@ export default {
           </p>
           `,
         },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
-        // { title: '/', image: 'x.png', description: '' },
       ],
       i: null,
       distance: 0,
@@ -379,24 +372,21 @@ export default {
     },
     countDown() {
       return {
-        start: DateTime.fromISO(
-          this.testToken ?
-          '2021-11-16T03:00:00.000+01:00' :
-          '2021-11-18T10:00:00.000+01:00',
+        start: DateTime.fromISO(`2021-11-${String(this.openingDay).padStart(2, '0')}T${String(this.opens).padStart(2, '0')}:00:00.000+01:00`,
           { zone: this.timeZone }
         ),
-        interval: 2, // hours
+        interval: 3, // hours
       }
     },
     testToken() {
       return this.$route.query.token === 'ha8HAsb289a'
     },
     open() {
-      if (this.now > this.countDown.start) return true
+      if (this.now < this.countDown.start) return
       // get hour as integer
-      // var hour = parseInt(this.now.toFormat('HH'))
+      var hour = parseInt(this.now.toFormat('HH'))
       // check if outside of opening hours
-      // return hour >= this.opens && hour < this.closes
+      return hour >= this.opens && hour < this.closes
     },
     currentDay() {
       // check day of conference
@@ -426,15 +416,26 @@ export default {
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       const before = this.now.ts < this.countDown.start.ts
       const h = 1000 * 60 * 60
+      const d = h * 24
       if (!before) {
-        const interval = this.countDown.interval * h
+        const interval = Number(this.countDown.interval) * h
         const remainder = distance % interval
-        this.i = Math.max(this.reduce(
-          this.countDown.interval + Math.floor(distance / h) - Math.floor(remainder / h),
-          this.countDown.interval,
-          this.works.length
-        ) - 1, 0)
         distance = interval - remainder
+          console.log(this.now.hour, Number(this.opens), Number(this.countDown.interval))
+        if ((this.now.hour >= Number(this.opens)) && (this.now.hour < (Number(this.opens) + Number(this.countDown.interval)))) {
+          this.i = 0
+        } else if (this.now.hour >= Number(this.opens) + Number(this.countDown.interval) && this.now.hour < Number(this.opens) + Number(this.countDown.interval) * 2) {
+          console.log('a')
+          this.i = 1
+        } else if (this.now.hour >= Number(this.opens) + Number(this.countDown.interval) * 2 && this.now.hour < Number(this.opens) + Number(this.countDown.interval) * 3) {
+          console.log('b')
+          this.i = 2
+        }
+        this.i = this.i + (3 * (this.currentDay - 1))
+        this.i = Math.min(this.i, this.works.length - 1)
+        if (this.now.hour >= this.closes) {
+          distance = Math.abs(this.countDown.start.ts + d * this.currentDay - this.now.ts)
+        }
       }
       this.distance = distance
     },
@@ -461,10 +462,11 @@ export default {
     getNow() {
       this.now = DateTime.local().setZone(this.timeZone)
     },
-    reduce(value, interval, to = 2) {
+    reduce(value, interval, to) {
       value = (value - (value % interval)) / interval
       if (value > to) {
-        value = this.reduce(value, interval)
+        // value =- interval
+        value = this.reduce(value, interval, to)
       }
       return Math.max(value, 0)
     },

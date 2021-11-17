@@ -64,7 +64,7 @@
       <div id="img-container">
         <audio
         controls
-        src="/exhibition/t-rex-roar.mp3"></audio>
+        src="/exhibition/audio-walk.mp3"></audio>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@ export default {
         },
       ],
       countDown: {
-        start: DateTime.fromISO('2021-11-18T10:00:00.000+01:00', { zone: this.timeZone }),
+        start: DateTime.fromISO('2021-11-17T10:00:00.000+01:00', { zone: this.timeZone }),
         interval: 3, // hours
       },
       i: null,
