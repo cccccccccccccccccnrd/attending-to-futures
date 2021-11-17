@@ -30,12 +30,18 @@ export default {
           designers: ['Jon Sueda', 'Chris Hamamoto'],
           link: 'unrealized-archive'
         },
-        // {
-        //   title: 'Challenge',
-        //   designers: ['Åsa Ståhl', 'Bianca Elzenbaumer', 'Eeva Houtbeckers', 'Svenja Keune', 'Evren Uzer', 'Saoirse Higgins', 'Tania Pérez-Bustos'],
-        //   subtitle: 'How can designers produce excess in their home environment – and share it in a fair way?',
-        //   link: 'challenge'
-        // }
+        {
+          title: 'Challenge',
+          designers: ['Åsa Ståhl', 'Bianca Elzenbaumer', 'Eeva Houtbeckers', 'Svenja Keune', 'Evren Uzer', 'Saoirse Higgins', 'Tania Pérez-Bustos'],
+          subtitle: 'How can designers produce excess in their home environment – and share it in a fair way?',
+          link: 'challenge'
+        },
+        {
+          title: 'Audio Walk',
+          designers: [''],
+          subtitle: '',
+          link: 'audio-walk'
+        }
       ]
     }
   },

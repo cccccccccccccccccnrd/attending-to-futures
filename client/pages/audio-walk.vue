@@ -5,14 +5,13 @@
         <logo style="max-width: 300px" />
       </nuxt-link>
       <h1 id="logo">
-        Mariah:<br />
-        Acts of Resistance
+        Audio Walk<br />
       </h1>
-      <div id="clock">Online Exhibition<br /><span id="current-day" v-if="open">Day {{currentDay}}, </span><span id="current-time">{{currentTime}}</span></div>
+      <div id="clock"><span id="current-day" v-if="open">Day {{currentDay}}, </span><span id="current-time">{{currentTime}}</span></div>
     </div>
-    <div id="countdown" v-if="!open"><span>The Exhibition Will Open In </span><span id="next-time">{{nextTime}}</span></div>
+    <div id="countdown" v-if="!open"><span>The Audio Walk Will Open In </span><span id="next-time">{{nextTime}}</span></div>
     <div id="closed" v-if="!open">
-      <p>The Exhibition is Closed.</p>
+      <p>The Audio Walk is Closed.</p>
     </div>
     <div id="container" v-else>
       <!-- top right -->
@@ -57,7 +56,7 @@
 
       <!-- large image -->
       <div id="img-container">
-        <video ref="video" width="100%" height="auto" :src="`/exhibition/short.mp4`" autoplay controls />
+        <video ref="video" width="100%" height="auto" :src="`/exhibition/lectures.mp4`" autoplay controls />
       </div>
     </div>
   </div>
@@ -78,7 +77,7 @@ export default {
         {
           title: '/',
           image: '',
-          description: `A documentary short film about an augmented reality experience, Mariah narrates stories of injustice by exposing the sinister funding of big Pharma, the blind acceptance of capital by cultural institutions, and the implications of technocratic power. We fill the halls of historic museums with the voices of those gone and those left to carry the burden of loss, staking claim to expose the power structures' status quo. Mariah is our witness, and she is our actor of protest.<br /><br />The film is accompanied by a corresponding publication and poster that can be activated by the Mariah smartphone app.`
+          description: `...`
         },
       ],
       countDown: {

@@ -10,7 +10,7 @@
       </h1>
       <div id="clock">Online Exhibition<br /><span id="current-day" v-if="open">Day {{currentDay}}, </span><span id="current-time">{{currentTime}}</span></div>
     </div>
-    <div id="countdown"><span v-if="open">Next Work Shown In </span><span v-else>The Exhibition Will Open In </span><span id="next-time">{{nextTime}}</span></div>
+    <div id="countdown" v-if="!open"><span>The Exhibition Will Open In </span><span id="next-time">{{nextTime}}</span></div>
     <div id="closed" v-if="!open">
       <p>The Exhibition is Closed.</p>
     </div>
@@ -57,7 +57,7 @@
 
       <!-- large image -->
       <div id="img-container">
-        <video id="main-img" :src="`/exhibition/${this.works[0].image}`" />
+        <video ref="video" width="100%" height="auto" :src="`/exhibition/lectures.mp4`" autoplay controls />
       </div>
     </div>
   </div>
@@ -82,18 +82,17 @@ export default {
         },
       ],
       countDown: {
-        start: DateTime.fromISO('2021-11-18T09:00', { zone: this.timeZone }),
+        start: DateTime.fromISO('2021-11-18T10:00:00.000+01:00', { zone: this.timeZone }),
+        interval: 3, // hours
       },
-      distance: 0
+      i: null,
+      distance: 0,
+      startTime: 0,
     }
   },
   computed: {
     open() {
-      // return
-      // get hour as integer
-      var hour = parseInt(this.now.toFormat('HH'))
-      // check if outside of opening hours
-      return hour >= 9 || hour <= 18
+      if (this.now > this.countDown.start) return true
     },
     currentDay() {
       // check day of conference
@@ -120,7 +119,17 @@ export default {
   },
   watch: {
     now() {
-      this.distance = Math.abs(this.countDown.start.ts - this.now.ts)
+      let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
+      // before exhibition
+      const before = this.now < this.countDown.start
+      if (!before) {
+        const h = 1000 * 60 * 60
+        const interval = this.countDown.interval * h
+        const remainder = distance % interval
+        this.i = this.reduce(Math.floor(distance / h) - Math.floor(remainder / h), Math.floor(interval / h), this.works.length - 1)
+        distance = interval - remainder
+      }
+      this.distance = distance
     }
   },
   mounted() {
@@ -182,7 +191,6 @@ export default {
   position: absolute;
   top: 0px;
   left: 0px;
-  pointer-events: none;
   z-index: 0;
 }
 
@@ -211,7 +219,8 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 1rem
+  padding: 1rem;
+  z-index: 999;
 }
 
 @media screen and (max-width: 640px) {
@@ -319,7 +328,11 @@ export default {
 p {
   padding: 12px 0px 24px;
 }
-
+video {
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    max-height: 100%;
+}
 @media (max-width: 414px) {
   #work {
     left: 10px;

@@ -157,7 +157,7 @@ export default {
       stats: 'stats/all'
     }),
     fullscreen() {
-      return ['unrealized-archive', 'mariah', 'challenge'].includes(this.$nuxt.$route.name)
+      return ['unrealized-archive', 'mariah', 'challenge', 'audio-walk'].includes(this.$nuxt.$route.name)
     }
   }
 }
@@ -349,7 +349,7 @@ nav a.nuxt-link-exact-active {
 .site {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .logo-container {
