@@ -115,22 +115,21 @@ export default {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `<em>Unrealized Archive 6: Future Histories</em><br /><br />
-            Featured Designers:<br />
-            MJ Balvanera<br />
-            Everett Epstein<br />
-            Nick Lamkin<br />
-            Kyle Neal<br />
-            Jinhwa Oh<br />
-            Goeun Park<br />
-            Juan Pablo Rahal Soto<br />
-            William Sumrall<br />
-            Sora Won<br /><br />
+          `<em><strong>Unrealized Archive 6: Future Histories<strong></em><br /><br />
+          <em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.<br /><br />
+          <strong>Featured Designers:</strong><br />
+          MJ Balvanera<br />
+          Everett Epstein<br />
+          Nick Lamkin<br />
+          Kyle Neal<br />
+          Jinhwa Oh<br />
+          Goeun Park<br />
+          Juan Pablo Rahal Soto<br />
+          William Sumrall<br />
+          Sora Won<br /><br />
 
-            Project organizers:<br />
-            Christopher Hamamoto and Jon Sueda<br /><br />
-
-          <em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.`,
+          <strong>Project organizers:</strong><br />
+          Christopher Hamamoto and Jon Sueda`,
         // width: 300,
         open: false,
       },
