@@ -98,8 +98,8 @@
 
 <script>
 import Logo from '@/components/Logo.vue'
-import Window from '@/components/Window.vue'
 import { DateTime, Duration } from 'luxon'
+import Window from '@/components/Window.vue'
 import { mapActions, mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -115,7 +115,7 @@ export default {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `<em><strong>Unrealized Archive 6: Future Histories<strong></em><br /><br />
+          `<strong>Unrealized Archive 6: Future Histories</strong><br /><br />
           <em>Unrealized Archive 6: Future Histories</em> examines the fabrication and manipulation of reality through graphic symbols – alphabets, patterns, and icons. It looks at the potential of circulation and Graphic Design’s role to legitimize as well as disrupt today’s flow of information. These collected works posit hypothetical states of the world to create productive interventions and explore everything from utopian visions, posthumanism, natural resources, nationalism, privacy, to ahistorical revision.<br /><br />The exhibition is on view during <em>Attending [to] Futures</em> – both online as well as within the conference exhibition space via a projection of the website. An ephemeral experience, the works will be shown for a limited time when they will be traced as silhouettes in the exhibit space, before receding into the past leaving behind graphic fragments.<br /><br />
           <strong>Featured Designers:</strong><br />
           MJ Balvanera<br />
@@ -468,7 +468,7 @@ export default {
       }
       return Math.max(value, 0)
     },
-  },
+  }
 }
 </script>
 
@@ -570,7 +570,7 @@ export default {
 
 #logo {
   font-size: 1.5em;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
 }
 #clock {

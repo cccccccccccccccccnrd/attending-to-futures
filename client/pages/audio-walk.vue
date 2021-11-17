@@ -17,6 +17,12 @@
       <!-- top right -->
 
       <!-- top left -->
+      <span
+        class="xl"
+        :style="`font-variation-settings: 'rond' ${rond};`"
+      >
+        Audio Walk
+      </span>
 
       <!-- bottom right -->
 
@@ -56,7 +62,9 @@
 
       <!-- large image -->
       <div id="img-container">
-        <video ref="video" width="100%" height="auto" :src="`/exhibition/lectures.mp4`" autoplay controls />
+        <audio
+        controls
+        src="/exhibition/t-rex-roar.mp3"></audio>
       </div>
     </div>
   </div>
@@ -65,6 +73,7 @@
 <script>
 import Logo from '@/components/Logo.vue'
 import { DateTime, Duration } from 'luxon'
+import { mapActions, mapGetters, mapMutations } from 'vuex'
 
 export default {
   components: { Logo },
@@ -90,6 +99,14 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      socket: 'socket/socket',
+      stats: 'stats/all',
+    }),
+    rond() {
+      if (!process.browser) return
+      return ((this.stats.mouseX - 0) / (window.innerWidth - 0)) * (900 - 0) + 0
+    },
     open() {
       if (this.now > this.countDown.start) return true
     },
@@ -137,6 +154,15 @@ export default {
     }.bind(this), 1000);
   },
   methods: {
+    ...mapActions({
+      send: 'socket/send',
+    }),
+    ...mapMutations({
+      setElement: 'drags/setElement',
+    }),
+    onDrag(event) {
+      // this.send(['drag', event])
+    },
     getNow() {
       this.now = DateTime.local().setZone(this.timeZone)
     },
@@ -168,6 +194,20 @@ export default {
 }
 .logo-container > * {
   flex-basis: 30%;
+}
+.xl {
+  font-size: min(30vw, 50vh);
+  line-height: 0.8;
+  color: var(--highlight-text-color);
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -0.05em;
 }
 #closed,
 #img-container {
@@ -244,6 +284,7 @@ export default {
   top: 100vh;
   left: 20px;
   width: calc(50vw - 20px);
+  max-width: 640px;
   height: 90vh;
   border: 1px solid black;
   background: white;

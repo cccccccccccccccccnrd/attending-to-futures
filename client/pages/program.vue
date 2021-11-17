@@ -552,6 +552,7 @@ export default {
           end: '2021-11-19T18:15',
           type: 'keynote',
           online: true,
+          abstract: `To attend is to be present; to look after; to care for. Yet, in spite of vehement and public diversity statements, design institutions have failed, and continue to fail those they outwardly claim to protect; those whose lives and livelihoods have been, and continue to be, most direly impacted by its decisions. How do these institutions, then, look after those whose futures have been shattered by multiple, devastating, sustained crises — from pandemics, to conflicts, to economic insecurity? What is present amongst the detritus of what could have been? How to care for those most affected by the forced suspensions of time enacted by these crises? `
         },
         {
           title: 'Good-Bye',

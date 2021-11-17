@@ -19,41 +19,17 @@
 
       <!-- top left -->
 
+      <window
+        :id="`window-about`"
+        :type="about.type"
+        :title="about.title"
+        :content="about.content"
+        :width="about.width"
+        :opened="about.open"
+        class="drag"
+        v-drag="onDrag"
+      />
       <!-- bottom right -->
-
-      <!-- bottom left / panel -->
-      <div id="work" :class="{show: showDescription }">
-        <div id="work-title" @click="showDescription = !showDescription">
-          <h2>{{this.works[0].title}}</h2>
-
-        <div :class="{ hide: !showDescription }"
-          class="button"
-        >
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 30 30" xml:space="preserve">
-            <style type="text/css">
-              .stroke {
-                fill: none;
-                stroke-width: 1.5px;
-                stroke: #FFFFFF;
-                stroke-miterlimit: 10;
-              }
-            </style>
-            <g v-if="open">
-              <line class="stroke" x1="0.5" y1="0.5" x2="29.5" y2="29.5"/>
-              <line class="stroke" x1="29.5" y1="0.5" x2="0.5" y2="29.5"/>
-            </g>
-            <g v-if="!open">
-              <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5 "/>
-            </g>
-          </svg>
-        </div>
-        </div>
-        <!-- work 0 -->
-        <div class="work-content">
-        <div class="desc" v-html="this.works[0].description"></div>
-      </div>
-      </div>
 
       <!-- large image -->
       <div id="img-container">
@@ -66,14 +42,24 @@
 <script>
 import Logo from '@/components/Logo.vue'
 import { DateTime, Duration } from 'luxon'
+import Window from '@/components/Window.vue'
+import { mapActions, mapGetters, mapMutations } from 'vuex'
 
 export default {
-  components: { Logo },
+  components: { Logo, Window },
   data() {
     return {
       now: DateTime.local().setZone(this.timeZone),
       timeZone: 'Europe/Berlin',
       showDescription: false,
+      about: {
+        type: 'drop-shadow',
+        title: 'About',
+        content:
+          `Åsa Ståhl, Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins and Tania Pérez-Bustos`,
+        // width: 300,
+        open: false,
+      },
       works: [
         {
           title: '/',
@@ -85,12 +71,21 @@ export default {
         start: DateTime.fromISO('2021-11-18T10:00:00.000+01:00', { zone: this.timeZone }),
         interval: 3, // hours
       },
-      i: null,
+      i: 0,
       distance: 0,
       startTime: 0,
     }
   },
   computed: {
+    ...mapGetters({
+      socket: 'socket/socket',
+      stats: 'stats/all',
+    }),
+
+    rond() {
+      if (!process.browser) return
+      return ((this.stats.mouseX - 0) / (window.innerWidth - 0)) * (900 - 0) + 0
+    },
     open() {
       if (this.now > this.countDown.start) return true
     },
@@ -133,11 +128,21 @@ export default {
     }
   },
   mounted() {
+    if (this.socket) this.send(['get-drag-init', {}])
     var timer = window.setInterval(function(){
       this.getNow();
     }.bind(this), 1000);
   },
   methods: {
+    ...mapActions({
+      send: 'socket/send',
+    }),
+    ...mapMutations({
+      setElement: 'drags/setElement',
+    }),
+    onDrag(event) {
+      // this.send(['drag', event])
+    },
     getNow() {
       this.now = DateTime.local().setZone(this.timeZone)
     },
@@ -146,13 +151,43 @@ export default {
       if (value > to) {
         value = this.reduce(value, interval)
       }
-      return value
+      return Math.max(value, 0)
     },
   }
 }
 </script>
 
 <style scoped>
+
+#window-about {
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
+  width: calc(100vw - 16rem);
+  max-width: 400px;
+  font-size: 1rem;
+}
+#window-about >>> .title {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+#window-about >>> .content {
+  max-height: calc(100vh - 20rem);
+  overflow-y: auto
+}
+@media screen and (max-width: 640px) {
+  #window-about {
+    position: relative;
+    right: initial;
+    left: 1rem;
+    max-width: 300px;
+    width: calc(100vw - 2rem);
+  }
+  #window-about >>> .content {
+    padding: 1em;
+  }
+}
+
 .page {
   padding: 0;
   display: flex;
@@ -182,7 +217,7 @@ export default {
 }
 
 #container {
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -193,7 +228,6 @@ export default {
   left: 0px;
   z-index: 0;
 }
-
 
 /* style open page */
 
@@ -220,7 +254,6 @@ export default {
   bottom: 0;
   right: 0;
   padding: 1rem;
-  z-index: 999;
 }
 
 @media screen and (max-width: 640px) {
@@ -245,16 +278,20 @@ export default {
   top: 100vh;
   left: 20px;
   width: calc(50vw - 20px);
+  max-width: 640px;
   height: 90vh;
   border: 1px solid black;
   background: white;
   transition: transform 500ms ease;
-  z-index: 999;
+  z-index: 99999;
 }
 .work-content {
   overflow-y: auto;
   height: 100%;
   margin-top: -1px;
+}
+.desc >>> p a:hover {
+  text-decoration: underline
 }
 
 #work.show {
@@ -278,7 +315,7 @@ export default {
 }
 #work-title h2 {
   padding: 10px 15px;
-  color: white
+  color: white;
 }
 #work-title .button {
   min-width: 2.625em;
@@ -316,10 +353,11 @@ export default {
   margin-bottom: 2rem;
 }
 .desc >>> p {
-  margin: 1rem 0
+  margin: 1rem 0;
 }
 
-.desc >>> img {
+.desc >>> img,
+.desc >>> video {
   width: 100%;
   height: auto;
   display: block;
@@ -329,9 +367,8 @@ p {
   padding: 12px 0px 24px;
 }
 video {
-    aspect-ratio: 16/9;
-    max-width: 100%;
-    max-height: 100%;
+  aspect-ratio: 16/9;
+  max-width: min(90vw, 140vh);
 }
 @media (max-width: 414px) {
   #work {
