@@ -178,9 +178,6 @@ export default {
           </p>
           <img src="/exhibition/2-c.png" />
           <p>
-            If your project could propose a hypothetical state of the world, what would that be?
-          </p>
-          <p>
             A world where there is a greater awareness of who owns our personal data, how it is being used and the impacts of surveillance capitalism. It is a world where individuals are able to take control of their data and wear it, spreading information and sharing knowledge in alternative, offline and analog ways, such as a jacket patch. In this hypothetical state, fashion is about self-expression and doesn’t require us to submit ourselves to increasingly detailed forms of data collection and online monitoring in order to wear what we want. This hypothetical state is one where data collection isn’t invisible and our personal data isn’t given up unwillingly but instead we are in control of how our data is used. The jacket patch that symbolizes our “data-fied” self shows this awareness.
           </p>
           `,
@@ -228,9 +225,6 @@ export default {
             * Mac OS has 14 different trackpad gestures: Look up & data detectors, Secondary click, Tap to click, Scroll direction, Zoom in or out, Smart zoom, Rotate, Swipe between pages, Swipe between full-screen apps, Notification Center, Mission Control, App Exposé, Launchpad, Show Desktop.
           </p>
           <p>
-            If your project could propose a hypothetical state of the world, what would that be?
-          </p>
-          <p>
             Gestures are a main tool to use a device. The devices are not merely the screen these days, but they can be expanded into space; a room itself could be a device in the future. This project could propose this question; How does creating a notation system contribute to highlighting the physical relationship between body, movement and the future tool?
           </p>
           <p>
@@ -259,9 +253,6 @@ export default {
           </p>
           <img src="/exhibition/5-a.png" />
           <p>
-             If your project could propose a hypothetical state of the world, what would that be?
-          </p>
-          <p>
              I hope that this project proposes a world more considerate of the alienated character of language. Emojis in particular—and digital type in general—are completely entangled in economies of precarity, and any solidarity with global worker movements must start with that recognition: my “voice” isn’t mine alone. The letters I type have never been so cheap to produce, never been so easily rendered, which should give us pause.
           </p>
           <img src="/exhibition/5-b.png" />
@@ -288,9 +279,6 @@ export default {
              Each aspect of the flag template (composition and forms) is set to the multiplicity of two and four — two for the two moons of Mars and four for its position as fourth planet from the sun. The system generates flags by separating the shapes onto layers and toggling their positive/negative fill. The individual flags generated vary significantly and are compelling on their own. However, the methodology shows its merit when the flags are displayed alongside one another as patchwork. No single flag holds dominion over another, existing as equals united by a simple and abstract graphic system.
           </p>
           <img src="/exhibition/6-c.jpeg" />
-          <p>
-            If your project could propose a hypothetical state of the world, what would that be?
-          </p>
           <p>
             In some ways this project imagines a future that our present does not suggest. In this future, the powers involved with the "colonization" of Mars have learned from the errors of the past. The project hopes for a future world state that values unity and independence over division and sovereignty.
           </p>
