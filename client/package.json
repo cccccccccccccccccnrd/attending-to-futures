@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@formatjs/intl-relativetimeformat": "^9.3.2",
     "@toast-ui/vue-calendar": "^1.1.1",
     "express": "^4.15.3",
     "luxon": "^1.28.0",

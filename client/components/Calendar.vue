@@ -21,7 +21,12 @@
 </template>
 
 <script>
+import '@formatjs/intl-relativetimeformat/polyfill'
 import { DateTime } from 'luxon'
+if (process.browser && window.Intl) {
+  console.log(window.Intl)
+}
+
 export default {
   name: 'Program',
   components: {},
@@ -50,7 +55,6 @@ export default {
       if (!this.events) return
       const events = [...this.events].map(e => {
         const regex = /(T\d.+)(?=\:)/
-        console.log(e.start.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0')))
         e.start = e.start.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0'))
         e.end = e.end.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0'))
         return e
