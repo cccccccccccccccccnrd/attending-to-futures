@@ -22,7 +22,7 @@
 
       </div>
       <div id="countdown">
-        <span v-if="open">[{{this.i+1}}/{{this.works.length}}] Next Work Shown In </span><span v-else>The Exhibition Will Open In </span
+        <span>{{ nextWorksLabel }} </span
         ><span id="next-time">{{ nextTime }}</span>
       </div>
       <div id="closed" v-if="!open">
@@ -376,6 +376,11 @@ export default {
       // check if outside of opening hours
       return hour >= this.opens && hour < this.closes
     },
+    nextWorksLabel() {
+      if (!this.open) 'The exhibition will open in'
+      if ([2, 5, 8].includes(this.i)) return 'The exhibition will close in'
+      return 'Next work shown in'
+    },
     currentDay() {
       // check day of conference
       var day = parseInt(this.now.toFormat('d'))
@@ -401,8 +406,6 @@ export default {
   },
   watch: {
     now() {
-      console.log()
-      console.log(DateTime.now().setZone(Intl.DateTimeFormat().resolvedOptions().timeZone).offset - DateTime.now().setZone(this.timeZone).offset)
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       const before = this.now.ts < this.countDown.start.ts
       const h = 1000 * 60 * 60
@@ -411,15 +414,13 @@ export default {
         const interval = Number(this.countDown.interval) * h
         const remainder = distance % interval
         distance = interval - remainder
-          console.log(this.now.hour, Number(this.opens), Number(this.countDown.interval))
         if ((this.now.hour >= Number(this.opens)) && (this.now.hour < (Number(this.opens) + Number(this.countDown.interval)))) {
           this.i = 0
         } else if (this.now.hour >= Number(this.opens) + Number(this.countDown.interval) && this.now.hour < Number(this.opens) + Number(this.countDown.interval) * 2) {
-          console.log('a')
           this.i = 1
         } else if (this.now.hour >= Number(this.opens) + Number(this.countDown.interval) * 2 && this.now.hour < Number(this.opens) + Number(this.countDown.interval) * 3) {
-          console.log('b')
           this.i = 2
+
         }
         this.i = this.i + (3 * (this.currentDay - 1))
         this.i = Math.min(this.i, this.works.length - 1)
