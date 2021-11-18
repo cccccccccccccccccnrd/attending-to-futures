@@ -38,8 +38,8 @@ export default {
         },
         {
           title: 'Audio Walk',
-          designers: [''],
-          subtitle: '',
+          designers: ['Research Institute of Botanical Linguistics / Marius Förster', 'Meike Hardt'],
+          subtitle: 'Rehearsing interconnected design practices',
           link: 'audio-walk'
         }
       ]

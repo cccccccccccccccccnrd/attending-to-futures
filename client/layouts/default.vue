@@ -48,7 +48,7 @@
             to="/tickets"
             @click.native="handleNavClick"
           >
-            Tickets
+            <span style="text-decoration: line-through;">Tickets</span>
           </nuxt-link>
           <nuxt-link
             to="/contact"
