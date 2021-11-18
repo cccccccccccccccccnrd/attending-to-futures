@@ -49,9 +49,10 @@ export default {
     schedules() {
       if (!this.events) return
       const events = [...this.events].map(e => {
-        // const regex = /(?<=T)(\d.+)(?=\:)/
-        // e.start = e.start.replace(regex, (h) => String(Number(h) + this.timeZoneOffset).padStart(2, '0'))
-        // e.end = e.end.replace(regex, (h) => String(Number(h) + this.timeZoneOffset).padStart(2, '0'))
+        const regex = /(T\d.+)(?=\:)/
+        console.log(e.start.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0')))
+        e.start = e.start.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0'))
+        e.end = e.end.replace(regex, (h) => 'T' + String(Number(h.replace('T', '')) + this.timeZoneOffset).padStart(2, '0'))
         return e
       })
       return events.map((e, i) => ({

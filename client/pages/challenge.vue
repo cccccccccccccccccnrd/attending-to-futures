@@ -242,7 +242,7 @@ export default {
 
 #logo {
   font-size: 1.5em;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
 }
 #clock {
