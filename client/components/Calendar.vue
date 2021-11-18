@@ -22,15 +22,12 @@
 
 <script>
 import { DateTime } from 'luxon'
+
 if (!Intl.RelativeTimeFormat) {
-  // eslint-disable-next-line global-require
-   require('@formatjs/intl-relativetimeformat/polyfill');
-   // eslint-disable-next-line global-require
-  //  require('@formatjs/intl-relativetimeformat/dist/locale-data/en-US');
+  require('@formatjs/intl-relativetimeformat/polyfill');
+  console.log(Intl.RelativeTimeFormat ? 'polyfilled RelativeTimeFormat' : 'failed polyfilling RelativeTimeFormat')
 }
-if (Intl) {
-  console.log(Intl)
-}
+console.log(Intl || 'no Intl')
 
 export default {
   name: 'Program',
