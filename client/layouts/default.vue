@@ -92,6 +92,10 @@
 </template>
 
 <script>
+if (!Intl.RelativeTimeFormat) {
+  require('@formatjs/intl-relativetimeformat/polyfill');
+  console.log(Intl.RelativeTimeFormat ? 'polyfilled RelativeTimeFormat' : 'failed polyfilling RelativeTimeFormat')
+}
 import { mapActions, mapGetters } from 'vuex'
 import Logo from '@/components/Logo.vue'
 import Visual from '@/components/Visual.vue'

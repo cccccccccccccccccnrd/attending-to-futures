@@ -23,12 +23,6 @@
 <script>
 import { DateTime } from 'luxon'
 
-if (!Intl.RelativeTimeFormat) {
-  require('@formatjs/intl-relativetimeformat/polyfill');
-  console.log(Intl.RelativeTimeFormat ? 'polyfilled RelativeTimeFormat' : 'failed polyfilling RelativeTimeFormat')
-}
-console.log(Intl || 'no Intl')
-
 export default {
   name: 'Program',
   components: {},
