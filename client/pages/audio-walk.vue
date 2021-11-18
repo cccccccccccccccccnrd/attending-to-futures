@@ -86,7 +86,7 @@ export default {
         {
           title: '/',
           image: '',
-          description: `...`
+          description: `RIBL (Research Institute of Botanical Linguistics) invites you to an audio-walk in »nature«, followed by a discussion of posthuman design perspectives. We intend to de-center the human perspective while imagining alternative (co)existence and looking for sensitive, empathic, and interconnected ways of designing. <br><br> The workshop aims to enmesh the participants into a multi-sensory transdisciplinary exchange.`
         },
       ],
       countDown: {

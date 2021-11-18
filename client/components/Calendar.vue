@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { DateTime } from 'luxon'
 export default {
   name: 'Program',
   components: {},
@@ -36,9 +37,23 @@ export default {
     },
   },
   computed: {
+    timeZoneOffset() {
+      return (DateTime.now().setZone(Intl.DateTimeFormat().resolvedOptions().timeZone).offset - DateTime.now().setZone(this.timeZone).offset) / 60 || 0
+    },
+    week() {
+      return {
+        hourStart: Math.min(Math.max(10 + this.timeZoneOffset, 0), 24),
+        hourEnd: Math.min(Math.max(20 + this.timeZoneOffset, 0), 24),
+      }
+    },
     schedules() {
       if (!this.events) return
-      const events = [...this.events]
+      const events = [...this.events].map(e => {
+        // const regex = /(?<=T)(\d.+)(?=\:)/
+        // e.start = e.start.replace(regex, (h) => String(Number(h) + this.timeZoneOffset).padStart(2, '0'))
+        // e.end = e.end.replace(regex, (h) => String(Number(h) + this.timeZoneOffset).padStart(2, '0'))
+        return e
+      })
       return events.map((e, i) => ({
         start: e.start,
         end: e.end,
@@ -86,17 +101,13 @@ export default {
       calendarList: [{ id: '1' }],
       timezones: [
         {
-          timezoneName: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Berlin',
+          timezoneName: 'Europe/Berlin',
+          // timezoneName: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Berlin',
         },
       ],
       view: 'day',
       taskView: false,
       scheduleView: ['time'],
-
-      week: {
-        hourStart: 10,
-        hourEnd: 20,
-      },
       disableDblClick: true,
       isReadOnly: true,
       useDetailPopup: true,

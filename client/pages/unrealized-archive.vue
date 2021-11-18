@@ -401,6 +401,8 @@ export default {
   },
   watch: {
     now() {
+      console.log()
+      console.log(DateTime.now().setZone(Intl.DateTimeFormat().resolvedOptions().timeZone).offset - DateTime.now().setZone(this.timeZone).offset)
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       const before = this.now.ts < this.countDown.start.ts
       const h = 1000 * 60 * 60
