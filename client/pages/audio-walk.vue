@@ -5,7 +5,7 @@
         <logo style="max-width: 300px" />
       </nuxt-link>
       <h1 id="logo">
-        Rehearsing interconnected design practices — Getting started with an audio walk<br />
+        Rehearsing interconnected design practices — Getting started with an audio walk
       </h1>
       <div id="clock"><span id="current-day" v-if="open">Day {{currentDay}}, </span><span id="current-time">{{currentTime}}</span></div>
     </div>
@@ -17,13 +17,13 @@
       <!-- top right -->
 
       <!-- top left -->
+
       <span
         class="xl"
         :style="`font-variation-settings: 'rond' ${rond};`"
       >
         Audio Walk
       </span>
-
 
       <window
         :id="`window-about`"
@@ -39,8 +39,7 @@
 
       <!-- large image -->
       <div id="img-container">
-        <button style="width: initial;"><a target="_blank" href="https://soundcloud.com/user-410186184/audiowalk-ribl-atf/s-dVddp7vKrgY?si=ada32e4053724c72ba7a2daf950a02dd">Listen on SoundCloud!</a></button>
-
+        <iframe width="320px" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1163134774&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" style="transform: sclae(2)"></iframe>
       </div>
     </div>
   </div>
@@ -59,20 +58,26 @@ export default {
       now: DateTime.local().setZone(this.timeZone),
       timeZone: 'Europe/Berlin',
       showDescription: false,
-      trackId: '1163134774',
-      widgetParams: '',
       about: {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `This Audiowalk is prepared for the KISD Conference with the accompanying discussion in mind. Nevertheless, thanks to the possibility to join virtually from everywhere, we invite everybody to conduct the audio walk wherever you're situated. Find a place outside the city jungle or in little green islands within, where you feel safe... All you need is to open the link.<br /><br />Marius Förster`,
+          `This Audiowalk is prepared for the KISD Conference with the accompanying discussion in mind. Nevertheless, thanks to the possibility to join virtually from everywhere, we invite everybody to conduct the audio walk wherever you're situated. Find a place outside the city jungle or in little green islands within, where you feel safe... All you need is play the audio.<br /><br />Marius Förster`,
         // width: 300,
         open: false,
       },
+      works: [
+        {
+          title: '/',
+          image: '',
+          description: `...`
+        },
+      ],
       countDown: {
-        start: DateTime.fromISO('2021-11-19T10:00:00.000+01:00', { zone: this.timeZone }),
+        start: DateTime.fromISO('2021-11-18T10:00:00.000+01:00', { zone: this.timeZone }),
         interval: 3, // hours
       },
+      i: 0,
       distance: 0,
       startTime: 0,
     }
@@ -116,6 +121,14 @@ export default {
     now() {
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       // before exhibition
+      const before = this.now < this.countDown.start
+      if (!before) {
+        const h = 1000 * 60 * 60
+        const interval = this.countDown.interval * h
+        const remainder = distance % interval
+        this.i = this.reduce(Math.floor(distance / h) - Math.floor(remainder / h), Math.floor(interval / h), this.works.length - 1)
+        distance = interval - remainder
+      }
       this.distance = distance
     }
   },
@@ -143,7 +156,7 @@ export default {
       if (value > to) {
         value = this.reduce(value, interval)
       }
-      return value
+      return Math.max(value, 0)
     },
   }
 }
@@ -179,6 +192,7 @@ export default {
     padding: 1em;
   }
 }
+
 .page {
   padding: 0;
   display: flex;
@@ -196,6 +210,7 @@ export default {
 .logo-container > * {
   flex-basis: 30%;
 }
+
 .xl {
   font-size: min(30vw, 50vh);
   line-height: 0.8;
@@ -221,27 +236,24 @@ export default {
   padding: 1rem;
 }
 
-#img-container button {
-  background: #f50;
-  color: #fff;
-  font-size: 2rem;
-  border-radius: 2rem;
-}
-#img-container button a {
-  color: inherit
-}
-#img-container button:hover {
-  background: #f30
+#img-container iframe {
+  --scale: 1.25;
+  transform: scale(var(--scale));
+  padding: 1rem;
+  background: white;
+  box-sizing: content-box;
+  /* border-radius: 100px; */
+  border: calc(1px / var(--scale)) solid black;
+  box-shadow: 5px 5px 0 0 black;
 }
 @media (max-width: 640px) {
 
-#img-container button {
-  font-size: 1rem;
+  #img-container iframe {
+    --scale: 1;
+  }
 }
-}
-
 #container {
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -252,7 +264,6 @@ export default {
   left: 0px;
   z-index: 0;
 }
-
 
 /* style open page */
 
@@ -279,7 +290,6 @@ export default {
   bottom: 0;
   right: 0;
   padding: 1rem;
-  z-index: 999;
 }
 
 @media screen and (max-width: 640px) {
@@ -309,12 +319,15 @@ export default {
   border: 1px solid black;
   background: white;
   transition: transform 500ms ease;
-  z-index: 999;
+  z-index: 99999;
 }
 .work-content {
   overflow-y: auto;
   height: 100%;
   margin-top: -1px;
+}
+.desc >>> p a:hover {
+  text-decoration: underline
 }
 
 #work.show {
@@ -338,7 +351,7 @@ export default {
 }
 #work-title h2 {
   padding: 10px 15px;
-  color: white
+  color: white;
 }
 #work-title .button {
   min-width: 2.625em;
@@ -376,10 +389,11 @@ export default {
   margin-bottom: 2rem;
 }
 .desc >>> p {
-  margin: 1rem 0
+  margin: 1rem 0;
 }
 
-.desc >>> img {
+.desc >>> img,
+.desc >>> video {
   width: 100%;
   height: auto;
   display: block;
@@ -389,9 +403,8 @@ p {
   padding: 12px 0px 24px;
 }
 video {
-    aspect-ratio: 16/9;
-    max-width: 100%;
-    max-height: 100%;
+  aspect-ratio: 16/9;
+  max-width: min(90vw, 140vh);
 }
 @media (max-width: 414px) {
   #work {
