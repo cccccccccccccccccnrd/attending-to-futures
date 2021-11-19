@@ -377,7 +377,8 @@ export default {
       return hour >= this.opens && hour < this.closes
     },
     nextWorksLabel() {
-      if (!this.open) 'The exhibition will open in'
+      console.log(this.open)
+      if (!this.open) return 'The exhibition will open in'
       if ([2, 5, 8].includes(this.i)) return 'The exhibition will close in'
       return 'Next work shown in'
     },

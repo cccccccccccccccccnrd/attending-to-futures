@@ -82,7 +82,6 @@ export default {
       socket: 'socket/socket',
       stats: 'stats/all',
     }),
-
     rond() {
       if (!process.browser) return
       return ((this.stats.mouseX - 0) / (window.innerWidth - 0)) * (900 - 0) + 0

@@ -5,7 +5,7 @@
         <logo style="max-width: 300px" />
       </nuxt-link>
       <h1 id="logo">
-        Audio Walk<br />
+        Rehearsing interconnected design practices — Getting started with an audio walk<br />
       </h1>
       <div id="clock"><span id="current-day" v-if="open">Day {{currentDay}}, </span><span id="current-time">{{currentTime}}</span></div>
     </div>
@@ -24,47 +24,23 @@
         Audio Walk
       </span>
 
+
+      <window
+        :id="`window-about`"
+        :type="about.type"
+        :title="about.title"
+        :content="about.content"
+        :width="about.width"
+        :opened="about.open"
+        class="drag"
+        v-drag="onDrag"
+      />
       <!-- bottom right -->
-
-      <!-- bottom left / panel -->
-      <div id="work" :class="{show: showDescription }">
-        <div id="work-title" @click="showDescription = !showDescription">
-          <h2>{{this.works[0].title}}</h2>
-
-        <div :class="{ hide: !showDescription }"
-          class="button"
-        >
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 30 30" xml:space="preserve">
-            <style type="text/css">
-              .stroke {
-                fill: none;
-                stroke-width: 1.5px;
-                stroke: #FFFFFF;
-                stroke-miterlimit: 10;
-              }
-            </style>
-            <g v-if="open">
-              <line class="stroke" x1="0.5" y1="0.5" x2="29.5" y2="29.5"/>
-              <line class="stroke" x1="29.5" y1="0.5" x2="0.5" y2="29.5"/>
-            </g>
-            <g v-if="!open">
-              <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5 "/>
-            </g>
-          </svg>
-        </div>
-        </div>
-        <!-- work 0 -->
-        <div class="work-content">
-        <div class="desc" v-html="this.works[0].description"></div>
-      </div>
-      </div>
 
       <!-- large image -->
       <div id="img-container">
-        <audio
-        controls
-        src="/exhibition/audio-walk.mp3"></audio>
+        <button style="width: initial;"><a target="_blank" href="https://soundcloud.com/user-410186184/audiowalk-ribl-atf/s-dVddp7vKrgY?si=ada32e4053724c72ba7a2daf950a02dd">Listen on SoundCloud!</a></button>
+
       </div>
     </div>
   </div>
@@ -73,27 +49,30 @@
 <script>
 import Logo from '@/components/Logo.vue'
 import { DateTime, Duration } from 'luxon'
+import Window from '@/components/Window.vue'
 import { mapActions, mapGetters, mapMutations } from 'vuex'
 
 export default {
-  components: { Logo },
+  components: { Logo, Window },
   data() {
     return {
       now: DateTime.local().setZone(this.timeZone),
       timeZone: 'Europe/Berlin',
       showDescription: false,
-      works: [
-        {
-          title: '/',
-          image: '',
-          description: `RIBL (Research Institute of Botanical Linguistics) invites you to an audio-walk in »nature«, followed by a discussion of posthuman design perspectives. We intend to de-center the human perspective while imagining alternative (co)existence and looking for sensitive, empathic, and interconnected ways of designing. <br><br> The workshop aims to enmesh the participants into a multi-sensory transdisciplinary exchange.`
-        },
-      ],
+      trackId: '1163134774',
+      widgetParams: '',
+      about: {
+        type: 'drop-shadow',
+        title: 'About',
+        content:
+          `This Audiowalk is prepared for the KISD Conference with the accompanying discussion in mind. Nevertheless, thanks to the possibility to join virtually from everywhere, we invite everybody to conduct the audio walk wherever you're situated. Find a place outside the city jungle or in little green islands within, where you feel safe... All you need is to open the link.<br /><br />Marius Förster`,
+        // width: 300,
+        open: false,
+      },
       countDown: {
-        start: DateTime.fromISO('2021-11-20T10:00:00.000+01:00', { zone: this.timeZone }),
+        start: DateTime.fromISO('2021-11-19T10:00:00.000+01:00', { zone: this.timeZone }),
         interval: 3, // hours
       },
-      i: null,
       distance: 0,
       startTime: 0,
     }
@@ -137,18 +116,11 @@ export default {
     now() {
       let distance = Math.abs(this.countDown.start.diffNow().values.milliseconds)
       // before exhibition
-      const before = this.now < this.countDown.start
-      if (!before) {
-        const h = 1000 * 60 * 60
-        const interval = this.countDown.interval * h
-        const remainder = distance % interval
-        this.i = this.reduce(Math.floor(distance / h) - Math.floor(remainder / h), Math.floor(interval / h), this.works.length - 1)
-        distance = interval - remainder
-      }
       this.distance = distance
     }
   },
   mounted() {
+    if (this.socket) this.send(['get-drag-init', {}])
     var timer = window.setInterval(function(){
       this.getNow();
     }.bind(this), 1000);
@@ -178,6 +150,35 @@ export default {
 </script>
 
 <style scoped>
+
+#window-about {
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
+  width: calc(100vw - 16rem);
+  max-width: 400px;
+  font-size: 1rem;
+}
+#window-about >>> .title {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+#window-about >>> .content {
+  max-height: calc(100vh - 20rem);
+  overflow-y: auto
+}
+@media screen and (max-width: 640px) {
+  #window-about {
+    position: relative;
+    right: initial;
+    left: 1rem;
+    max-width: 300px;
+    width: calc(100vw - 2rem);
+  }
+  #window-about >>> .content {
+    padding: 1em;
+  }
+}
 .page {
   padding: 0;
   display: flex;
@@ -218,6 +219,25 @@ export default {
   height: 100vh;
   overflow: hidden;
   padding: 1rem;
+}
+
+#img-container button {
+  background: #f50;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+#img-container button a {
+  color: inherit
+}
+#img-container button:hover {
+  background: #f30
+}
+@media (max-width: 640px) {
+
+#img-container button {
+  font-size: 1rem;
+}
 }
 
 #container {
