@@ -56,7 +56,8 @@ export default {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `Åsa Ståhl, Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins and Tania Pérez-Bustos`,
+          `Åsa Ståhl, Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins and Tania Pérez-Bustos<br /><br />An international team of lecturers created virtual field trips to and around their living spaces and met up with students to discuss how they use their design approach to work with fair share of domestic surplus. Bianca Elzenbaumer, Eeva Houtbeckers, Svenja Keune, Evren Uzer, Saoirse Higgins, and Tania Pérez-Bustos take 3rd year BA Design+Change students – and now us – on a tour across continents, in this project initiated and arranged by Åsa Ståhl, senior lecturer in design and course coordinator of Design+Change, Autumn 2020.<br /><br />
+          For more, including student's answers to the challenge, <a href='https://www.instagram.com/design_lnu/' target='_blank'>see @design_lnu</a>`,
         // width: 300,
         open: false,
       },

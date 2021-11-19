@@ -90,7 +90,7 @@ export default {
         },
       ],
       countDown: {
-        start: DateTime.fromISO('2021-11-19T10:00:00.000+01:00', { zone: this.timeZone }),
+        start: DateTime.fromISO('2021-11-20T10:00:00.000+01:00', { zone: this.timeZone }),
         interval: 3, // hours
       },
       i: null,

@@ -60,7 +60,7 @@
           <div id="work-title" @click="showDescription = !showDescription">
             <h2>{{ this.works[this.i].title }}</h2>
 
-            <div :class="{ hide: !showDescription }" class="button">
+            <div class="button">
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,12 +78,12 @@
                     stroke-miterlimit: 10;
                   }
                 </style>
-                <g v-if="open">
+                <g v-if="showDescription">
                   <line class="stroke" x1="0.5" y1="0.5" x2="29.5" y2="29.5" />
                   <line class="stroke" x1="29.5" y1="0.5" x2="0.5" y2="29.5" />
                 </g>
-                <g v-if="!open">
-                  <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5 " />
+                <g v-if="!showDescription" transform="rotate(180 15 15)">
+                  <polyline class="stroke" points="29.5,7.5 15,22 0.5,7.5" />
                 </g>
               </svg>
             </div>
