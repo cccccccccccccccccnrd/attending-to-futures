@@ -161,10 +161,10 @@ export default {
       }
       let online = ''
       if (schedule.raw.online) {
-        if (schedule.raw.type !== 'workshop') {
-          online = 'stream'
-        } else {
+        if (schedule.raw.type === 'workshop') {
           online = 'online'
+        } else {
+          online = 'only stream'
         }
       } else {
         if (schedule.raw.type === 'workshop') {
