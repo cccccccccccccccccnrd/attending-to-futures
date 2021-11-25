@@ -62,7 +62,7 @@ export default {
         type: 'drop-shadow',
         title: 'About',
         content:
-          `This Audiowalk is prepared for the KISD Conference with the accompanying discussion in mind. Nevertheless, thanks to the possibility to join virtually from everywhere, we invite everybody to conduct the audio walk wherever you're situated. Find a place outside the city jungle or in little green islands within, where you feel safe... All you need is play the audio.<br /><br />Marius Förster`,
+          `This Audiowalk is prepared for the KISD Conference with the accompanying discussion in mind. Nevertheless, thanks to the possibility to join virtually from everywhere, we invite everybody to conduct the audio walk wherever you're situated. Find a place outside the city jungle or in little green islands within, where you feel safe... All you need is play the audio.<br /><br />Marius Förster and Meike Hardt`,
         // width: 300,
         open: false,
       },
