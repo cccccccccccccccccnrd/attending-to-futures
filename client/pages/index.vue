@@ -140,11 +140,20 @@ export default {
         //   width: 400,
         //   open: true,
         // },
+        // {
+        //   type: 'drop-shadow',
+        //   title: 'tickets',
+        //   content:
+        //     `<div style="display: flex; flex-flow: column wrap;"><p>The ticket sale is open.</p><br><button><a href="https://hopin.com/events/attending-to-futures-matters-of-politics-in-design-education-research-practice" target="_blank">Get your ticket now!</a></button>`,
+        //   width: 400,
+        //   open: true,
+        // },
         {
           type: 'drop-shadow',
-          title: 'tickets',
+          title: 'recordings available',
           content:
-            `<div style="display: flex; flex-flow: column wrap;"><p>The ticket sale is open.</p><br><button><a href="https://hopin.com/events/attending-to-futures-matters-of-politics-in-design-education-research-practice" target="_blank">Get your ticket now!</a></button>`,
+            `<small>Recordings of the conference are now availbale on Vimeo.</small><br /><br />
+            <button><a href="https://vimeo.com/showcase/attendingtofutures" target="_blank">Watch</a></button>`,
           width: 400,
           open: true,
         },

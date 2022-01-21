@@ -32,6 +32,13 @@
           >
             Exhibitions
           </nuxt-link>
+          <a
+            :badge="(new Date('Jan 21, 2022 10:00:00')).getTime() + 2.419e+9 > Date.now() ? '← new' : null"
+            target="_blank"
+            href="https://vimeo.com/showcase/attendingtofutures"
+          >
+            Recordings
+          </a>
           <nuxt-link
             to="/lectures"
             @click.native="handleNavClick"
@@ -472,5 +479,23 @@ aside .description {
   nav a:first-of-type {
     margin-top: 0;
   }
+}
+[badge] {
+  display: inline-flex;
+  align-items: center;
+}
+[badge]::after {
+  content: attr(badge);
+  background: blue;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.75em;
+  font-size: 0.625em;
+  border-radius: 1em;
+  margin-left: 1em;
+  font-weight: bold;
+
 }
 </style>
