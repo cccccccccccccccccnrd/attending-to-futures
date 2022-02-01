@@ -43,7 +43,8 @@ export default {
     return {
       terms: Array.apply(null, Array(1)).map((e) => [
         'Matters of Politics in Design Education, Research, Practice',
-        'Join the lecture series',
+        // 'Join the lecture series',
+        'Watch recordings now',
       ]),
       index: 0,
       windows: [
