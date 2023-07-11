@@ -152,7 +152,6 @@ export default {
       statsInit: 'stats/init'
     }),
     position (payload, show) {
-      return
       if (this.$route.name !== 'index') return
       const element = document.querySelector(`#${payload.id}`)
       if (!element) return
