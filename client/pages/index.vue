@@ -149,12 +149,20 @@ export default {
         //   width: 400,
         //   open: true,
         // },
+        // {
+        //   type: 'drop-shadow',
+        //   title: 'recordings available',
+        //   content:
+        //     `<small>Recordings of the conference are now availbale on Vimeo.</small><br /><br />
+        //     <button><a href="https://vimeo.com/showcase/attendingtofutures" target="_blank">Watch</a></button>`,
+        //   width: 400,
+        //   open: true,
+        // },
         {
           type: 'drop-shadow',
-          title: 'recordings available',
+          title: 'book launch',
           content:
-            `<small>Recordings of the conference are now availbale on Vimeo.</small><br /><br />
-            <button><a href="https://vimeo.com/showcase/attendingtofutures" target="_blank">Watch</a></button>`,
+            `<h3>Attending [to] Futures book launch this summer!</h3><br><small>The Attending [to] Futures book will be published by <a class="link" href="https://adocs.de" target="_blank">adocs</a> this summer!<br><br>It will be available as a print edition as well as online and for free (Open Access).</small><br><br><button><a href="/publication">Learn more</a></button>`,
           width: 400,
           open: true,
         },
@@ -228,5 +236,13 @@ h1 {
   h1 {
     font-size: 10vw;
   }
+}
+</style>
+<style>
+a.link {
+  color: blue;
+}
+a.link:hover {
+  text-decoration: underline;
 }
 </style>

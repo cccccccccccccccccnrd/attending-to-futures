@@ -15,6 +15,13 @@
             Conference
           </nuxt-link>
           <nuxt-link
+            to="/publication"
+            :badge="(new Date('Aug 21, 2023 10:00:00')).getTime() + 2.419e+9 > Date.now() ? '← new' : null"
+            @click.native="handleNavClick"
+          >
+            Publication
+          </nuxt-link>
+          <nuxt-link
             to="/keynotes"
             @click.native="handleNavClick"
           >
@@ -130,7 +137,6 @@ export default {
       switch (msg.type) {
         case 'drag-init':
           Object.keys(msg.payload).map((key) => {
-            console.log(msg.payload[key])
             app.position(msg.payload[key], true)
           })
           break
@@ -146,8 +152,10 @@ export default {
       statsInit: 'stats/init'
     }),
     position (payload, show) {
+      return
       if (this.$route.name !== 'index') return
       const element = document.querySelector(`#${payload.id}`)
+      if (!element) return
       element.style.top = `${payload.top}px`
       element.style.left = `${payload.left}px`
     },
