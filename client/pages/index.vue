@@ -158,11 +158,19 @@ export default {
         //   width: 400,
         //   open: true,
         // },
+        // {
+        //   type: 'drop-shadow',
+        //   title: 'book launch',
+        //   content:
+        //     `<h3>Attending [to] Futures book launch this summer!</h3><br><small>The Attending [to] Futures book will be published by <a class="link" href="https://adocs.de" target="_blank">adocs</a> this summer!<br><br>It will be available as a print edition as well as online and for free (Open Access).</small><br><br><button><a href="/publication">Learn more</a></button>`,
+        //   width: 400,
+        //   open: true,
+        // },
         {
           type: 'drop-shadow',
           title: 'book launch',
           content:
-            `<h3>Attending [to] Futures book launch this summer!</h3><br><small>The Attending [to] Futures book will be published by <a class="link" href="https://adocs.de" target="_blank">adocs</a> this summer!<br><br>It will be available as a print edition as well as online and for free (Open Access).</small><br><br><button><a href="/publication">Learn more</a></button>`,
+            `<h3 style="text-wrap: balance;">Open Access Publication Out Now!</h3><br><small>The Attending [to] Futures book has be published by <a class="link" href="https://adocs.de" target="_blank">adocs</a>!<br><br>It is available as a print edition as well as online and for free (Open Access).</small><br><br><button><a target="_blank" href="https://adocs.de/de/buecher/design-theorie-praxis-open-accessebooks/attending-futures-matters-politics-design-education-research-practice">Get it now!</a></button>`,
           width: 400,
           open: true,
         },

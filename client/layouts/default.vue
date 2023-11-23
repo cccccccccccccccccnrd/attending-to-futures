@@ -16,7 +16,7 @@
           </nuxt-link>
           <nuxt-link
             to="/publication"
-            :badge="(new Date('Aug 21, 2023 10:00:00')).getTime() + 2.419e+9 > Date.now() ? '← new' : null"
+            :badge="(new Date('Nov 21, 2023 10:00:00')).getTime() + 2.419e+9 > Date.now() ? '← update' : null"
             @click.native="handleNavClick"
           >
             Publication
@@ -503,6 +503,17 @@ aside .description {
   border-radius: 1em;
   margin-left: 1em;
   font-weight: bold;
-
+}
+nav a[target=_blank]:after {
+    --size: 0.75em;
+    position: relative;
+    padding-left: 1ex;
+    content: "";
+    -webkit-mask: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.4 70.2"><path d="M4,70.2H60c2.2,0,4-1.8,4-4V34.2h-8v28H8V14.2h28V6.2H4C1.8,6.2,0,8,0,10.2v56c0,2.2,1.8,4,4,4Z"/><polygon points="30.9 33.8 36.5 39.4 62.4 13.6 62.4 22.3 70.4 22.3 70.4 0 48 0 48 8 56.7 8 30.9 33.8"/></svg>') no-repeat 50% 50%;
+    mask: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.4 70.2"><path d="M4,70.2H60c2.2,0,4-1.8,4-4V34.2h-8v28H8V14.2h28V6.2H4C1.8,6.2,0,8,0,10.2v56c0,2.2,1.8,4,4,4Z"/><polygon points="30.9 33.8 36.5 39.4 62.4 13.6 62.4 22.3 70.4 22.3 70.4 0 48 0 48 8 56.7 8 30.9 33.8"/></svg>') no-repeat 50% 50%;
+    background-color: currentColor;
+    width: var(--size);
+    height: var(--size);
+    display: inline-block;
 }
 </style>
